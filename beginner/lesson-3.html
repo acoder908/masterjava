@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: First Java Program - Complete Guide | A Coder</title>
+    <meta name="description"
+        content="Learn to write your first Java program. Understand program structure, main method, print statements with detailed examples and explanations.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Mobile Lesson Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <a href="tutorials.html">Tutorials</a>
+                <span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a>
+                <span>/</span>
+                <span>Lesson 3</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Course Layout -->
+    <div class="course-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Course Progress -->
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">12%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 12%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>3 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <!-- Lessons Navigation -->
+            <nav class="lessons-nav">
+                <!-- Module 1 -->
+                <div class="module">
+                    <button class="module-header active" data-module="1">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">What is Java</span>
+                            <span class="lesson-duration">10 min</span>
+                            <svg class="check-icon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Environment Setup</span>
+                            <span class="lesson-duration">15 min</span>
+                            <svg class="check-icon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item active">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">First Java Program</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item">
+                            <span class="lesson-number">4</span>
+                            <span class="lesson-title">Java Comments</span>
+                            <span class="lesson-duration">8 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item">
+                            <span class="lesson-number">5</span>
+                            <span class="lesson-title">Variables and Literals</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item">
+                            <span class="lesson-number">6</span>
+                            <span class="lesson-title">Data Types</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item">
+                            <span class="lesson-number">7</span>
+                            <span class="lesson-title">Operators</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <span class="lesson-number">8</span>
+                            <span class="lesson-title">Constants & Final</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <span class="lesson-number">9</span>
+                            <span class="lesson-title">If-Else Statements</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <span class="lesson-number">10</span>
+                            <span class="lesson-title">Switch Statements</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <span class="lesson-number">11</span>
+                            <span class="lesson-title">For Loops</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <span class="lesson-number">12</span>
+                            <span class="lesson-title">While Loops</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item">
+                            <span class="lesson-number">13</span>
+                            <span class="lesson-title">Methods</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item">
+                            <span class="lesson-number">14</span>
+                            <span class="lesson-title">Parameters</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item">
+                            <span class="lesson-number">15</span>
+                            <span class="lesson-title">Return Values</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item">
+                            <span class="lesson-number">16</span>
+                            <span class="lesson-title">Method Overloading</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item">
+                            <span class="lesson-number">17</span>
+                            <span class="lesson-title">Arrays</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item">
+                            <span class="lesson-number">18</span>
+                            <span class="lesson-title">Multi-dimensional Arrays</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item">
+                            <span class="lesson-number">19</span>
+                            <span class="lesson-title">Arrays with For Each</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item">
+                            <span class="lesson-number">20</span>
+                            <span class="lesson-title">ArrayList</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item">
+                            <span class="lesson-number">21</span>
+                            <span class="lesson-title">Classes & Objects</span>
+                            <span class="lesson-duration">18 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item">
+                            <span class="lesson-number">22</span>
+                            <span class="lesson-title">Constructors</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item">
+                            <span class="lesson-number">23</span>
+                            <span class="lesson-title">Access Modifiers</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item">
+                            <span class="lesson-number">24</span>
+                            <span class="lesson-title">Super, This Keyword</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="course-content">
+            <!-- Mobile Header -->
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open lesson menu">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <span>Lessons</span>
+                </button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 3 of 24</span>
+                    <span class="mobile-lesson-title">First Java Program</span>
+                </div>
+            </div>
+
+            <!-- Lesson Header -->
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 3</span>
+                    <span class="lesson-duration">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg>
+                        12 min read
+                    </span>
+                </div>
+                <h1 class="lesson-title">Your First Java Program</h1>
+                <p class="lesson-description">အခု lesson မှာ Java program တစ်ခု လက်တွေ့ ရေးကြည့်မှာ ဖြစ်ပါတယ်။ Program
+                    structure, syntax rules, common mistakes တွေကို အသေးစိတ် လေ့လာကြမယ်။</p>
+            </div>
+
+            <!-- Lesson Content -->
+            <article class="lesson-article">
+                <!-- Section 1: The Classic Hello World -->
+                <section class="content-section">
+                    <h2>1. The Classic "Hello, World!" Program</h2>
+
+                    <p>Let's start with the traditional first program that every programmer writes:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - HelloWorld.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Hello, World!</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Program အလုပ်လုပ်ပုံ</span>
+                        </div>
+                        <p>ဒီ program က screen မှာ "Hello, World!" ဆိုတဲ့ text ကို ပြပေးမှာ ဖြစ်ပါတယ်။ ရိုးရှင်းပေမယ့်
+                            Java programming ရဲ့ အခြေခံ structure အားလုံး ပါဝင်ပါတယ်။</p>
+                        <p><strong>How it works:</strong></p>
+                        <ol>
+                            <li>JVM က program ကို start လုပ်တဲ့ အခါ <code>main</code> method ကို ရှာပါတယ်</li>
+                            <li><code>main</code> method အထဲက statements တွေကို top-to-bottom execute လုပ်ပါတယ်</li>
+                            <li><code>System.out.println()</code> က text ကို console မှာ print လုပ်ပေးပါတယ်</li>
+                            <li>Program က ပြီးဆုံးပါတယ် (no more statements to execute)</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Section 2: Program Structure Breakdown -->
+                <section class="content-section">
+                    <h2>2. Java Program Structure (အသေးစိတ် ခွဲခြမ်းစိတ်ဖြာခြင်း)</h2>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Annotated Structure</span>
+                        </div>
+                        <pre><code>// 1. Class Declaration
+public class HelloWorld {
+    
+    // 2. Main Method (Entry Point)
+    public static void main(String[] args) {
+        
+        // 3. Method Body (Executable Code)
+        System.out.println("Hello, World!");
+        
+    } // End of main method
+    
+} // End of class</code></pre>
+                    </div>
+
+                    <h3>Part 1: Class Declaration</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                        </div>
+                        <pre><code>public class HelloWorld {
+    // class body
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Class Declaration အကြောင်း</span>
+                        </div>
+                        <p><code><strong>public</strong></code> - Access modifier ပါ။ ဒီ class ကို ဘယ်ကနေမဆို access
+                            လုပ်လို့ ရတယ် ဆိုတဲ့ သဘောပါ။</p>
+                        <ul>
+                            <li><code>public</code> = Everyone can access</li>
+                            <li><code>private</code> = Only within this class</li>
+                            <li><code>protected</code> = Subclasses can access</li>
+                            <li>No modifier = Package-private (same package only)</li>
+                        </ul>
+
+                        <p><code><strong>class</strong></code> - Java keyword ပါ။ Class တစ်ခု declare လုပ်ရန် သုံးပါတယ်။
+                            Java မှာ code အားလုံး class ထဲမှာ ရေးရပါတယ်။</p>
+
+                        <p><code><strong>HelloWorld</strong></code> - Class ရဲ့ နာမည်ပါ။ <strong>Naming Rules:</strong>
+                        </p>
+                        <ul>
+                            <li>CapitalCase (PascalCase) သုံးပါ - စာလုံးကြီးနဲ့ စပါ (HelloWorld, MyClass, StudentInfo)
+                            </li>
+                            <li>File name နဲ့ <strong>exactly တူရပါမယ်</strong> - HelloWorld class ဆို HelloWorld.java
+                                ဖြစ်ရမယ်</li>
+                            <li>Letters, digits, underscore, dollar sign သာ သုံးလို့ ရပါတယ်</li>
+                            <li>Digit နဲ့ မစနိုင်ပါ - 3Class ❌, Class3 ✅</li>
+                            <li>Java keywords မသုံးရပါ - class, public, int စတာတွေ ❌</li>
+                            <li>Case-sensitive ဖြစ်ပါတယ် - HelloWorld ≠ helloworld</li>
+                        </ul>
+
+                        <p><code><strong>{ }</strong></code> - Curly braces က class body ကို define လုပ်ပါတယ်။ Class ရဲ့
+                            code အားလုံး curly braces အတွင်းမှာ ရေးရပါတယ်။</p>
+                    </div>
+
+                    <h3>Part 2: Main Method</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                        </div>
+                        <pre><code>public static void main(String[] args) {
+    // method body
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Main Method - Entry Point</span>
+                        </div>
+                        <p><strong>Main method</strong> က Java program ရဲ့ <strong>entry point</strong> (စတင်ရာ နေရာ)
+                            ဖြစ်ပါတယ်။ JVM က program run တဲ့ အခါ <code>main</code> method ကို အရင်ဆုံး ရှာပြီး execute
+                            လုပ်ပါတယ်။</p>
+
+                        <p><strong>Signature breakdown (အစိတ်အပိုင်းတစ်ခုချင်းစီ):</strong></p>
+
+                        <p><code><strong>public</strong></code> - JVM က ဘယ်ကနေမဆို access လုပ်နိုင်ဖို့ public
+                            ဖြစ်ရပါမယ်။ JVM က class အပြင်ကနေ ခေါ်မှာ ဖြစ်လို့ပါ။</p>
+
+                        <p><code><strong>static</strong></code> - Object မလုပ်ဘဲ ခေါ်လို့ ရဖို့ static ဖြစ်ရပါမယ်။</p>
+                        <ul>
+                            <li>JVM က <code>HelloWorld</code> object မလုပ်ဘဲ <code>HelloWorld.main()</code> ကို
+                                တိုက်ရိုက် ခေါ်ချင်လို့ပါ</li>
+                            <li><code>static</code> methods တွေက class-level ဖြစ်ပြီး object မလိုပါ</li>
+                            <li>Non-static ဆို object create လုပ်ရမှာ ဖြစ်ပါတယ် -
+                                <code>HelloWorld obj = new HelloWorld();</code></li>
+                        </ul>
+
+                        <p><code><strong>void</strong></code> - Return type ပါ။ <code>void</code> ဆိုတာ ဘာမှ return
+                            မလုပ်ဘူး ဆိုတဲ့ သဘောပါ။</p>
+                        <ul>
+                            <li><code>void</code> = Returns nothing</li>
+                            <li><code>int</code> = Returns integer number</li>
+                            <li><code>String</code> = Returns text</li>
+                            <li>Main method က <code>void</code> ဖြစ်ရပါမယ် (JVM requirement)</li>
+                        </ul>
+
+                        <p><code><strong>main</strong></code> - Method နာမည်ပါ။ ဒါက <strong>fixed name</strong> ဖြစ်ပြီး
+                            ပြောင်းလို့ မရပါ။ JVM က "main" ဆိုတဲ့ နာမည်ကို သတ်မှတ်ထားလို့ပါ။</p>
+
+                        <p><code><strong>String[] args</strong></code> - Parameter ပါ။ Command-line arguments တွေကို
+                            လက်ခံဖို့ ဖြစ်ပါတယ်။</p>
+                        <ul>
+                            <li><code>String[]</code> = Array of strings (text တွေ စုစည်းထားတာ)</li>
+                            <li><code>args</code> = Parameter name (ကိုယ်ကြိုက်တာ ပေးလို့ရပေမယ့် "args" က standard)</li>
+                            <li>Command line ကနေ: <code>java HelloWorld arg1 arg2 arg3</code></li>
+                            <li>args[0] = "arg1", args[1] = "arg2", args[2] = "arg3"</li>
+                        </ul>
+
+                        <p><strong>📌 Main method signature က exact ဖြစ်ရပါမယ်:</strong></p>
+                        <ul>
+                            <li>✅ <code>public static void main(String[] args)</code></li>
+                            <li>✅ <code>public static void main(String args[])</code> - Also valid</li>
+                            <li>✅ <code>public static void main(String... args)</code> - Varargs also valid</li>
+                            <li>❌ <code>static public void main(String[] args)</code> - Order မှားတယ် (works but not
+                                standard)</li>
+                            <li>❌ <code>public void main(String[] args)</code> - static မရှိတော့ error</li>
+                            <li>❌ <code>public static int main(String[] args)</code> - void မဟုတ်ရင် error</li>
+                        </ul>
+                    </div>
+
+                    <h3>Part 3: Print Statement</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                        </div>
+                        <pre><code>System.out.println("Hello, World!");</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Print Statement အသေးစိတ်</span>
+                        </div>
+
+                        <p><code><strong>System</strong></code> - <code>java.lang</code> package ထဲက built-in class
+                            တစ်ခု ဖြစ်ပါတယ်။ System ကို import မလုပ်ရပါ၊ java.lang က automatic import ဖြစ်လို့ပါ။</p>
+
+                        <p><code><strong>out</strong></code> - <code>System</code> class ရဲ့ static field တစ်ခု
+                            ဖြစ်ပါတယ်။ ဒါက <code>PrintStream</code> object တစ်ခု ဖြစ်ပြီး standard output stream
+                            (console) ကို represent လုပ်ပါတယ်။</p>
+
+                        <p><code><strong>println()</strong></code> - "Print Line" ရဲ့ အတိုကောက်ပါ။ Text ကို print
+                            လုပ်ပြီး cursor ကို next line ကို ရွှေ့ပေးပါတယ်။</p>
+                        <ul>
+                            <li><code>println()</code> = Print + New line</li>
+                            <li><code>print()</code> = Print only (no new line)</li>
+                            <li><code>printf()</code> = Formatted print (like C language)</li>
+                        </ul>
+
+                        <p><code><strong>"Hello, World!"</strong></code> - String literal ပါ။ Print လုပ်ချင်တဲ့ text ကို
+                            double quotes (" ") ထဲမှာ ထည့်ပါတယ်။</p>
+                        <ul>
+                            <li>Double quotes လိုပါတယ် - Single quotes (') က character အတွက်သာ</li>
+                            <li>Case-sensitive ဖြစ်ပါတယ် - "Hello" ≠ "hello"</li>
+                            <li>Special characters သုံးလို့ ရပါတယ် - \n (newline), \t (tab), \" (quote)</li>
+                        </ul>
+
+                        <p><code><strong>;</strong></code> - Semicolon က Java မှာ statement ရဲ့ အဆုံး marker ပါ။
+                            <strong>မဖြစ်မနေ</strong> ထည့်ရပါမယ်။ Semicolon မပါရင် compilation error ပေါ်ပါတယ်။</p>
+                    </div>
+                </section>
+
+                <!-- Section 3: Step by Step Execution -->
+                <section class="content-section">
+                    <h2>3. How to Write, Compile, and Run (အဆင့်ဆင့် လုပ်နည်း)</h2>
+
+                    <h3>Step 1: Write the Code</h3>
+                    <p>Create a file named <code>HelloWorld.java</code> using any text editor (Notepad, VS Code,
+                        IntelliJ IDEA):</p>
+
+                    <div class="highlight-box">
+                        <h3>📝 File Naming Rules</h3>
+                        <ul>
+                            <li><strong>File name MUST match class name exactly</strong> - Case-sensitive!</li>
+                            <li>File extension MUST be <code>.java</code></li>
+                            <li>If class name is <code>HelloWorld</code>, file must be <code>HelloWorld.java</code></li>
+                            <li>❌ <code>helloworld.java</code> - Wrong case</li>
+                            <li>❌ <code>Hello.java</code> - Wrong name</li>
+                            <li>❌ <code>HelloWorld.txt</code> - Wrong extension</li>
+                            <li>✅ <code>HelloWorld.java</code> - Correct!</li>
+                        </ul>
+                    </div>
+
+                    <h3>Step 2: Compile the Program</h3>
+                    <p>Open Command Prompt/Terminal in the folder containing your file:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Command Line</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>javac HelloWorld.java</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Compilation အကြောင်း</span>
+                        </div>
+                        <p><code><strong>javac</strong></code> = Java Compiler command</p>
+                        <p><strong>What happens during compilation:</strong></p>
+                        <ol>
+                            <li>Compiler က <code>HelloWorld.java</code> source file ကို ဖတ်ပါတယ်</li>
+                            <li>Syntax errors တွေ စစ်ဆေးပါတယ် (typos, missing semicolons, etc.)</li>
+                            <li>အားလုံး မှန်ကန်ရင် <code>HelloWorld.class</code> bytecode file ကို create လုပ်ပါတယ်</li>
+                            <li>Success ဖြစ်ရင် output message မရှိပါ (silent success)</li>
+                            <li>Error ရှိရင် error messages ပြပါတယ်</li>
+                        </ol>
+                        <p><strong>After compilation:</strong> <code>HelloWorld.class</code> file ပေါ်လာပါမယ်။ ဒါက
+                            bytecode file ဖြစ်ပြီး JVM က execute လုပ်မှာ ဖြစ်ပါတယ်။</p>
+                    </div>
+
+                    <h3>Step 3: Run the Program</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Command Line</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>java HelloWorld</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Hello, World!</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Execution အကြောင်း</span>
+                        </div>
+                        <p><code><strong>java</strong></code> = Java Runtime command (JVM launcher)</p>
+                        <p><strong>⚠️ အရေးကြီးတဲ့ Points:</strong></p>
+                        <ul>
+                            <li><strong>Class name သာ သုံးပါ, file extension (.class) မပါဘူး</strong></li>
+                            <li>✅ <code>java HelloWorld</code> - Correct</li>
+                            <li>❌ <code>java HelloWorld.class</code> - Wrong! Don't include .class</li>
+                            <li>❌ <code>java HelloWorld.java</code> - Wrong! Don't include .java</li>
+                        </ul>
+                        <p><strong>What happens during execution:</strong></p>
+                        <ol>
+                            <li>JVM က <code>HelloWorld.class</code> file ကို load လုပ်ပါတယ်</li>
+                            <li><code>main</code> method ကို ရှာပြီး execution start လုပ်ပါတယ်</li>
+                            <li>Method body ထဲက statements တွေကို top-to-bottom execute လုပ်ပါတယ်</li>
+                            <li><code>System.out.println()</code> က console မှာ text print လုပ်ပါတယ်</li>
+                            <li>No more statements ရှိတော့ program terminate ဖြစ်ပါတယ်</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Section 4: More Examples -->
+                <section class="content-section">
+                    <h2>4. More Print Examples (နောက်ထပ် ဥပမာများ)</h2>
+
+                    <h3>Example 1: Multiple Print Statements</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - Welcome.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class Welcome {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Java Programming!");
+        System.out.println("Java is powerful and versatile.");
+        System.out.println("Let's learn Java together!");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Welcome to Java Programming!
+Java is powerful and versatile.
+Let's learn Java together!</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ဘာကြောင့် သုံးသလဲ?</span>
+                        </div>
+                        <p>Multiple <code>println()</code> statements တွေ သုံးရင် line တစ်ကြောင်းချင်းစီ print
+                            လုပ်ပါတယ်။ Statement တစ်ခုချင်းစီ execute ပြီးရင် cursor က next line ကို ရွှေ့ပါတယ်။</p>
+                        <p>Statements တွေက top-to-bottom order အတိုင်း execute ဖြစ်ပါတယ်။</p>
+                    </div>
+
+                    <h3>Example 2: print() vs println()</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - PrintDemo.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class PrintDemo {
+    public static void main(String[] args) {
+        // Using print() - stays on same line
+        System.out.print("Java ");
+        System.out.print("is ");
+        System.out.print("fun!");
+        
+        // Move to next line
+        System.out.println();
+        
+        // Using println() - moves to next line
+        System.out.println("Learning");
+        System.out.println("Programming");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Java is fun!
+Learning
+Programming</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ကွာခြားချက်</span>
+                        </div>
+                        <p><code><strong>print()</strong></code> - Text print လုပ်ပြီး cursor က same line မှာပဲ
+                            ရှိနေပါတယ်</p>
+                        <ul>
+                            <li>တစ်ကြောင်းတည်းမှာ စာများများ ရေးချင်ရင် သုံးပါ</li>
+                            <li>Example: Building sentences piece by piece</li>
+                        </ul>
+                        <p><code><strong>println()</strong></code> - Text print လုပ်ပြီး cursor က next line ကို
+                            ရွှေ့ပါတယ်</p>
+                        <ul>
+                            <li>Line သစ် တစ်ကြောင်းချင်းစီ print ချင်ရင် သုံးပါ</li>
+                            <li>Most commonly used for output</li>
+                        </ul>
+                        <p><code><strong>println()</strong></code> with no argument - Empty line တစ်ကြောင်း ထည့်ပေးပါတယ်
+                            (line break only)</p>
+                    </div>
+
+                    <h3>Example 3: Printing Numbers and Expressions</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - Numbers.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class Numbers {
+    public static void main(String[] args) {
+        // Printing numbers
+        System.out.println(100);
+        System.out.println(3.14);
+        
+        // Printing expressions (calculations)
+        System.out.println(10 + 20);
+        System.out.println(50 - 15);
+        System.out.println(5 * 6);
+        System.out.println(100 / 4);
+        
+        // Mixing text and numbers
+        System.out.println("Result: " + (10 + 5));
+        System.out.println("Pi value: " + 3.14159);
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>100
+3.14
+30
+35
+30
+25
+Result: 15
+Pi value: 3.14159</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အရေးကြီးတဲ့ အချက်များ</span>
+                        </div>
+                        <p><strong>Numbers without quotes:</strong> Quotes မပါရင် number အဖြစ် treat လုပ်ပြီး
+                            calculations လုပ်လို့ ရပါတယ်</p>
+                        <ul>
+                            <li><code>System.out.println(10 + 20);</code> → Output: <code>30</code> (calculation)</li>
+                            <li><code>System.out.println("10 + 20");</code> → Output: <code>10 + 20</code> (text)</li>
+                        </ul>
+                        <p><strong>Concatenation with + operator:</strong> Text နဲ့ numbers တွေကို <code>+</code>
+                            operator နဲ့ ပေါင်းလို့ ရပါတယ်</p>
+                        <ul>
+                            <li><code>"Result: " + 15</code> → <code>Result: 15</code></li>
+                            <li>Text ပါရင် အားလုံး string အဖြစ် convert ဖြစ်ပါတယ်</li>
+                        </ul>
+                        <p><strong>Parentheses for calculations:</strong> Calculation ကို အရင် လုပ်ချင်ရင် parentheses
+                            () သုံးပါ</p>
+                        <ul>
+                            <li><code>"Result: " + (10 + 5)</code> → Calculate first, then concat →
+                                <code>Result: 15</code></li>
+                            <li><code>"Result: " + 10 + 5</code> → Concat left-to-right → <code>Result: 105</code>
+                                (string concat!)</li>
+                        </ul>
+                    </div>
+
+                    <h3>Example 4: Special Characters (Escape Sequences)</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - SpecialChars.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class SpecialChars {
+    public static void main(String[] args) {
+        // New line
+        System.out.println("Line 1\nLine 2\nLine 3");
+        
+        // Tab
+        System.out.println("Name:\tJohn");
+        System.out.println("Age:\t25");
+        
+        // Quotes
+        System.out.println("She said, \"Hello!\"");
+        
+        // Backslash
+        System.out.println("File path: C:\\Users\\Documents\\file.txt");
+        
+        // Single quote (in char context)
+        System.out.println("It\'s a beautiful day!");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Line 1
+Line 2
+Line 3
+Name:	John
+Age:	25
+She said, "Hello!"
+File path: C:\Users\Documents\file.txt
+It's a beautiful day!</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Escape Sequences (ထူးခြားတဲ့ characters)</span>
+                        </div>
+                        <p>Escape sequences က backslash <code>\</code> နဲ့ စတဲ့ special character combinations ပါ:</p>
+                        <ul>
+                            <li><code>\n</code> - New line (line break)</li>
+                            <li><code>\t</code> - Tab (horizontal spacing)</li>
+                            <li><code>\"</code> - Double quote (inside string)</li>
+                            <li><code>\'</code> - Single quote</li>
+                            <li><code>\\</code> - Backslash (literal backslash)</li>
+                            <li><code>\r</code> - Carriage return</li>
+                            <li><code>\b</code> - Backspace</li>
+                        </ul>
+                        <p><strong>ဘာကြောင့် လိုအပ်လဲ?</strong> Special meaning ရှိတဲ့ characters တွေကို string ထဲမှာ
+                            သုံးချင်ရင် escape sequences သုံးရပါတယ်။ ဥပမာ - quotes ကို string ထဲမှာ ပြချင်ရင်
+                            <code>\"</code> သုံးရပါတယ်။</p>
+                    </div>
+                </section>
+
+                <!-- Section 5: Common Mistakes -->
+                <section class="content-section">
+                    <h2>5. Common Mistakes and How to Fix Them (အမှားများနှင့် အဖြေများ)</h2>
+
+                    <h3>Mistake 1: File Name Doesn't Match Class Name</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">❌ Wrong - Hello.java</span>
+                        </div>
+                        <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello!");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Error</span>
+                        </div>
+                        <pre><code>error: class HelloWorld is public, should be declared in a file named HelloWorld.java</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">✅ Correct - HelloWorld.java</span>
+                        </div>
+                        <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello!");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                            </svg>
+                            <span>Solution</span>
+                        </div>
+                        <p>File name နဲ့ public class name က <strong>exactly တူရပါမယ်</strong> - case-sensitive!</p>
+                    </div>
+
+                    <h3>Mistake 2: Missing Semicolon</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">❌ Wrong</span>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {
+        System.out.println("Hello")  // Missing semicolon!
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Error</span>
+                        </div>
+                        <pre><code>error: ';' expected</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">✅ Correct</span>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {
+        System.out.println("Hello");  // Semicolon added
+    }
+}</code></pre>
+                    </div>
+
+                    <h3>Mistake 3: Missing or Mismatched Braces</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">❌ Wrong</span>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    // Missing closing brace for main method!
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Error</span>
+                        </div>
+                        <pre><code>error: reached end of file while parsing
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">✅ Correct</span>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }  // Closing brace for main
+}  // Closing brace for class</code></pre>
+                    </div>
+
+                    <h3>Mistake 4: Wrong main Method Signature</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">❌ Wrong - Missing static</span>
+                        </div>
+                        <pre><code>public class Test {
+    public void main(String[] args) {  // Missing 'static'
+        System.out.println("Hello");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Error at Runtime</span>
+                        </div>
+                        <pre><code>Error: Main method is not static in class Test</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">✅ Correct</span>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {  // 'static' included
+        System.out.println("Hello");
+    }
+}</code></pre>
+                    </div>
+
+                    <h3>Mistake 5: Case Sensitivity Errors</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">❌ Wrong</span>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {
+        system.out.println("Hello");  // 'system' should be 'System'
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Error</span>
+                        </div>
+                        <pre><code>error: cannot find symbol
+symbol: variable system</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>⚠️ Java Case Sensitivity Rules</h3>
+                        <ul>
+                            <li><code>System</code> ≠ <code>system</code></li>
+                            <li><code>String</code> ≠ <code>string</code></li>
+                            <li><code>main</code> ≠ <code>Main</code></li>
+                            <li><code>println</code> ≠ <code>Println</code></li>
+                            <li>Class names, method names, keywords - အားလုံး case-sensitive ဖြစ်ပါတယ်</li>
+                        </ul>
+                    </div>
+
+                    <h3>Mistake 6: Forgetting Double Quotes</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">❌ Wrong</span>
+                        </div>
+                        <pre><code>System.out.println(Hello);  // Missing quotes!</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Error</span>
+                        </div>
+                        <pre><code>error: cannot find symbol
+symbol: variable Hello</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">✅ Correct</span>
+                        </div>
+                        <pre><code>System.out.println("Hello");  // Quotes added</code></pre>
+                    </div>
+                </section>
+
+                <!-- Section 6: Key Takeaways -->
+                <section class="content-section">
+                    <h2>6. Key Takeaways (မှတ်သားရမည့် အချက်များ)</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>Every Java program must have a class</strong> - All code lives inside classes
+                            </li>
+                            <li><strong>File name must match public class name exactly</strong> - Case-sensitive!</li>
+                            <li><strong>Main method is the entry point</strong> - Signature must be exact</li>
+                            <li><strong>Statements end with semicolons</strong> - Don't forget the ;</li>
+                            <li><strong>Curly braces must match</strong> - Every { needs a corresponding }</li>
+                            <li><strong>Java is case-sensitive</strong> - System ≠ system</li>
+                            <li><strong>Compile with javac</strong> - <code>javac FileName.java</code></li>
+                            <li><strong>Run with java</strong> - <code>java ClassName</code> (no .class extension)</li>
+                            <li><strong>println() adds newline</strong> - print() doesn't</li>
+                            <li><strong>Use escape sequences for special characters</strong> - \n, \t, \", etc.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Practice Exercise -->
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Practice Exercise</h3>
+                        <p><strong>Task:</strong> Write a program named <code>MyInfo.java</code> that displays your
+                            information:</p>
+
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-language">Expected Output</span>
+                            </div>
+                            <pre><code>Name: [Your Name]
+Age: [Your Age]
+Hobby: [Your Hobby]
+Learning: Java Programming</code></pre>
+                        </div>
+
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Class name must be <code>MyInfo</code></li>
+                            <li>Use multiple <code>println()</code> statements</li>
+                            <li>File name must be <code>MyInfo.java</code></li>
+                            <li>Don't forget semicolons!</li>
+                        </ul>
+
+                        <h3>💡 Quick Quiz</h3>
+
+                        <div class="quiz-question">
+                            <p><strong>Q1: Which command compiles a Java program?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q1" value="a">
+                                    <span>java HelloWorld.java</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="b">
+                                    <span>javac HelloWorld.java</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="c">
+                                    <span>compile HelloWorld.java</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: What is the output of: System.out.print("A"); System.out.print("B");</strong>
+                            </p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q2" value="a">
+                                    <span>A B</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="b">
+                                    <span>AB</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="c">
+                                    <span>A
+                                        B</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: What does \n do in a string?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q3" value="a">
+                                    <span>Creates a new line</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="b">
+                                    <span>Creates a tab</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="c">
+                                    <span>Prints the letter n</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Lesson Navigation -->
+            <div class="lesson-navigation">
+                <a href="lesson-2.html" class="nav-btn prev-btn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Previous Lesson
+                </a>
+                <div class="lesson-actions">
+                    <button class="action-btn" id="bookmarkBtn" onclick="toggleBookmark()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        </svg>
+                        Bookmark
+                    </button>
+                    <button class="action-btn" id="completeBtn" onclick="markComplete()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Mark as Complete
+                    </button>
+                </div>
+                <a href="lesson-4.html" class="nav-btn next-btn">
+                    Next Lesson
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Notes Section -->
+            <div class="notes-section">
+                <div class="notes-header">
+                    <h3>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
+                            <path
+                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+                        </svg>
+                        Your Notes
+                    </h3>
+                    <span class="notes-count">0 notes</span>
+                </div>
+                <textarea id="notesTextarea" class="notes-textarea"
+                    placeholder="Write your notes here... (auto-saved)"></textarea>
+                <div class="notes-saved" id="notesSaved">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Saved
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        // Quiz checker
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                showToast('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'b') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'a') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    Perfect! 3/3 correct! 🎉 You're mastering Java basics!
+                `;
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg>
+                    ${score}/3 correct. Review the lesson!<br>
+                    <small>Correct answers: Q1=B (javac), Q2=B (AB - print doesn't add newline), Q3=A (Creates newline)</small>
+                `;
+            }
+        }
+    </script>
+</body>
+
+</html>

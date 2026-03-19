@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6: Data Types - Complete Guide | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+</head>
+
+<body>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 6</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="course-layout">
+        <!-- W3Schools-style Sidebar for Lesson 6 -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">25%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 25%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>6 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types (ACTIVE) -->
+                <div class="module active">
+                    <button class="module-header active" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-5.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="course-content">
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">Lessons</button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 6 of 24</span>
+                    <span class="mobile-lesson-title">Data Types</span>
+                </div>
+            </div>
+
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 6</span>
+                    <span class="lesson-duration">⏱ 12 min read</span>
+                </div>
+                <h1 class="lesson-title">Java Data Types</h1>
+                <p class="lesson-description">Java မှာ data type အမျိုးအစားတွေ၊ primitive နဲ့ reference types၊ size နဲ့
+                    range၊ type conversion တွေကို အသေးစိတ် လေ့လာကြမယ်။</p>
+            </div>
+
+            <article class="lesson-article">
+                <section class="content-section">
+                    <h2>1. Data Types ဆိုတာ ဘာလဲ?</h2>
+
+                    <p>A <strong>data type</strong> specifies what kind of value a variable can hold and how much memory
+                        it needs.</p>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>📊 Data Type အကြောင်း</span>
+                        </div>
+                        <p><strong>Data type</strong> က variable တစ်ခုမှာ ဘယ် အမျိုးအစား value သိမ်းလို့ရလဲ၊ memory
+                            ဘယ်လောက် လိုအပ်လဲ ဆိုတာ သတ်မှတ်ပေးပါတယ်။</p>
+                        <ul>
+                            <li><strong>Type safety:</strong> မှားယွင်းတဲ့ data မသိမ်းအောင် ကာကွယ်ပေးတယ်</li>
+                            <li><strong>Memory allocation:</strong> ဘယ်လောက် memory လိုအပ်လဲ သိနိုင်တယ်</li>
+                            <li><strong>Operations:</strong> ဘယ် operations တွေ လုပ်လို့ရလဲ သတ်မှတ်ပေးတယ်</li>
+                        </ul>
+                        <p><strong>Example:</strong> <code>int age = 25;</code> - int က numbers သာ သိမ်းနိုင်တယ်၊ text
+                            မသိမ်းနိုင်ပါ။</p>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Java Data Type Categories</span></div>
+                        <pre><code>Java Data Types
+│
+├── Primitive Types (8 types)
+│   ├── Integer Types: byte, short, int, long
+│   ├── Floating-point: float, double
+│   ├── Character: char
+│   └── Boolean: boolean
+│
+└── Reference Types
+    ├── String
+    ├── Arrays
+    ├── Classes
+    └── Interfaces</code></pre>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔢</div>
+                            <h3>Primitive Types</h3>
+                            <p>8 basic types built into Java</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📦</div>
+                            <h3>Reference Types</h3>
+                            <p>Objects, arrays, strings</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💾</div>
+                            <h3>Memory Size</h3>
+                            <p>Each type uses specific memory</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>2. Primitive Data Types (အခြေခံ အမျိုးအစား ၈ ခု)</h2>
+
+                    <p>Java has <strong>8 primitive data types</strong> that store simple values directly in memory.</p>
+
+                    <h3>2.1 Integer Types (ကိန်းပြည့် အမျိုးအစားများ)</h3>
+
+                    <div class="highlight-box">
+                        <h4>byte (8-bit)</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 1 byte (8 bits)</li>
+                            <li><strong>Range:</strong> -128 to 127</li>
+                            <li><strong>Default:</strong> 0</li>
+                            <li><strong>Use:</strong> Save memory in large arrays</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>byte age = 25;
+byte temperature = -10;
+byte maxValue = 127;
+byte minValue = -128;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>short (16-bit)</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 2 bytes (16 bits)</li>
+                            <li><strong>Range:</strong> -32,768 to 32,767</li>
+                            <li><strong>Default:</strong> 0</li>
+                            <li><strong>Use:</strong> Save memory when int is too large</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>short year = 2024;
+short population = 32000;
+short maxShort = 32767;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>int (32-bit) - Most Common</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 4 bytes (32 bits)</li>
+                            <li><strong>Range:</strong> -2,147,483,648 to 2,147,483,647</li>
+                            <li><strong>Default:</strong> 0</li>
+                            <li><strong>Use:</strong> Most common integer type</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>int studentCount = 100;
+int salary = 50000;
+int maxInt = 2147483647;
+int minInt = -2147483648;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>long (64-bit)</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 8 bytes (64 bits)</li>
+                            <li><strong>Range:</strong> -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</li>
+                            <li><strong>Default:</strong> 0L</li>
+                            <li><strong>Use:</strong> Very large numbers</li>
+                            <li><strong>Suffix:</strong> L or l (use L)</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>long worldPopulation = 8000000000L;
+long distance = 384400000L;  // Earth to Moon (km)
+long bigNumber = 9223372036854775807L;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🔢 Integer Types မြန်မာလို</span>
+                        </div>
+                        <table style="width:100%; border-collapse: collapse;">
+                            <tr style="background: rgba(0,217,255,0.1);">
+                                <th style="padding:8px; border:1px solid rgba(0,217,255,0.3);">Type</th>
+                                <th style="padding:8px; border:1px solid rgba(0,217,255,0.3);">Size</th>
+                                <th style="padding:8px; border:1px solid rgba(0,217,255,0.3);">Range</th>
+                                <th style="padding:8px; border:1px solid rgba(0,217,255,0.3);">Use Case</th>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);"><code>byte</code></td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">1 byte</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">-128 to 127</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">အရမ်းသေးတဲ့ ကိန်း</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);"><code>short</code></td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">2 bytes</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">-32K to 32K</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">သေးတဲ့ ကိန်း</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);"><code>int</code></td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">4 bytes</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">-2B to 2B</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">အသုံးအများဆုံး ⭐</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);"><code>long</code></td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">8 bytes</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">-9Q to 9Q</td>
+                                <td style="padding:8px; border:1px solid rgba(0,217,255,0.3);">အရမ်းကြီးတဲ့ ကိန်း</td>
+                            </tr>
+                        </table>
+                        <p style="margin-top:10px;"><strong>📌 Tip:</strong> အများအားဖြင့် <code>int</code> သုံးပါ။
+                            အရမ်းကြီးမှ <code>long</code> သုံးပါ။</p>
+                    </div>
+
+                    <h3>2.2 Floating-Point Types (ဒသမ ကိန်းများ)</h3>
+
+                    <div class="highlight-box">
+                        <h4>float (32-bit)</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 4 bytes (32 bits)</li>
+                            <li><strong>Precision:</strong> 6-7 decimal digits</li>
+                            <li><strong>Default:</strong> 0.0f</li>
+                            <li><strong>Suffix:</strong> f or F (required)</li>
+                            <li><strong>Use:</strong> Save memory with large arrays of decimals</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>float price = 99.99f;
+float pi = 3.14159f;
+float temperature = 36.5f;
+float rate = 5.5f;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>double (64-bit) - Recommended</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 8 bytes (64 bits)</li>
+                            <li><strong>Precision:</strong> 15-16 decimal digits</li>
+                            <li><strong>Default:</strong> 0.0d</li>
+                            <li><strong>Suffix:</strong> d or D (optional)</li>
+                            <li><strong>Use:</strong> Default for decimal numbers</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>double salary = 5000.50;
+double pi = 3.141592653589793;
+double scientific = 1.5e10;  // 15000000000.0
+double precise = 123.456789012345;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>💰 Floating-Point မြန်မာလို</span>
+                        </div>
+                        <ul>
+                            <li><strong>float:</strong> 6-7 digits accurate, f suffix လိုတယ်, memory သက်သာတယ်</li>
+                            <li><strong>double:</strong> 15-16 digits accurate, default ဖြစ်တယ်, precise ပိုများတယ်</li>
+                            <li><strong>Scientific notation:</strong> 1.5e10 = 1.5 × 10¹⁰ = 15,000,000,000</li>
+                            <li><strong>Precision matters:</strong> Financial calculations မှာ double သုံးပါ</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>// ❌ float - Less precise
+float f = 123456789.0f;
+System.out.println(f);  // 1.23456792E8 (rounded!)
+
+// ✅ double - More precise
+double d = 123456789.0;
+System.out.println(d);  // 1.23456789E8 (accurate)</code></pre>
+                        </div>
+                    </div>
+
+                    <h3>2.3 Character Type</h3>
+
+                    <div class="highlight-box">
+                        <h4>char (16-bit Unicode)</h4>
+                        <ul>
+                            <li><strong>Size:</strong> 2 bytes (16 bits)</li>
+                            <li><strong>Range:</strong> 0 to 65,535 (Unicode characters)</li>
+                            <li><strong>Default:</strong> '\u0000'</li>
+                            <li><strong>Use:</strong> Single character</li>
+                            <li><strong>Notation:</strong> Single quotes 'A'</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>char letter = 'A';
+char digit = '5';
+char symbol = '@';
+char unicode = '\u0041';  // 'A'
+char newline = '\n';
+char tab = '\t';</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🔤 Character အကြောင်း</span>
+                        </div>
+                        <ul>
+                            <li><strong>Single character only:</strong> 'A' သုံးပါ, "A" မသုံးပါနဲ့</li>
+                            <li><strong>Unicode support:</strong> Myanmar, Chinese, Emoji အားလုံး သုံးလို့ရတယ်</li>
+                            <li><strong>Escape sequences:</strong> \n, \t, \', \", \\</li>
+                            <li><strong>Actually a number:</strong> char က internally 0-65535 number ပါ</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>char burmese = 'က';
+char emoji = '😀';  // Unicode emoji
+char a = 'A';
+System.out.println((int) a);  // 65 (ASCII value)</code></pre>
+                        </div>
+                    </div>
+
+                    <h3>2.4 Boolean Type</h3>
+
+                    <div class="highlight-box">
+                        <h4>boolean</h4>
+                        <ul>
+                            <li><strong>Size:</strong> Not precisely defined (typically 1 bit)</li>
+                            <li><strong>Values:</strong> true or false only</li>
+                            <li><strong>Default:</strong> false</li>
+                            <li><strong>Use:</strong> Logical conditions, flags</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>boolean isStudent = true;
+boolean hasPermission = false;
+boolean isComplete = true;
+boolean isValid = false;
+
+// Commonly used in conditions
+if (isStudent) {
+    System.out.println("Student discount applied");
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>✓✗ Boolean မြန်မာလို</span>
+                        </div>
+                        <ul>
+                            <li><strong>Two values:</strong> true, false သာ ရှိတယ် (1, 0 မဟုတ်ပါ)</li>
+                            <li><strong>Lowercase only:</strong> True, FALSE, TRUE မရပါ</li>
+                            <li><strong>Logical operations:</strong> &&, ||, ! operators နဲ့ သုံးတယ်</li>
+                            <li><strong>Conditions:</strong> if, while, for loops မှာ သုံးတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>3. Primitive Types Summary Table</h2>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3); text-align:left;">
+                                        Type</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Size</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Range</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Default</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3); text-align:left;">
+                                        Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>byte</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">1 byte</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">-128 to 127</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>byte b = 100;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>short</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">2 bytes</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">-32,768 to 32,767
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>short s = 30000;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>int</code> ⭐
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">4 bytes</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">-2B to 2B</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>int i = 100000;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>long</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">8 bytes</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">-9Q to 9Q</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0L</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>long l = 10000L;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>float</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">4 bytes</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">6-7 digits</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0.0f</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>float f = 3.14f;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>double</code>
+                                        ⭐</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">8 bytes</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">15-16 digits</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0.0d</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>double d = 3.14;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>char</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">2 bytes</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">0 to 65,535</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">'\u0000'</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>char c = 'A';</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>boolean</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">1 bit</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true/false</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">false</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>boolean b = true;</code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>⭐ အသုံးများတဲ့ Types</span>
+                        </div>
+                        <ul>
+                            <li><strong>int:</strong> အသုံးအများဆုံး integer type (age, count, index)</li>
+                            <li><strong>double:</strong> အသုံးအများဆုံး decimal type (price, salary, average)</li>
+                            <li><strong>boolean:</strong> Conditions, flags (isPassed, isActive)</li>
+                            <li><strong>String:</strong> Text data (name, address, message)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>4. Reference Data Types (Object များ)</h2>
+
+                    <p>Reference types store references (addresses) to objects in memory, not the actual values.</p>
+
+                    <h3>4.1 String Type</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>String Examples</span></div>
+                        <pre><code>String name = "John Doe";
+String message = "Hello, World!";
+String empty = "";
+String multiline = "Line 1\nLine 2";
+
+// String methods
+String upper = name.toUpperCase();  // "JOHN DOE"
+int length = name.length();         // 8
+char first = name.charAt(0);        // 'J'</code></pre>
+                    </div>
+
+                    <h3>4.2 Arrays</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Array Examples</span></div>
+                        <pre><code>int[] numbers = {1, 2, 3, 4, 5};
+String[] names = {"Alice", "Bob", "Charlie"};
+double[] prices = new double[10];
+
+System.out.println(numbers[0]);     // 1
+System.out.println(names.length);   // 3</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>📦 Reference vs Primitive</span>
+                        </div>
+                        <ul>
+                            <li><strong>Primitive:</strong> Value တိုက်ရိုက် သိမ်းတယ် (int, double, boolean)</li>
+                            <li><strong>Reference:</strong> Memory address သိမ်းတယ် (String, arrays, objects)</li>
+                            <li><strong>Default:</strong> Primitives = 0/false, References = null</li>
+                            <li><strong>Methods:</strong> Reference types မှာ methods ရှိတယ် (.length(), .toUpperCase())
+                            </li>
+                            <li><strong>Mutability:</strong> Primitives immutable, some references mutable</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>5. Type Conversion (အမျိုးအစား ပြောင်းလဲခြင်း)</h2>
+
+                    <h3>5.1 Implicit Conversion (Widening)</h3>
+                    <p>Automatic conversion from smaller to larger type.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Widening Examples</span></div>
+                        <pre><code>// byte → short → int → long → float → double
+byte b = 10;
+int i = b;       // Automatic (byte to int)
+long l = i;      // Automatic (int to long)
+float f = l;     // Automatic (long to float)
+double d = f;    // Automatic (float to double)
+
+System.out.println(d);  // 10.0</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>↗️ Widening Conversion</span>
+                        </div>
+                        <ul>
+                            <li><strong>Automatic:</strong> Java က အလိုအလျောက် လုပ်ပေးတယ်</li>
+                            <li><strong>Safe:</strong> Data loss မရှိပါ</li>
+                            <li><strong>Direction:</strong> သေးတာ → ကြီးတာ (byte → int → long → double)</li>
+                            <li><strong>No cast needed:</strong> Casting မလိုပါ</li>
+                        </ul>
+                    </div>
+
+                    <h3>5.2 Explicit Conversion (Narrowing)</h3>
+                    <p>Manual conversion from larger to smaller type (requires casting).</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Narrowing Examples</span></div>
+                        <pre><code>// Larger to smaller (need casting)
+double d = 9.7;
+int i = (int) d;          // 9 (decimal part lost)
+System.out.println(i);
+
+long l = 100L;
+int i2 = (int) l;         // 100
+byte b = (byte) i2;       // 100
+
+// Be careful with overflow!
+int big = 130;
+byte b2 = (byte) big;     // -126 (overflow!)</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>↘️ Narrowing Conversion</span>
+                        </div>
+                        <ul>
+                            <li><strong>Manual:</strong> Casting လုပ်ရပါမယ် - <code>(type) value</code></li>
+                            <li><strong>Risky:</strong> Data loss ဖြစ်နိုင်တယ်</li>
+                            <li><strong>Direction:</strong> ကြီးတာ → သေးတာ (double → int → byte)</li>
+                            <li><strong>Precision loss:</strong> Decimal ဆုံးရှုံးနိုင်တယ်</li>
+                            <li><strong>Overflow:</strong> Range ကျော်ရင် unexpected results</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>// ⚠️ Data loss examples
+double d = 9.9;
+int i = (int) d;      // 9 (0.9 lost)
+
+int big = 130;
+byte b = (byte) big;  // -126 (overflow!)</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>6. Complete Example</h2>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>DataTypeDemo.java</span></div>
+                        <pre><code>public class DataTypeDemo {
+    public static void main(String[] args) {
+        // Integer types
+        byte age = 25;
+        short year = 2024;
+        int population = 1000000;
+        long worldPopulation = 8000000000L;
+        
+        // Floating-point types
+        float price = 99.99f;
+        double salary = 5000.50;
+        
+        // Character
+        char grade = 'A';
+        char symbol = '@';
+        
+        // Boolean
+        boolean isStudent = true;
+        boolean hasLicense = false;
+        
+        // String (reference type)
+        String name = "Alice";
+        String course = "Java Programming";
+        
+        // Display all types
+        System.out.println("=== Integer Types ===");
+        System.out.println("byte: " + age);
+        System.out.println("short: " + year);
+        System.out.println("int: " + population);
+        System.out.println("long: " + worldPopulation);
+        
+        System.out.println("\n=== Floating-Point ===");
+        System.out.println("float: " + price);
+        System.out.println("double: " + salary);
+        
+        System.out.println("\n=== Character ===");
+        System.out.println("char: " + grade);
+        System.out.println("symbol: " + symbol);
+        
+        System.out.println("\n=== Boolean ===");
+        System.out.println("isStudent: " + isStudent);
+        System.out.println("hasLicense: " + hasLicense);
+        
+        System.out.println("\n=== String ===");
+        System.out.println("name: " + name);
+        System.out.println("course: " + course);
+        
+        // Type conversion
+        System.out.println("\n=== Type Conversion ===");
+        int x = 100;
+        long y = x;              // Widening
+        double z = y;            // Widening
+        System.out.println("Widening: " + x + " → " + y + " → " + z);
+        
+        double d = 9.7;
+        int i = (int) d;         // Narrowing
+        System.out.println("Narrowing: " + d + " → " + i);
+    }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>7. Key Takeaways</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>8 primitive types:</strong> byte, short, int, long, float, double, char, boolean
+                            </li>
+                            <li><strong>int:</strong> Most common integer (4 bytes, -2B to 2B)</li>
+                            <li><strong>double:</strong> Most common decimal (8 bytes, 15-16 digits)</li>
+                            <li><strong>long suffix:</strong> 1000000L (L required)</li>
+                            <li><strong>float suffix:</strong> 99.99f (f required)</li>
+                            <li><strong>char:</strong> Single quotes 'A' (2 bytes Unicode)</li>
+                            <li><strong>boolean:</strong> true or false only</li>
+                            <li><strong>String:</strong> Reference type for text (double quotes)</li>
+                            <li><strong>Widening:</strong> Automatic (byte → int → long → double)</li>
+                            <li><strong>Narrowing:</strong> Manual casting (double → int → byte)</li>
+                            <li><strong>Default values:</strong> 0, 0.0, false, null</li>
+                            <li><strong>Choose right type:</strong> Memory vs Range trade-off</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Practice Exercise</h3>
+                        <p><strong>Create a StudentRecord program with:</strong></p>
+                        <ul>
+                            <li>Use all 8 primitive types appropriately</li>
+                            <li>Include student age (byte), year (short), ID (int), phone (long)</li>
+                            <li>GPA (float), percentage (double), grade (char), passed (boolean)</li>
+                            <li>Name and course (String)</li>
+                            <li>Demonstrate type conversion</li>
+                        </ul>
+
+                        <h3>💡 Quick Quiz</h3>
+                        <div class="quiz-question">
+                            <p><strong>Q1: Which data type is best for storing salary?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q1" value="a"><span>int</span></label>
+                                <label><input type="radio" name="q1" value="b"><span>double</span></label>
+                                <label><input type="radio" name="q1" value="c"><span>boolean</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: What is the size of int in Java?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q2" value="a"><span>2 bytes</span></label>
+                                <label><input type="radio" name="q2" value="b"><span>4 bytes</span></label>
+                                <label><input type="radio" name="q2" value="c"><span>8 bytes</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: Which requires explicit casting?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q3" value="a"><span>int to long</span></label>
+                                <label><input type="radio" name="q3" value="b"><span>double to int</span></label>
+                                <label><input type="radio" name="q3" value="c"><span>byte to int</span></label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-5.html" class="nav-btn prev-btn">← Previous</a>
+                <div class="lesson-actions">
+                    <button class="action-btn" id="bookmarkBtn">Bookmark</button>
+                    <button class="action-btn" id="completeBtn">Mark Complete</button>
+                </div>
+                <a href="lesson-7.html" class="nav-btn next-btn">Next →</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <!-- highlight.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <script>
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightElement(block);
+        });
+    </script>
+
+    <script>
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                alert('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'b') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'b') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = '✓ Perfect! 3/3 correct! 🎉 You understand data types!';
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = score + '/3 correct. Correct: Q1=B (double for decimals), Q2=B (4 bytes), Q3=B (double→int needs cast)';
+            }
+        }
+    </script>
+</body>
+
+</html>

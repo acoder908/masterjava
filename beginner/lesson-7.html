@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7: Java Operators - Complete Guide | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- ........navigation....... -->
+    <div id="header"></div>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 7</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="course-layout">
+        <!-- W3Schools-style Sidebar for Lesson 7 -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">29%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 29%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>7 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types (ACTIVE) -->
+                <div class="module active">
+                    <button class="module-header active" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-5.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="course-content">
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">Lessons</button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 7 of 24</span>
+                    <span class="mobile-lesson-title">Java Operators</span>
+                </div>
+            </div>
+
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 7</span>
+                    <span class="lesson-duration">⏱ 15 min read</span>
+                </div>
+                <h1 class="lesson-title">Java Operators</h1>
+                <p class="lesson-description">Java မှာ calculations တွေ လုပ်တဲ့ operators များ၊ arithmetic, relational,
+                    logical, assignment operators တွေကို အသေးစိတ် လေ့လာကြမယ်။</p>
+            </div>
+
+            <article class="lesson-article">
+                <section class="content-section">
+                    <h2>1. Operators ဆိုတာ ဘာလဲ?</h2>
+
+                    <p>An <strong>operator</strong> is a symbol that performs operations on variables and values.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Simple Operator Example</span></div>
+                        <pre><code>int a = 10;
+int b = 5;
+int sum = a + b;        // + is an operator
+int product = a * b;    // * is an operator
+boolean result = a > b; // > is an operator
+
+System.out.println("Sum: " + sum);         // 15
+System.out.println("Product: " + product); // 50
+System.out.println("a > b: " + result);    // true</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>⚡ Operators အကြောင်း</span>
+                        </div>
+                        <p><strong>Operator</strong> ဆိုတာ variables နဲ့ values တွေ အပေါ်မှာ operations လုပ်တဲ့ special
+                            symbols တွေ ဖြစ်ပါတယ်။</p>
+                        <ul>
+                            <li><strong>Operands:</strong> Operator က operate လုပ်တဲ့ values (a, b)</li>
+                            <li><strong>Expression:</strong> Operators နဲ့ operands ပေါင်းထားတာ (a + b)</li>
+                            <li><strong>Result:</strong> Expression ရဲ့ final value</li>
+                        </ul>
+                        <p><strong>Example:</strong> <code>10 + 5</code> - 10 နဲ့ 5 က operands, + က operator, 15 က
+                            result</p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">➕</div>
+                            <h3>Arithmetic</h3>
+                            <p>Math operations: +, -, *, /, %</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚖️</div>
+                            <h3>Relational</h3>
+                            <p>Comparisons: ==, !=, >, <,>=, <=< /p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔗</div>
+                            <h3>Logical</h3>
+                            <p>Logic: &&, ||, !</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>2. Arithmetic Operators (ဂဏန်း တွက်ချက်မှု)</h2>
+
+                    <p>Used for mathematical calculations.</p>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Operator</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Name</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Example</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>+</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Addition
+                                        (ပေါင်းခြင်း)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>10 + 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">15</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>-</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Subtraction
+                                        (နုတ်ခြင်း)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>10 - 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">5</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>*</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Multiplication
+                                        (မြှောက်ခြင်း)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>10 * 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">50</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>/</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Division (စားခြင်း)
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>10 / 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">2</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>%</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Modulus (စား၍ ကျန်)
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>10 % 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Arithmetic Examples</span></div>
+                        <pre><code>int a = 20;
+int b = 7;
+
+System.out.println("Addition: " + (a + b));       // 27
+System.out.println("Subtraction: " + (a - b));    // 13
+System.out.println("Multiplication: " + (a * b)); // 140
+System.out.println("Division: " + (a / b));       // 2 (integer division)
+System.out.println("Modulus: " + (a % b));        // 6 (remainder)
+
+// Division with doubles
+double x = 20.0;
+double y = 7.0;
+System.out.println("Double division: " + (x / y)); // 2.857142857142857</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>➗ Division အကြောင်း</span>
+                        </div>
+                        <p><strong>Integer Division:</strong> int ÷ int = int (ဒသမ ပယ်ပစ်တယ်)</p>
+                        <div class="code-block">
+                            <pre><code>int result1 = 10 / 3;      // 3 (not 3.333...)
+int result2 = 7 / 2;       // 3 (not 3.5)</code></pre>
+                        </div>
+                        <p><strong>Double Division:</strong> double ÷ double = double (ဒသမ ပါတယ်)</p>
+                        <div class="code-block">
+                            <pre><code>double result3 = 10.0 / 3.0;  // 3.3333333333333335
+double result4 = 7.0 / 2.0;   // 3.5</code></pre>
+                        </div>
+                        <p><strong>Mixed Division:</strong> int နဲ့ double ရောတဲ့အခါ double ဖြစ်သွားတယ်</p>
+                        <div class="code-block">
+                            <pre><code>double result5 = 10 / 3.0;    // 3.3333333333333335
+double result6 = 10.0 / 3;    // 3.3333333333333335</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>% Modulus Operator အကြောင်း</span>
+                        </div>
+                        <p><strong>Modulus (%)</strong> က division ရဲ့ <strong>remainder (ကျန်ကိန်း)</strong> ကို return
+                            လုပ်ပါတယ်။</p>
+                        <div class="code-block">
+                            <pre><code>10 % 3 = 1  // 10 ÷ 3 = 3 ကျန် 1
+15 % 4 = 3  // 15 ÷ 4 = 3 ကျန် 3
+20 % 5 = 0  // 20 ÷ 5 = 4 ကျန် 0 (ပြတ်သွားတယ်)
+7 % 2 = 1   // 7 ÷ 2 = 3 ကျန် 1 (odd number)</code></pre>
+                        </div>
+                        <p><strong>Common Uses:</strong></p>
+                        <ul>
+                            <li><strong>Even/Odd check:</strong> <code>number % 2 == 0</code> → Even</li>
+                            <li><strong>Cycle/Loop:</strong> Array index wrapping</li>
+                            <li><strong>Divisibility:</strong> <code>number % 5 == 0</code> → Divisible by 5</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>3. Unary Operators (တစ်ခုတည်း Operand)</h2>
+
+                    <p>Operators that work with a single operand.</p>
+
+                    <h3>3.1 Increment and Decrement</h3>
+
+                    <div class="highlight-box">
+                        <h4>++ (Increment - တိုးခြင်း)</h4>
+                        <div class="code-block">
+                            <pre><code>int x = 5;
+
+// Post-increment (အရင် သုံးပြီးမှ တိုးတယ်)
+int a = x++;  // a = 5, x = 6
+System.out.println("a: " + a + ", x: " + x);
+
+// Pre-increment (အရင် တိုးပြီးမှ သုံးတယ်)
+int y = 5;
+int b = ++y;  // b = 6, y = 6
+System.out.println("b: " + b + ", y: " + y);</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>-- (Decrement - လျှော့ခြင်း)</h4>
+                        <div class="code-block">
+                            <pre><code>int x = 10;
+
+// Post-decrement
+int a = x--;  // a = 10, x = 9
+
+// Pre-decrement
+int y = 10;
+int b = --y;  // b = 9, y = 9</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🔄 Increment/Decrement အကြောင်း</span>
+                        </div>
+                        <p><strong>Post-increment (x++):</strong> Current value သုံးပြီးမှ 1 တိုးတယ်</p>
+                        <div class="code-block">
+                            <pre><code>int x = 5;
+int y = x++;  // y gets 5, then x becomes 6
+// y = 5, x = 6</code></pre>
+                        </div>
+                        <p><strong>Pre-increment (++x):</strong> အရင် 1 တိုးပြီးမှ value သုံးတယ်</p>
+                        <div class="code-block">
+                            <pre><code>int x = 5;
+int y = ++x;  // x becomes 6 first, then y gets 6
+// y = 6, x = 6</code></pre>
+                        </div>
+                        <p><strong>Common Usage:</strong> Loops မှာ အများဆုံး သုံးတယ်</p>
+                        <div class="code-block">
+                            <pre><code>for (int i = 0; i < 10; i++) {
+    // i++ increments after each iteration
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <h3>3.2 Unary Plus and Minus</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Unary Examples</span></div>
+                        <pre><code>int a = 10;
+int b = -a;   // Unary minus: b = -10
+int c = +a;   // Unary plus: c = 10 (no change)
+
+System.out.println("a: " + a);  // 10
+System.out.println("b: " + b);  // -10
+System.out.println("c: " + c);  // 10</code></pre>
+                    </div>
+
+                    <h3>3.3 Logical NOT (!)</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Logical NOT</span></div>
+                        <pre><code>boolean isTrue = true;
+boolean isFalse = !isTrue;  // NOT operator
+
+System.out.println("isTrue: " + isTrue);     // true
+System.out.println("isFalse: " + isFalse);   // false
+System.out.println("!isFalse: " + !isFalse); // true</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>4. Assignment Operators (သတ်မှတ်ခြင်း)</h2>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Operator</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Example</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Same As</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x = 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x = 5</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>+=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x += 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>x = x + 3</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>-=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x -= 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>x = x - 3</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>*=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x *= 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>x = x * 3</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>/=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x /= 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>x = x / 3</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>%=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x %= 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>x = x % 3</code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Assignment Examples</span></div>
+                        <pre><code>int x = 10;
+
+x += 5;   // x = x + 5 → x = 15
+System.out.println("After += : " + x);
+
+x -= 3;   // x = x - 3 → x = 12
+System.out.println("After -= : " + x);
+
+x *= 2;   // x = x * 2 → x = 24
+System.out.println("After *= : " + x);
+
+x /= 4;   // x = x / 4 → x = 6
+System.out.println("After /= : " + x);
+
+x %= 5;   // x = x % 5 → x = 1
+System.out.println("After %= : " + x);</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>📝 Assignment Operators မြန်မာလို</span>
+                        </div>
+                        <p>Compound assignment operators တွေက code ကို တိုတောင်းအောင် ရေးနိုင်အောင် လုပ်ပေးပါတယ်။</p>
+                        <ul>
+                            <li><code>x += 5</code> က <code>x = x + 5</code> နဲ့ အတူတူပါ</li>
+                            <li>Typing လျှော့နိုင်တယ်၊ code ရှင်းတယ်</li>
+                            <li>All arithmetic operators နဲ့ သုံးလို့ရတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>5. Relational Operators (နှိုင်းယှဉ်ခြင်း)</h2>
+
+                    <p>Used to compare two values. Returns <code>boolean</code> (true/false).</p>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Operator</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Name</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Example</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>==</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Equal to (တူသည်)
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>5 == 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>!=</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Not equal (မတူသည်)
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>5 != 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>&gt;</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Greater than
+                                        (ကြီးသည်)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>5 &gt; 3</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>&lt;</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Less than (သေးသည်)
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>3 &lt; 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>&gt;=</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Greater or equal
+                                        (ကြီးသည် သို့ တူသည်)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>5 &gt;= 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>&lt;=</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Less or equal
+                                        (သေးသည် သို့ တူသည်)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>3 &lt;= 5</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">true</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Relational Examples</span></div>
+                        <pre><code>int a = 10;
+int b = 5;
+
+System.out.println("a == b: " + (a == b)); // false
+System.out.println("a != b: " + (a != b)); // true
+System.out.println("a > b: " + (a > b));   // true
+System.out.println("a < b: " + (a < b));   // false
+System.out.println("a >= b: " + (a >= b)); // true
+System.out.println("a <= b: " + (a <= b)); // false
+
+// Common usage in conditions
+if (a > b) {
+    System.out.println("a is greater than b");
+}</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>⚠️ Common Mistake</h3>
+                        <div class="code-block">
+                            <pre><code>// ❌ Wrong: Using = instead of ==
+if (x = 5) {  // Assignment, not comparison!
+    // Error: incompatible types
+}
+
+// ✅ Correct: Using == for comparison
+if (x == 5) {  // Comparison
+    System.out.println("x is 5");
+}</code></pre>
+                        </div>
+                        <p><strong>Remember:</strong> <code>=</code> is assignment, <code>==</code> is comparison!</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>6. Logical Operators (ယုတ္တိ ဆိုင်ရာ)</h2>
+
+                    <p>Used to combine multiple boolean expressions.</p>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Operator</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Name</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Description</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>&&</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">AND (နှင့်)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Both must be true
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>true && true = true</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>||</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">OR (သို့)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">At least one must be
+                                        true</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>true || false = true</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>!</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">NOT (မဟုတ်)</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Reverses the value
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>!true = false</code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>6.1 AND Operator (&&)</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>AND Examples</span></div>
+                        <pre><code>int age = 25;
+boolean hasLicense = true;
+
+// Both conditions must be true
+if (age >= 18 && hasLicense) {
+    System.out.println("Can drive");
+}
+
+// Truth table for AND
+System.out.println(true && true);   // true
+System.out.println(true && false);  // false
+System.out.println(false && true);  // false
+System.out.println(false && false); // false</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>AND (&&) အကြောင်း</span>
+                        </div>
+                        <p><strong>AND operator (&&)</strong> က conditions <strong>အားလုံး true</strong> ဖြစ်မှ true
+                            return လုပ်ပါတယ်။</p>
+                        <ul>
+                            <li><code>true && true</code> = true</li>
+                            <li><code>true && false</code> = false</li>
+                            <li><code>false && true</code> = false</li>
+                            <li><code>false && false</code> = false</li>
+                        </ul>
+                        <p><strong>Short-circuit:</strong> First condition false ဖြစ်ရင် second ကို check မလုပ်တော့ပါ
+                        </p>
+                    </div>
+
+                    <h3>6.2 OR Operator (||)</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>OR Examples</span></div>
+                        <pre><code>boolean isWeekend = false;
+boolean isHoliday = true;
+
+// At least one condition must be true
+if (isWeekend || isHoliday) {
+    System.out.println("No work today!");
+}
+
+// Truth table for OR
+System.out.println(true || true);   // true
+System.out.println(true || false);  // true
+System.out.println(false || true);  // true
+System.out.println(false || false); // false</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>OR (||) အကြောင်း</span>
+                        </div>
+                        <p><strong>OR operator (||)</strong> က conditions တစ်ခုခု true ဖြစ်ရင် true return လုပ်ပါတယ်။
+                        </p>
+                        <ul>
+                            <li><code>true || true</code> = true</li>
+                            <li><code>true || false</code> = true</li>
+                            <li><code>false || true</code> = true</li>
+                            <li><code>false || false</code> = false</li>
+                        </ul>
+                        <p><strong>Short-circuit:</strong> First condition true ဖြစ်ရင် second ကို check မလုပ်တော့ပါ</p>
+                    </div>
+
+                    <h3>6.3 NOT Operator (!)</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>NOT Examples</span></div>
+                        <pre><code>boolean isRaining = false;
+
+// Reverses the boolean value
+if (!isRaining) {
+    System.out.println("Go for a walk!");
+}
+
+System.out.println(!true);   // false
+System.out.println(!false);  // true
+
+boolean isReady = true;
+System.out.println("Not ready: " + !isReady);  // false</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>7. Ternary Operator (သုံးပိုင်း Operator)</h2>
+
+                    <p>A shorthand for if-else statement.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Ternary Syntax</span></div>
+                        <pre><code>condition ? valueIfTrue : valueIfFalse;</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Ternary Examples</span></div>
+                        <pre><code>int age = 20;
+
+// Ternary operator
+String status = (age >= 18) ? "Adult" : "Minor";
+System.out.println(status);  // Adult
+
+// Equivalent if-else
+String status2;
+if (age >= 18) {
+    status2 = "Adult";
+} else {
+    status2 = "Minor";
+}
+
+// More examples
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+System.out.println("Max: " + max);  // 20
+
+int num = 7;
+String type = (num % 2 == 0) ? "Even" : "Odd";
+System.out.println(num + " is " + type);  // 7 is Odd</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>❓ Ternary Operator အကြောင်း</span>
+                        </div>
+                        <p><strong>Ternary operator (? :)</strong> က if-else ရဲ့ short form ဖြစ်ပါတယ်။</p>
+                        <p><strong>Format:</strong> <code>condition ? value1 : value2</code></p>
+                        <ul>
+                            <li>Condition true ဆို value1 return လုပ်တယ်</li>
+                            <li>Condition false ဆို value2 return လုပ်တယ်</li>
+                            <li>Code တိုတယ်၊ ရှင်းတယ်</li>
+                            <li>Simple conditions အတွက် သင့်တော်တယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>8. Operator Precedence (ဦးစားပေး အစီအစဉ်)</h2>
+
+                    <p>Operators are evaluated in a specific order when multiple operators appear in an expression.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Precedence Example</span></div>
+                        <pre><code>int result = 10 + 5 * 2;
+// Multiplication happens first: 5 * 2 = 10
+// Then addition: 10 + 10 = 20
+System.out.println(result);  // 20
+
+// Use parentheses to change order
+int result2 = (10 + 5) * 2;
+// Parentheses first: 10 + 5 = 15
+// Then multiplication: 15 * 2 = 30
+System.out.println(result2);  // 30</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>Precedence Order (High to Low)</h3>
+                        <ol>
+                            <li><strong>Parentheses:</strong> <code>()</code></li>
+                            <li><strong>Unary:</strong> <code>++, --, !, +, -</code></li>
+                            <li><strong>Multiplicative:</strong> <code>*, /, %</code></li>
+                            <li><strong>Additive:</strong> <code>+, -</code></li>
+                            <li><strong>Relational:</strong> <code>&lt;, &gt;, &lt;=, &gt;=</code></li>
+                            <li><strong>Equality:</strong> <code>==, !=</code></li>
+                            <li><strong>Logical AND:</strong> <code>&&</code></li>
+                            <li><strong>Logical OR:</strong> <code>||</code></li>
+                            <li><strong>Ternary:</strong> <code>? :</code></li>
+                            <li><strong>Assignment:</strong> <code>=, +=, -=, *=, /=, %=</code></li>
+                        </ol>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🎯 Best Practice</span>
+                        </div>
+                        <p><strong>Use parentheses for clarity!</strong> Precedence မှတ်ရခက်တယ်၊ parentheses သုံးရင်
+                            code ရှင်းပြီး bug နည်းတယ်။</p>
+                        <div class="code-block">
+                            <pre><code>// Less clear
+int x = 10 + 5 * 2;
+
+// More clear
+int x = 10 + (5 * 2);</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>9. Complete Example</h2>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>OperatorDemo.java</span></div>
+                        <pre><code>public class OperatorDemo {
+    public static void main(String[] args) {
+        // Arithmetic operators
+        int a = 20, b = 10;
+        System.out.println("=== Arithmetic ===");
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+        
+        // Unary operators
+        System.out.println("\n=== Unary ===");
+        int x = 5;
+        System.out.println("x++ = " + (x++));  // 5, then x=6
+        System.out.println("x = " + x);        // 6
+        System.out.println("++x = " + (++x));  // 7
+        System.out.println("x = " + x);        // 7
+        
+        // Relational operators
+        System.out.println("\n=== Relational ===");
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+        
+        // Logical operators
+        System.out.println("\n=== Logical ===");
+        boolean p = true, q = false;
+        System.out.println("p && q: " + (p && q));
+        System.out.println("p || q: " + (p || q));
+        System.out.println("!p: " + (!p));
+        
+        // Ternary operator
+        System.out.println("\n=== Ternary ===");
+        int age = 20;
+        String status = (age >= 18) ? "Adult" : "Minor";
+        System.out.println("Status: " + status);
+        
+        // Assignment operators
+        System.out.println("\n=== Assignment ===");
+        int y = 10;
+        y += 5;  // y = y + 5
+        System.out.println("After += 5: " + y);
+        y *= 2;  // y = y * 2
+        System.out.println("After *= 2: " + y);
+    }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>10. Key Takeaways</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>Arithmetic:</strong> +, -, *, /, % (modulus = remainder)</li>
+                            <li><strong>Unary:</strong> ++, -- (increment/decrement), !, +, -</li>
+                            <li><strong>Assignment:</strong> =, +=, -=, *=, /=, %=</li>
+                            <li><strong>Relational:</strong> ==, !=, &gt;, &lt;, &gt;=, &lt;= (returns boolean)</li>
+                            <li><strong>Logical:</strong> && (AND), || (OR), ! (NOT)</li>
+                            <li><strong>Ternary:</strong> condition ? value1 : value2</li>
+                            <li><strong>Post-increment (x++):</strong> Use then increment</li>
+                            <li><strong>Pre-increment (++x):</strong> Increment then use</li>
+                            <li><strong>Integer division:</strong> 10 / 3 = 3 (no decimal)</li>
+                            <li><strong>Modulus:</strong> 10 % 3 = 1 (remainder)</li>
+                            <li><strong>= vs ==:</strong> Assignment vs Comparison</li>
+                            <li><strong>Use parentheses</strong> for clarity in complex expressions</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Practice Exercise</h3>
+                        <p><strong>Create a Calculator program:</strong></p>
+                        <ul>
+                            <li>Use all arithmetic operators (+, -, *, /, %)</li>
+                            <li>Demonstrate pre/post increment</li>
+                            <li>Use relational operators to compare results</li>
+                            <li>Use logical operators to combine conditions</li>
+                            <li>Use ternary operator for output messages</li>
+                        </ul>
+
+                        <h3>💡 Quick Quiz</h3>
+                        <div class="quiz-question">
+                            <p><strong>Q1: What is 10 % 3?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q1" value="a"><span>3</span></label>
+                                <label><input type="radio" name="q1" value="b"><span>1</span></label>
+                                <label><input type="radio" name="q1" value="c"><span>0</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: What does x++ do?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q2" value="a"><span>Increment before
+                                        using</span></label>
+                                <label><input type="radio" name="q2" value="b"><span>Use then increment</span></label>
+                                <label><input type="radio" name="q2" value="c"><span>Decrement x</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: Which operator is used for comparison?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q3" value="a"><span>=</span></label>
+                                <label><input type="radio" name="q3" value="b"><span>==</span></label>
+                                <label><input type="radio" name="q3" value="c"><span>!=</span></label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-6.html" class="nav-btn prev-btn">← Previous</a>
+                <div class="lesson-actions">
+                    <button class="action-btn">Bookmark</button>
+                    <button class="action-btn">Mark Complete</button>
+                </div>
+                <a href="lesson-8.html" class="nav-btn next-btn">Next →</a>
+            </div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/syntax-highlighter.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                alert('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'b') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'b') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = '✓ Perfect! 3/3 correct! 🎉 You mastered operators!';
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = score + '/3 correct. Correct: Q1=B (10%3=1 remainder), Q2=B (use then increment), Q3=B (== for comparison)';
+            }
+        }
+    </script>
+</body>
+
+</html>

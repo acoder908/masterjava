@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5: Variables and Literals - Complete Guide | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+
+</head>
+
+<body>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <text x="5" y="28" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700"
+                        fill="#00d9ff">&lt;/&gt;</text>
+                </svg>
+                <span class="logo-text"><span class="logo-a">A</span>Coder</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="tutorials.html" class="active">Tutorials</a>
+                <a href="../index.html#blog">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <svg class="sun-icon" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8z" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 5</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="course-layout">
+        <!-- W3Schools-style Always-Visible Sidebar -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">21%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 21%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>5 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types -->
+                <div class="module active">
+                    <button class="module-header active" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-5.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="course-content">
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">Lessons</button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 5 of 24</span>
+                    <span class="mobile-lesson-title">Variables and Literals</span>
+                </div>
+            </div>
+
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 5</span>
+                    <span class="lesson-duration">⏱ 10 min read</span>
+                </div>
+                <h1 class="lesson-title">Variables and Literals</h1>
+                <p class="lesson-description">Java မှာ data သိမ်းဆည်းတဲ့ variables တွေနဲ့ literal values တွေကို
+                    လေ့လာကြမယ်။</p>
+            </div>
+
+            <article class="lesson-article">
+                <section class="content-section">
+                    <h2>1. Variables ဆိုတာ ဘာလဲ?</h2>
+                    <p>A <strong>variable</strong> is a container that stores data values during program execution.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Simple Variable Example</span></div>
+                        <pre><code>int age = 25;
+String name = "John";
+double salary = 5000.50;
+
+System.out.println("Name: " + name);
+System.out.println("Age: " + age);
+System.out.println("Salary: " + salary);</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>📦 မြန်မာလို ရှင်းပြရင်</span>
+                        </div>
+                        <p><strong>Variable</strong> ဆိုတာ data တန်ဖိုး သိမ်းဆည်းထားနိုင်တဲ့ container (သေတ္တာ) တစ်ခု
+                            ဖြစ်ပါတယ်။</p>
+                        <ul>
+                            <li><strong>Variable name:</strong> သေတ္တာပေါ်က အမည် (age, name, salary)</li>
+                            <li><strong>Variable value:</strong> သေတ္တာထဲက အရာ (25, "John", 5000.50)</li>
+                            <li><strong>Data type:</strong> သေတ္တာ အမျိုးအစား (int, String, double)</li>
+                        </ul>
+                        <p><strong>ဘာကြောင့် လိုအပ်လဲ?</strong></p>
+                        <ul>
+                            <li>Store data - Information သိမ်းထားနိုင်တယ်</li>
+                            <li>Reuse values - တူညီတဲ့ value ကို နေရာအများကြီးမှာ သုံးလို့ရတယ်</li>
+                            <li>Modify data - Value ပြောင်းလဲနိုင်တယ်</li>
+                            <li>Readable code - Code နားလည်ရလွယ်တယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>2. Variable Declaration (ကြေညာခြင်း)</h2>
+                    <p><strong>Syntax:</strong> <code>dataType variableName;</code></p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Declaration Examples</span></div>
+                        <pre><code>// Single declarations
+int age;
+String name;
+double salary;
+boolean isStudent;
+
+// Multiple declarations
+int x, y, z;</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>💡 Declaration အကြောင်း</span></div>
+                        <ul>
+                            <li><code>dataType</code> - Variable မှာ သိမ်းမယ့် data အမျိုးအစား</li>
+                            <li><code>variableName</code> - Variable အမည် (ကိုယ်တိုင်ရွေးနိုင်တယ်)</li>
+                            <li>Declaration ပြီးရင် memory မှာ နေရာရပါပြီ</li>
+                            <li>ဒါပေမယ့် value မရှိသေးပါ (uninitialized)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>3. Variable Initialization (Value ပေးခြင်း)</h2>
+
+                    <h3>Declaration + Initialization Together (Recommended)</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Combined Approach</span></div>
+                        <pre><code>int age = 25;
+String name = "Alice";
+double price = 99.99;
+boolean isActive = true;
+
+int a = 10, b = 20, c = 30;</code></pre>
+                    </div>
+
+                    <h3>Separate Steps</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Two-Step Process</span></div>
+                        <pre><code class="language-java">// Declare first
+int score;
+String city;
+
+// Initialize later
+score = 100;
+city = "Yangon";
+
+System.out.println("Score: " + score);
+System.out.println("City: " + city);</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>⚠️ Important Rules</h3>
+                        <ul>
+                            <li><strong>Local variables must be initialized before use</strong></li>
+                            <li>Uninitialized variable သုံးရင် compilation error ပေါ်ပါတယ်</li>
+                            <li>Best practice: Declaration နဲ့ initialization ကို တစ်ကြိမ်တည်း လုပ်ပါ</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>// ❌ Error
+int x;
+System.out.println(x);  // Error!
+
+// ✅ Correct
+int y = 10;
+System.out.println(y);  // Works</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>4. Variable Assignment (Value ပြောင်းလဲခြင်း)</h2>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Reassignment Example</span></div>
+                        <pre><code>// Initial value
+int score = 50;
+System.out.println("Initial: " + score);
+
+// Reassign new value
+score = 75;
+System.out.println("Updated: " + score);
+
+// Update based on previous value
+score = score + 10;
+System.out.println("Final: " + score);  // 85</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>🔄 Assignment အကြောင်း</span></div>
+                        <ul>
+                            <li><code>=</code> operator က right side value ကို left side variable မှာ သိမ်းတယ်</li>
+                            <li>Old value က ပျောက်သွားပြီး new value ဖြစ်သွားတယ်</li>
+                            <li>Self-assignment လုပ်လို့ ရတယ်: <code>x = x + 1;</code></li>
+                            <li>Data type က compatible ဖြစ်ရပါမယ်</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>int age = 25;     // ✅ Correct
+age = 30;         // ✅ Correct
+age = "Thirty";   // ❌ Error! Type mismatch</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>5. Variable Naming Rules (အမည်ပေးစည်းမျဉ်းများ)</h2>
+
+                    <div class="highlight-box">
+                        <h3>✅ Valid Naming Rules</h3>
+                        <ul>
+                            <li><strong>Start with letter, $ or _</strong> - Digit နဲ့ မစနိုင်ပါ</li>
+                            <li><strong>Can contain letters, digits, $ and _</strong></li>
+                            <li><strong>Case-sensitive</strong> - age ≠ Age ≠ AGE</li>
+                            <li><strong>No spaces</strong> - Use camelCase instead</li>
+                            <li><strong>Cannot use Java keywords</strong> - int, class, public စတာတွေ မသုံးနိုင်ပါ</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Examples</span></div>
+                        <pre><code>// ✅ Valid names
+int age;
+int studentAge;
+int student_age;
+int _count;
+int $price;
+int age2;
+
+// ❌ Invalid names
+int 2age;        // Cannot start with digit
+int student-age; // Cannot use hyphen
+int my age;      // Cannot have space
+int class;       // Java keyword
+int public;      // Java keyword</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>📝 Naming Conventions (Best Practices)</h3>
+                        <ul>
+                            <li><strong>camelCase for variables:</strong> studentName, totalScore</li>
+                            <li><strong>Descriptive names:</strong> age လို့ရေးပါ, a လို့ မရေးပါနဲ့</li>
+                            <li><strong>Avoid abbreviations:</strong> number လို့ရေးပါ, num လို့ တတ်နိုင်သမျှ ရှောင်ပါ
+                            </li>
+                            <li><strong>Start with lowercase:</strong> userName (not UserName)</li>
+                            <li><strong>Constants in UPPER_CASE:</strong> MAX_VALUE, PI</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Good vs Bad Examples</span></div>
+                        <pre><code>// ❌ Bad naming
+int a = 25;
+int x = "John";
+int sd = 5000;
+
+// ✅ Good naming
+int studentAge = 25;
+String studentName = "John";
+double studentSalary = 5000;</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>6. Literals (တန်ဖိုး အမျိုးအစားများ)</h2>
+
+                    <p>A <strong>literal</strong> is a fixed value written directly in the code.</p>
+
+                    <h3>6.1 Integer Literals</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Integer Examples</span></div>
+                        <pre><code>int decimal = 100;      // Decimal (base 10)
+int binary = 0b1010;    // Binary (base 2) = 10
+int octal = 0144;       // Octal (base 8) = 100
+int hex = 0x64;         // Hexadecimal (base 16) = 100
+
+long bigNumber = 1000000000L;  // Long literal (L suffix)</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>🔢 Integer Literals အကြောင်း</span></div>
+                        <ul>
+                            <li><strong>Decimal:</strong> ပုံမှန် ဂဏန်း - 10, 100, 255</li>
+                            <li><strong>Binary:</strong> <code>0b</code> နဲ့ စတယ် - 0b1010 = 10</li>
+                            <li><strong>Octal:</strong> <code>0</code> နဲ့ စတယ် - 0144 = 100</li>
+                            <li><strong>Hexadecimal:</strong> <code>0x</code> နဲ့ စတယ် - 0xFF = 255</li>
+                            <li><strong>Long suffix:</strong> L or l (capital L ပိုကောင်းတယ်)</li>
+                            <li><strong>Underscore:</strong> Readability အတွက် _ သုံးလို့ရတယ် - 1_000_000</li>
+                        </ul>
+                    </div>
+
+                    <h3>6.2 Floating-Point Literals</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Decimal Numbers</span></div>
+                        <pre><code>double price = 99.99;      // double (default)
+float rate = 5.5f;         // float (f suffix required)
+double scientific = 1.5e3; // Scientific notation = 1500.0
+double negative = -3.14;
+
+// Underscore for readability
+double million = 1_000_000.50;</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>💰 Floating-Point အကြောင်း</span></div>
+                        <ul>
+                            <li><strong>Double:</strong> Default ဖြစ်တယ် (64-bit) - 3.14, 99.99</li>
+                            <li><strong>Float:</strong> f or F suffix လိုတယ် (32-bit) - 5.5f</li>
+                            <li><strong>Scientific notation:</strong> 1.5e3 = 1.5 × 10³ = 1500</li>
+                            <li><strong>Precision:</strong> double က float ထက် accurate ပိုများတယ်</li>
+                        </ul>
+                    </div>
+
+                    <h3>6.3 Character Literals</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Single Characters</span></div>
+                        <pre><code>char letter = 'A';
+char digit = '9';
+char symbol = '@';
+
+// Escape sequences
+char newline = '\n';
+char tab = '\t';
+char quote = '\'';
+char backslash = '\\';
+
+// Unicode
+char heart = '\u2665';  // ♥</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>🔤 Character Literals အကြောင်း</span></div>
+                        <ul>
+                            <li><strong>Single quotes:</strong> 'A', 'B', '1' (double quotes မဟုတ်ပါ)</li>
+                            <li><strong>One character only:</strong> 'AB' မရပါ, "AB" က String ပါ</li>
+                            <li><strong>Escape sequences:</strong> \n (newline), \t (tab), \' (quote)</li>
+                            <li><strong>Unicode:</strong> \uXXXX format - \u0041 = 'A'</li>
+                        </ul>
+                    </div>
+
+                    <h3>6.4 String Literals</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Text Strings</span></div>
+                        <pre><code>String name = "John Doe";
+String message = "Hello, World!";
+String empty = "";          // Empty string
+String number = "123";      // String, not number!
+
+// Escape sequences in strings
+String path = "C:\\Users\\Desktop";
+String quote = "He said, \"Hello\"";
+String multi = "Line 1\nLine 2\nLine 3";</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>📝 String Literals အကြောင်း</span></div>
+                        <ul>
+                            <li><strong>Double quotes:</strong> "Hello" (single quotes မဟုတ်ပါ)</li>
+                            <li><strong>Multiple characters:</strong> "", "A", "ABC", "Hello World"</li>
+                            <li><strong>Escape sequences work:</strong> \n, \t, \", \\</li>
+                            <li><strong>Immutable:</strong> String value ပြောင်းလို့မရပါ (create new one)</li>
+                            <li><strong>Concatenation:</strong> + operator နဲ့ ပေါင်းလို့ ရတယ်</li>
+                        </ul>
+                    </div>
+
+                    <h3>6.5 Boolean Literals</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>True or False</span></div>
+                        <pre><code>boolean isStudent = true;
+boolean isActive = false;
+
+// Commonly used in conditions
+boolean hasPermission = true;
+boolean isComplete = false;
+
+System.out.println(isStudent);  // true
+System.out.println(isActive);   // false</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header"><span>✓✗ Boolean အကြောင်း</span></div>
+                        <ul>
+                            <li><strong>Only two values:</strong> true or false</li>
+                            <li><strong>Lowercase only:</strong> True, FALSE, 1, 0 မရပါ</li>
+                            <li><strong>Used for logic:</strong> Conditions, loops, flags</li>
+                            <li><strong>Default value:</strong> false (for class-level variables)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>7. Complete Example</h2>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>VariableDemo.java</span></div>
+                        <pre><code>public class VariableDemo {
+    public static void main(String[] args) {
+        // Integer variables
+        int studentCount = 30;
+        int totalMarks = 2850;
+        
+        // Floating-point
+        double averageScore = 85.5;
+        double percentage = 95.67;
+        
+        // Character
+        char grade = 'A';
+        
+        // String
+        String courseName = "Java Programming";
+        String instructor = "Mr. Smith";
+        
+        // Boolean
+        boolean isPassed = true;
+        boolean isCompleted = false;
+        
+        // Display information
+        System.out.println("=== Course Information ===");
+        System.out.println("Course: " + courseName);
+        System.out.println("Instructor: " + instructor);
+        System.out.println("Students: " + studentCount);
+        System.out.println("Average Score: " + averageScore);
+        System.out.println("Percentage: " + percentage + "%");
+        System.out.println("Grade: " + grade);
+        System.out.println("Passed: " + isPassed);
+        System.out.println("Completed: " + isCompleted);
+        
+        // Calculate
+        double scorePerStudent = (double) totalMarks / studentCount;
+        System.out.println("Score per student: " + scorePerStudent);
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Output</span></div>
+                        <pre><code>=== Course Information ===
+Course: Java Programming
+Instructor: Mr. Smith
+Students: 30
+Average Score: 85.5
+Percentage: 95.67%
+Grade: A
+Passed: true
+Completed: false
+Score per student: 95.0</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>8. Key Takeaways</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>Variables store data</strong> - Container for values</li>
+                            <li><strong>Declaration:</strong> dataType variableName;</li>
+                            <li><strong>Initialization:</strong> Give it a value</li>
+                            <li><strong>Assignment:</strong> Change the value using =</li>
+                            <li><strong>Naming rules:</strong> Start with letter/$/_, no spaces, no keywords</li>
+                            <li><strong>camelCase convention:</strong> studentName, totalScore</li>
+                            <li><strong>Integer literals:</strong> 100, 0b1010, 0x64, 1000L</li>
+                            <li><strong>Float literals:</strong> 99.99, 5.5f, 1.5e3</li>
+                            <li><strong>Char literals:</strong> 'A', '\n', '\u2665'</li>
+                            <li><strong>String literals:</strong> "Hello", "Java"</li>
+                            <li><strong>Boolean literals:</strong> true, false</li>
+                            <li><strong>Local variables must be initialized</strong> before use</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Practice Exercise</h3>
+                        <p><strong>Create a StudentInfo program:</strong></p>
+                        <ul>
+                            <li>Declare variables: name, age, grade, gpa, isEnrolled</li>
+                            <li>Initialize with appropriate values</li>
+                            <li>Print all information</li>
+                            <li>Calculate and print years until graduation (assume 4 year program)</li>
+                        </ul>
+
+                        <h3>💡 Quick Quiz</h3>
+                        <div class="quiz-question">
+                            <p><strong>Q1: Which is a valid variable name?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q1" value="a"><span>2student</span></label>
+                                <label><input type="radio" name="q1" value="b"><span>student_name</span></label>
+                                <label><input type="radio" name="q1" value="c"><span>class</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: What's the correct way to declare and initialize an integer?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q2" value="a"><span>int age = 25;</span></label>
+                                <label><input type="radio" name="q2" value="b"><span>age = 25;</span></label>
+                                <label><input type="radio" name="q2" value="c"><span>int = age 25;</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: Which literal is a character?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q3" value="a"><span>"A"</span></label>
+                                <label><input type="radio" name="q3" value="b"><span>'A'</span></label>
+                                <label><input type="radio" name="q3" value="c"><span>A</span></label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-4.html" class="nav-btn prev-btn">← Previous</a>
+                <div class="lesson-actions">
+                    <button class="action-btn" id="bookmarkBtn" onclick="toggleBookmark()">Bookmark</button>
+                    <button class="action-btn" id="completeBtn" onclick="markComplete()">Mark Complete</button>
+                </div>
+                <a href="lesson-6.html" class="nav-btn next-btn">Next →</a>
+            </div>
+
+            <div class="notes-section">
+                <div class="notes-header">
+                    <h3>Your Notes</h3>
+                    <span class="notes-count">0 notes</span>
+                </div>
+                <textarea id="notesTextarea" class="notes-textarea" placeholder="Your notes..."></textarea>
+                <div class="notes-saved" id="notesSaved">✓ Saved</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <!-- highlight.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <script>
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightElement(block);
+        });
+    </script>
+
+    <script>
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                alert('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'b') score++;
+            if (q2.value === 'a') score++;
+            if (q3.value === 'b') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = '✓ Perfect! 3/3 correct! 🎉';
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = score + '/3 correct. Correct answers: Q1=B (student_name), Q2=A (int age = 25;), Q3=B (\'A\')';
+            }
+        }
+    </script>
+</body>
+
+</html>

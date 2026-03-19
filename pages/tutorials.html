@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore comprehensive Java tutorials and courses. From beginner to advanced, learn Java programming step by step.">
+    <title>Java Tutorials & Courses - A Coder</title>
+
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorials.css">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section class="tutorials-hero">
+        <div class="container">
+            <h1>Java Tutorials & Courses</h1>
+            <p>Master Java programming from basics to advanced concepts</p>
+
+            <!-- Filter & Search -->
+            <div class="tutorials-controls">
+                <div class="search-box">
+                    <input type="text" id="searchTutorials" placeholder="Search tutorials...">
+                    <button class="search-icon">🔍</button>
+                </div>
+
+                <div class="filter-buttons">
+                    <a href="tutorials.html" class="filter-btn active">All</a>
+                    <a href="../beginner/lesson-1.html" class="filter-btn">Beginner</a>
+                    <a href="intermediate.html" class="filter-btn">Intermediate</a>
+                    <a href="advanced.html" class="filter-btn">Advanced</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="tutorials-stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Video Lessons</p>
+                </div>
+                <div class="stat-box">
+                    <h3>15+</h3>
+                    <p>Full Courses</p>
+                </div>
+                <div class="stat-box">
+                    <h3>50K+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat-box">
+                    <h3>4.8★</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths -->
+    <section class="learning-paths">
+        <div class="container">
+            <h2 class="section-title">🎯 Choose Your Learning Path</h2>
+
+            <div class="paths-grid">
+                <div class="path-card beginner-path">
+                    <div class="path-icon">🌱</div>
+                    <h3>Beginner Path</h3>
+                    <p>Start your Java journey from zero</p>
+                    <ul>
+                        <li>✓ Java Basics</li>
+                        <li>✓ Variables & Data Types</li>
+                        <li>✓ Control Flow</li>
+                        <li>✓ Functions & Methods</li>
+                    </ul>
+                    <a href="../beginner/lesson-1.html" class="btn-path">Start Learning</a>
+
+                </div>
+
+                <div class="path-card intermediate-path">
+                    <div class="path-icon">🚀</div>
+                    <h3>Intermediate Path</h3>
+                    <p>Level up your Java skills</p>
+                    <ul>
+                        <li>✓ Object-Oriented Programming</li>
+                        <li>✓ Collections Framework</li>
+                        <li>✓ Exception Handling</li>
+                        <li>✓ File I/O</li>
+                    </ul>
+                    <button class="btn-path">Continue Learning</button>
+                </div>
+
+                <div class="path-card advanced-path">
+                    <div class="path-icon">⚡</div>
+                    <h3>Advanced Path</h3>
+                    <p>Master advanced concepts</p>
+                    <ul>
+                        <li>✓ Multithreading</li>
+                        <li>✓ Design Patterns</li>
+                        <li>✓ JVM Internals</li>
+                        <li>✓ Performance Tuning</li>
+                    </ul>
+                    <button class="btn-path">Master Java</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Grid -->
+    <section class="tutorials-section">
+        <div class="container">
+            <h2 class="section-title">📚 All Tutorials</h2>
+
+            <div id="tutorialsGrid" class="tutorials-grid">
+                <!-- Beginner Courses -->
+                <div class="tutorial-card" data-level="beginner">
+                    <div class="tutorial-badge beginner">Beginner</div>
+                    <div class="tutorial-header gradient-bg-1">
+                        <span class="tutorial-icon">☕</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Java Fundamentals</h3>
+                        <p>Learn the basics of Java programming from scratch</p>
+                        <div class="tutorial-meta">
+                            <span>📚 24 Lessons</span>
+                            <span>⏱️ 12 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" data-level="beginner">
+                    <div class="tutorial-badge beginner">Beginner</div>
+                    <div class="tutorial-header gradient-bg-2">
+                        <span class="tutorial-icon">🎮</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Variables & Data Types</h3>
+                        <p>Understand Java's type system and variables</p>
+                        <div class="tutorial-meta">
+                            <span>📚 12 Lessons</span>
+                            <span>⏱️ 6 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" data-level="beginner">
+                    <div class="tutorial-badge beginner">Beginner</div>
+                    <div class="tutorial-header gradient-bg-3">
+                        <span class="tutorial-icon">🔄</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Control Flow & Loops</h3>
+                        <p>Master if-else, switch, and loop statements</p>
+                        <div class="tutorial-meta">
+                            <span>📚 15 Lessons</span>
+                            <span>⏱️ 8 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+
+                <!-- Intermediate Courses -->
+                <div class="tutorial-card" data-level="intermediate">
+                    <div class="tutorial-badge intermediate">Intermediate</div>
+                    <div class="tutorial-header gradient-bg-2">
+                        <span class="tutorial-icon">🎯</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Object-Oriented Programming</h3>
+                        <p>Master OOP: Classes, Objects, Inheritance, Polymorphism</p>
+                        <div class="tutorial-meta">
+                            <span>📚 32 Lessons</span>
+                            <span>⏱️ 18 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="45"></div>
+                            </div>
+                            <span class="progress-text">45% Complete</span>
+                        </div>
+                        <button class="btn-start">Continue</button>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" data-level="intermediate">
+                    <div class="tutorial-badge intermediate">Intermediate</div>
+                    <div class="tutorial-header gradient-bg-1">
+                        <span class="tutorial-icon">📦</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Collections Framework</h3>
+                        <p>Deep dive into Lists, Sets, Maps, and more</p>
+                        <div class="tutorial-meta">
+                            <span>📚 28 Lessons</span>
+                            <span>⏱️ 15 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" data-level="intermediate">
+                    <div class="tutorial-badge intermediate">Intermediate</div>
+                    <div class="tutorial-header gradient-bg-3">
+                        <span class="tutorial-icon">⚠️</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Exception Handling</h3>
+                        <p>Learn to handle errors gracefully in Java</p>
+                        <div class="tutorial-meta">
+                            <span>📚 18 Lessons</span>
+                            <span>⏱️ 10 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+
+                <!-- Advanced Courses -->
+                <div class="tutorial-card" data-level="advanced">
+                    <div class="tutorial-badge advanced">Advanced</div>
+                    <div class="tutorial-header gradient-bg-1">
+                        <span class="tutorial-icon">🔧</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Data Structures & Algorithms</h3>
+                        <p>Master arrays, trees, graphs, and algorithms</p>
+                        <div class="tutorial-meta">
+                            <span>📚 40 Lessons</span>
+                            <span>⏱️ 25 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="30"></div>
+                            </div>
+                            <span class="progress-text">30% Complete</span>
+                        </div>
+                        <button class="btn-start">Continue</button>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" data-level="advanced">
+                    <div class="tutorial-badge advanced">Advanced</div>
+                    <div class="tutorial-header gradient-bg-2">
+                        <span class="tutorial-icon">🧵</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Multithreading & Concurrency</h3>
+                        <p>Build high-performance concurrent applications</p>
+                        <div class="tutorial-meta">
+                            <span>📚 35 Lessons</span>
+                            <span>⏱️ 20 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" data-level="advanced">
+                    <div class="tutorial-badge advanced">Advanced</div>
+                    <div class="tutorial-header gradient-bg-3">
+                        <span class="tutorial-icon">🎨</span>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Design Patterns</h3>
+                        <p>Learn proven solutions to common problems</p>
+                        <div class="tutorial-meta">
+                            <span>📚 30 Lessons</span>
+                            <span>⏱️ 18 Hours</span>
+                        </div>
+                        <div class="tutorial-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <button class="btn-start">Start Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/tutorials.js"></script>
+    <script src="../js/glo.js"></script>
+</body>
+
+</html>

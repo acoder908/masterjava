@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Environment Setup - Complete Guide | A Coder</title>
+    <meta name="description"
+        content="Learn how to set up Java development environment. Install JDK, configure environment variables, and set up your IDE for Java programming.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Mobile Lesson Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <a href="tutorials.html">Tutorials</a>
+                <span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a>
+                <span>/</span>
+                <span>Lesson 2</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Course Layout -->
+    <div class="course-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Course Progress -->
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">8%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 8%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>2 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <!-- Lessons Navigation -->
+            <nav class="lessons-nav">
+                <!-- Module 1 -->
+                <div class="module">
+                    <button class="module-header active" data-module="1">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">What is Java</span>
+                            <span class="lesson-duration">10 min</span>
+                            <svg class="check-icon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item active">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Environment Setup</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">First Java Program</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item">
+                            <span class="lesson-number">4</span>
+                            <span class="lesson-title">Java Comments</span>
+                            <span class="lesson-duration">8 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item">
+                            <span class="lesson-number">5</span>
+                            <span class="lesson-title">Variables and Literals</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item">
+                            <span class="lesson-number">6</span>
+                            <span class="lesson-title">Data Types</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item">
+                            <span class="lesson-number">7</span>
+                            <span class="lesson-title">Operators</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <span class="lesson-number">8</span>
+                            <span class="lesson-title">Constants & Final</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <span class="lesson-number">9</span>
+                            <span class="lesson-title">If-Else Statements</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <span class="lesson-number">10</span>
+                            <span class="lesson-title">Switch Statements</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <span class="lesson-number">11</span>
+                            <span class="lesson-title">For Loops</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <span class="lesson-number">12</span>
+                            <span class="lesson-title">While Loops</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item">
+                            <span class="lesson-number">13</span>
+                            <span class="lesson-title">Methods</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item">
+                            <span class="lesson-number">14</span>
+                            <span class="lesson-title">Parameters</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item">
+                            <span class="lesson-number">15</span>
+                            <span class="lesson-title">Return Values</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item">
+                            <span class="lesson-number">16</span>
+                            <span class="lesson-title">Method Overloading</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item">
+                            <span class="lesson-number">17</span>
+                            <span class="lesson-title">Arrays</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item">
+                            <span class="lesson-number">18</span>
+                            <span class="lesson-title">Multi-dimensional Arrays</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item">
+                            <span class="lesson-number">19</span>
+                            <span class="lesson-title">Arrays with For Each</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item">
+                            <span class="lesson-number">20</span>
+                            <span class="lesson-title">ArrayList</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item">
+                            <span class="lesson-number">21</span>
+                            <span class="lesson-title">Classes & Objects</span>
+                            <span class="lesson-duration">18 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item">
+                            <span class="lesson-number">22</span>
+                            <span class="lesson-title">Constructors</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item">
+                            <span class="lesson-number">23</span>
+                            <span class="lesson-title">Access Modifiers</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item">
+                            <span class="lesson-number">24</span>
+                            <span class="lesson-title">Super, This Keyword</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="course-content">
+            <!-- Mobile Header -->
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open lesson menu">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <span>Lessons</span>
+                </button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 2 of 24</span>
+                    <span class="mobile-lesson-title">Environment Setup</span>
+                </div>
+            </div>
+
+            <!-- Lesson Header -->
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 2</span>
+                    <span class="lesson-duration">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg>
+                        15 min read
+                    </span>
+                </div>
+                <h1 class="lesson-title">Java Environment Setup</h1>
+                <p class="lesson-description">Java programming စလုပ်ဖို့ လိုအပ်တဲ့ tools တွေ install လုပ်နည်း၊
+                    environment configure လုပ်နည်း၊ IDE setup လုပ်နည်းကို step-by-step လေ့လာကြမယ်။</p>
+            </div>
+
+            <!-- Lesson Content -->
+            <article class="lesson-article">
+                <!-- Section 1: Overview -->
+                <section class="content-section">
+                    <h2>1. ဘာတွေ လိုအပ်လဲ? (What You'll Need)</h2>
+
+                    <p>Before you can start writing Java programs, you need to set up your development environment. This
+                        involves installing and configuring several essential tools.</p>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">☕</div>
+                            <h3>JDK</h3>
+                            <p>Java Development Kit - Compile & Run Java programs</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔧</div>
+                            <h3>Environment Variables</h3>
+                            <p>Configure system PATH for command-line access</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💻</div>
+                            <h3>IDE / Text Editor</h3>
+                            <p>IntelliJ IDEA, Eclipse, or VS Code for coding</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>စတင်မယ့်သူတွေ အတွက်</span>
+                        </div>
+                        <p>Java programming ရေးဖို့ အခြေခံ ၃ ခု လိုပါတယ်:</p>
+                        <ul>
+                            <li><strong>JDK (Java Development Kit):</strong> Java compiler (javac) နဲ့ JVM ပါဝင်တဲ့
+                                complete package ပါ။ ဒါမှ Java code တွေ compile လုပ်ပြီး run လို့ ရမှာပါ။</li>
+                            <li><strong>Environment Variables:</strong> Computer ကို JDK ဘယ်မှာ install လုပ်ထားလဲ
+                                ပြောပေးရပါတယ်။ အဲ့ဒါမှ command line (Terminal/CMD) ကနေ <code>javac</code>,
+                                <code>java</code> commands တွေ သုံးလို့ ရပါမယ်။</li>
+                            <li><strong>IDE (Integrated Development Environment):</strong> Code editor, debugger,
+                                compiler စတာတွေ စုစည်းထားတဲ့ software ပါ။ Notepad လို simple editor မဟုတ်ဘဲ၊
+                                professional development အတွက် ဖြစ်ပါတယ်။</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 2: Understanding JDK, JRE, JVM -->
+                <section class="content-section">
+                    <h2>2. JDK, JRE, JVM ဆိုတာ ဘာတွေလဲ?</h2>
+
+                    <p>Before installing, let's understand the difference between JDK, JRE, and JVM:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java Platform Components</span>
+                        </div>
+                        <pre><code>┌─────────────────────────────────────────┐
+│            JDK (Development Kit)         │
+│  ┌───────────────────────────────────┐  │
+│  │         JRE (Runtime)              │  │
+│  │  ┌─────────────────────────────┐  │  │
+│  │  │    JVM (Virtual Machine)    │  │  │
+│  │  │   - Executes bytecode       │  │  │
+│  │  │   - Memory management       │  │  │
+│  │  └─────────────────────────────┘  │  │
+│  │  + Core Libraries (java.lang,    │  │
+│  │    java.util, java.io, etc.)     │  │
+│  └───────────────────────────────────┘  │
+│  + Development Tools:                   │
+│    - javac (Compiler)                   │
+│    - javadoc (Documentation)            │
+│    - jar (Archive tool)                 │
+│    - debugger                           │
+└─────────────────────────────────────────┘</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အသေးစိတ် ရှင်းပြချက်</span>
+                        </div>
+
+                        <p><strong>1. JVM (Java Virtual Machine)</strong></p>
+                        <p>JVM က အခြေခံဆုံး component ပါ။ Java bytecode (.class files) ကို execute လုပ်တဲ့ virtual
+                            machine ပါ။</p>
+                        <ul>
+                            <li><strong>Bytecode ကို Machine Code အဖြစ် ပြောင်းပေးတယ်:</strong> Platform-specific
+                                machine code အဖြစ် ပြောင်းလို့ program က အလုပ်လုပ်ပါတယ်</li>
+                            <li><strong>Memory Management:</strong> Garbage Collection နဲ့ memory ကို အလိုအလျောက်
+                                စီမံပေးတယ်</li>
+                            <li><strong>Security:</strong> Bytecode verification လုပ်ပြီး malicious code တွေကို
+                                ကာကွယ်ပေးတယ်</li>
+                        </ul>
+                        <p>📌 JVM က platform-specific ဖြစ်ပါတယ်။ Windows JVM, Mac JVM, Linux JVM တစ်ခုချင်းစီ ရှိပါတယ်။
+                        </p>
+
+                        <p><strong>2. JRE (Java Runtime Environment)</strong></p>
+                        <p>JRE = JVM + Core Libraries (java.lang, java.util, etc.)</p>
+                        <ul>
+                            <li><strong>Java programs run လုပ်ဖို့ လိုတယ်:</strong> Already compiled ဖြစ်နေတဲ့ .class
+                                files တွေကို execute လုပ်လို့ ရပါတယ်</li>
+                            <li><strong>Development မလုပ်ဘူးဆို JRE လုံလောက်တယ်:</strong> End users တွေက JRE တင် install
+                                လုပ်ရုံနဲ့ Java apps run လို့ ရပါပြီ</li>
+                            <li><strong>Core Libraries:</strong> String, ArrayList, File I/O စတဲ့ built-in classes တွေ
+                                ပါဝင်ပါတယ်</li>
+                        </ul>
+
+                        <p><strong>3. JDK (Java Development Kit)</strong></p>
+                        <p>JDK = JRE + Development Tools (javac, javadoc, jar, debugger)</p>
+                        <ul>
+                            <li><strong>Java programs develop လုပ်ဖို့ လိုတယ်:</strong> Source code ရေးပြီး compile
+                                လုပ်ချင်ရင် JDK လိုပါတယ်</li>
+                            <li><strong>javac compiler:</strong> .java files တွေကို .class bytecode အဖြစ် compile
+                                လုပ်ပေးတယ်</li>
+                            <li><strong>Development tools:</strong> javadoc (documentation generator), jar (package
+                                tool), jdb (debugger) စတာတွေ ပါပါတယ်</li>
+                            <li><strong>JRE ပါပါတယ်:</strong> JDK install လုပ်ရင် JRE နဲ့ JVM အလိုအလျောက် ပါပါတယ်</li>
+                        </ul>
+
+                        <p><strong>📊 ဘယ်အချိန်မှာ ဘာသုံးရမလဲ?</strong></p>
+                        <ul>
+                            <li><strong>Developer (Program ရေးမယ်):</strong> JDK install လုပ်ပါ</li>
+                            <li><strong>End User (Program run ဖြစ်မယ်):</strong> JRE install လုပ်ပါ</li>
+                            <li><strong>Server (Java apps host လုပ်မယ်):</strong> JRE လုံလောက်ပါတယ် (production မှာ)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 3: Installing JDK -->
+                <section class="content-section">
+                    <h2>3. JDK Installation (JDK Install လုပ်နည်း)</h2>
+
+                    <h3>Step 1: Download JDK</h3>
+                    <p>There are several JDK distributions available. We recommend <strong>Oracle JDK</strong> or
+                        <strong>OpenJDK</strong>:</p>
+
+                    <div class="highlight-box">
+                        <h3>🔗 Download Links</h3>
+                        <ul>
+                            <li><strong>Oracle JDK:</strong> https://www.oracle.com/java/technologies/downloads/</li>
+                            <li><strong>OpenJDK:</strong> https://jdk.java.net/ (Open source, free)</li>
+                            <li><strong>Adoptium (Eclipse Temurin):</strong> https://adoptium.net/ (Recommended for
+                                beginners)</li>
+                        </ul>
+                        <p><strong>Recommended Version:</strong> JDK 17 LTS or JDK 21 LTS (Long Term Support)</p>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>JDK Versions အကြောင်း</span>
+                        </div>
+                        <p><strong>Oracle JDK vs OpenJDK:</strong></p>
+                        <ul>
+                            <li><strong>Oracle JDK:</strong> Oracle ရဲ့ official version ဖြစ်ပြီး commercial license
+                                ပါပါတယ်။ Production use မှာ license fee ပေးရနိုင်ပါတယ်။ Performance နဲ့ support
+                                ကောင်းပါတယ်။</li>
+                            <li><strong>OpenJDK:</strong> Open source, အခမဲ့ ဖြစ်ပြီး community-driven ပါ။ Oracle JDK
+                                နဲ့ functionality အတူတူပါ။ Personal projects, learning အတွက် သင့်တော်ပါတယ်။</li>
+                            <li><strong>Adoptium (Eclipse Temurin):</strong> OpenJDK ရဲ့ prebuilt binaries တွေ ဖြစ်ပြီး
+                                long-term support ရပါတယ်။ Beginners အတွက် အကောင်းဆုံး ရွေးချယ်မှု ဖြစ်ပါတယ်။</li>
+                        </ul>
+                        <p><strong>LTS (Long Term Support) Versions:</strong></p>
+                        <ul>
+                            <li><strong>Java 8:</strong> အရင်က အများဆုံး သုံးတယ် (2014-2030 support)</li>
+                            <li><strong>Java 11:</strong> Modern features များပါပြီး stable (2018-2027 support)</li>
+                            <li><strong>Java 17:</strong> Latest LTS, recommended for new projects (2021-2029 support)
+                            </li>
+                            <li><strong>Java 21:</strong> Newest LTS with cutting-edge features (2023-2031 support)</li>
+                        </ul>
+                        <p>📌 Beginners တွေ အတွက် <strong>Java 17 LTS</strong> သို့မဟုတ် <strong>Java 21 LTS</strong>
+                            ကို recommend လုပ်ပါတယ်။</p>
+                    </div>
+
+                    <h3>Step 2: Installation Process</h3>
+
+                    <h4>🪟 Windows Installation</h4>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Windows Installation Steps</span>
+                        </div>
+                        <pre><code>1. Download JDK installer (.exe file)
+2. Double-click the installer
+3. Click "Next" through installation wizard
+4. Note the installation path (e.g., C:\Program Files\Java\jdk-17)
+5. Click "Install"
+6. Wait for installation to complete
+7. Click "Close"
+
+Default Path: C:\Program Files\Java\jdk-17</code></pre>
+                    </div>
+
+                    <h4>🍎 macOS Installation</h4>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">macOS Installation Steps</span>
+                        </div>
+                        <pre><code>1. Download JDK installer (.dmg file)
+2. Double-click the .dmg file
+3. Double-click the package icon
+4. Follow the installation wizard
+5. Enter admin password if prompted
+6. Click "Install"
+
+Default Path: /Library/Java/JavaVirtualMachines/jdk-17.jdk</code></pre>
+                    </div>
+
+                    <h4>🐧 Linux Installation (Ubuntu/Debian)</h4>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Terminal Commands</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code># Update package list
+sudo apt update
+
+# Install OpenJDK 17
+sudo apt install openjdk-17-jdk
+
+# Verify installation
+java -version
+javac -version</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Installation Tips</span>
+                        </div>
+                        <ul>
+                            <li><strong>Installation path ကို မှတ်ထားပါ:</strong> Environment variables set လုပ်တဲ့ အခါ
+                                သုံးရမှာ ဖြစ်ပါတယ်</li>
+                            <li><strong>Admin rights လိုပါတယ်:</strong> Windows/Mac မှာ administrator privileges
+                                ရှိရပါမယ်</li>
+                            <li><strong>Previous versions:</strong> Old Java versions ရှိရင် uninstall မလုပ်လည်း ရပါတယ်၊
+                                multiple versions သုံးလို့ ရပါတယ်</li>
+                            <li><strong>Disk space:</strong> JDK က approximately 300-500 MB ခန့် လိုပါတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 4: Environment Variables -->
+                <section class="content-section">
+                    <h2>4. Setting Environment Variables (Environment Variables Configure လုပ်နည်း)</h2>
+
+                    <p>After installing JDK, you need to set up environment variables so your system knows where to find
+                        Java tools.</p>
+
+                    <h3>Why Environment Variables?</h3>
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ဘာကြောင့် လိုအပ်လဲ?</span>
+                        </div>
+                        <p>Environment variables ကို set မလုပ်ရင် command line (CMD, Terminal) ကနေ <code>javac</code>
+                            နဲ့ <code>java</code> commands တွေ သုံးလို့ မရပါ။</p>
+                        <p>Example: <code>javac HelloWorld.java</code> လို့ ရိုက်လိုက်ရင်
+                            <code>'javac' is not recognized as an internal or external command</code> ဆိုတဲ့ error
+                            ပေါ်ပါတယ်။</p>
+                        <p>Environment variables set လုပ်ပြီးမှ system က JDK ရဲ့ bin folder ထဲက javac.exe/java.exe
+                            တွေကို ရှာတွေ့ပြီး command တွေ အလုပ်လုပ်ပါတယ်။</p>
+                        <p><strong>JAVA_HOME:</strong> JDK installation directory ကို ညွှန်ပြပေးတာ ဖြစ်ပါတယ်</p>
+                        <p><strong>PATH:</strong> Executable files (javac.exe, java.exe) တွေ ရှိတဲ့ folder ကို
+                            ညွှန်ပြပေးတာ ဖြစ်ပါတယ်</p>
+                    </div>
+
+                    <h3>🪟 Windows - Setting Environment Variables</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Windows Steps</span>
+                        </div>
+                        <pre><code>Step 1: Open System Properties
+  - Right-click "This PC" or "My Computer"
+  - Click "Properties"
+  - Click "Advanced system settings"
+  - Click "Environment Variables" button
+
+Step 2: Set JAVA_HOME
+  - Under "System variables", click "New"
+  - Variable name: JAVA_HOME
+  - Variable value: C:\Program Files\Java\jdk-17
+  - Click "OK"
+
+Step 3: Update PATH
+  - Under "System variables", find "Path"
+  - Click "Edit"
+  - Click "New"
+  - Add: %JAVA_HOME%\bin
+  - Click "OK" on all windows
+
+Step 4: Verify
+  - Open NEW Command Prompt (CMD)
+  - Type: java -version
+  - Type: javac -version</code></pre>
+                    </div>
+
+                    <h3>🍎 macOS - Setting Environment Variables</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Terminal Commands</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code># Open terminal and edit bash profile
+nano ~/.bash_profile
+
+# Add these lines (press 'i' to insert):
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Save and exit (press Esc, then type :wq)
+
+# Reload profile
+source ~/.bash_profile
+
+# Verify
+java -version
+javac -version</code></pre>
+                    </div>
+
+                    <h3>🐧 Linux - Setting Environment Variables</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Terminal Commands</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code># Edit bashrc file
+nano ~/.bashrc
+
+# Add these lines at the end:
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Save and exit (Ctrl+X, then Y, then Enter)
+
+# Reload
+source ~/.bashrc
+
+# Verify
+java -version
+javac -version</code></pre>
+                    </div>
+
+                    <h3>Verification (အတည်ပြုခြင်း)</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Command Line</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>java -version</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Expected Output</span>
+                        </div>
+                        <pre><code>java version "17.0.9" 2023-10-17 LTS
+Java(TM) SE Runtime Environment (build 17.0.9+11-LTS-201)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.9+11-LTS-201, mixed mode)</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Command Line</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>javac -version</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Expected Output</span>
+                        </div>
+                        <pre><code>javac 17.0.9</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Troubleshooting</span>
+                        </div>
+                        <p><strong>Error: 'java' is not recognized:</strong></p>
+                        <ul>
+                            <li>Environment variables မှန်ကန်စွာ set လုပ်ထားခြင်း ရှိ/မရှိ စစ်ပါ</li>
+                            <li>Command Prompt/Terminal ကို close ပြီး ပြန်ဖွင့်ပါ (changes ကို reload လုပ်ဖို့)</li>
+                            <li>Computer restart လုပ်ပါ (Windows မှာ တစ်ခါတစ်ရံ လိုပါတယ်)</li>
+                            <li>PATH variable မှာ <code>%JAVA_HOME%\bin</code> ပါဝင်ခြင်း စစ်ပါ</li>
+                        </ul>
+                        <p><strong>Multiple Java versions installed:</strong></p>
+                        <ul>
+                            <li>JAVA_HOME က အသစ်ဆုံး version ကို point လုပ်ထားပါ</li>
+                            <li>PATH မှာ JAVA_HOME\bin က အရှေ့ဆုံးမှာ ရှိအောင် ထားပါ</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 5: IDE Setup -->
+                <section class="content-section">
+                    <h2>5. IDE Setup (IDE ရွေးချယ်ပြီး Install လုပ်နည်း)</h2>
+
+                    <p>An <strong>Integrated Development Environment (IDE)</strong> provides tools for writing,
+                        compiling, running, and debugging Java code all in one place.</p>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">💡</div>
+                            <h3>IntelliJ IDEA</h3>
+                            <p><strong>Recommended for beginners</strong></p>
+                            <p>Intelligent code completion, refactoring, debugging. Free Community Edition available.
+                            </p>
+                            <p><small>Download: https://www.jetbrains.com/idea/</small></p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🌙</div>
+                            <h3>Eclipse IDE</h3>
+                            <p><strong>Popular & Free</strong></p>
+                            <p>Mature, stable, extensive plugin ecosystem. Completely free and open source.</p>
+                            <p><small>Download: https://www.eclipse.org/</small></p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📝</div>
+                            <h3>VS Code</h3>
+                            <p><strong>Lightweight</strong></p>
+                            <p>Fast, modern editor with Java extensions. Good for small projects.</p>
+                            <p><small>Download: https://code.visualstudio.com/</small></p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ဘယ် IDE ကို ရွေးမလဲ?</span>
+                        </div>
+
+                        <p><strong>IntelliJ IDEA (Highly Recommended):</strong></p>
+                        <ul>
+                            <li><strong>Pros:</strong> Smart code completion, excellent refactoring tools, built-in
+                                Maven/Gradle support, great debugger, modern UI</li>
+                            <li><strong>Cons:</strong> Resource-intensive (needs good RAM), Community Edition မှာ
+                                enterprise features တချို့ ပိတ်ထားတယ်</li>
+                            <li><strong>Best for:</strong> Beginners to professionals, large projects, Spring/Java EE
+                                development</li>
+                        </ul>
+
+                        <p><strong>Eclipse IDE:</strong></p>
+                        <ul>
+                            <li><strong>Pros:</strong> Completely free, large plugin ecosystem, good for enterprise
+                                Java, lighter than IntelliJ</li>
+                            <li><strong>Cons:</strong> UI နည်းနည်း outdated, setup လုပ်ရတာ ရှုပ်နိုင်တယ်</li>
+                            <li><strong>Best for:</strong> Students, budget-conscious developers, enterprise projects
+                            </li>
+                        </ul>
+
+                        <p><strong>VS Code:</strong></p>
+                        <ul>
+                            <li><strong>Pros:</strong> Very fast, modern, lightweight, good for multiple languages, free
+                                extensions</li>
+                            <li><strong>Cons:</strong> Java support က extension dependent, IDE features နည်းတယ်</li>
+                            <li><strong>Best for:</strong> Simple projects, quick edits, developers who prefer
+                                lightweight editors</li>
+                        </ul>
+
+                        <p>📌 <strong>Recommendation:</strong> Beginners တွေ အတွက် <strong>IntelliJ IDEA Community
+                                Edition</strong> ကို အကြံပြုပါတယ်။ Setup လွယ်ပြီး beginner-friendly ဖြစ်ပါတယ်။</p>
+                    </div>
+
+                    <h3>Installing IntelliJ IDEA</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Installation Steps</span>
+                        </div>
+                        <pre><code>1. Go to https://www.jetbrains.com/idea/download/
+2. Download "Community Edition" (Free)
+3. Run the installer
+4. Choose installation directory
+5. Create desktop shortcut (recommended)
+6. Select "Create associations" for .java files
+7. Click "Install"
+8. Launch IntelliJ IDEA
+9. Choose UI theme (Light/Dark)
+10. Skip or install featured plugins
+11. Click "Start using IntelliJ IDEA"</code></pre>
+                    </div>
+
+                    <h3>Creating Your First Project in IntelliJ</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Project Setup Steps</span>
+                        </div>
+                        <pre><code>1. Click "New Project"
+2. Select "Java" from left sidebar
+3. Choose Project SDK (select installed JDK)
+   - If not listed, click "Add SDK" → "JDK"
+   - Browse to JDK installation folder
+4. Name your project (e.g., "JavaLearning")
+5. Choose project location
+6. Click "Create"
+7. IDE opens with project structure
+8. Right-click "src" folder → New → Java Class
+9. Name the class (e.g., "HelloWorld")
+10. Write your code
+11. Click green "Run" button</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>IntelliJ Tips</span>
+                        </div>
+                        <ul>
+                            <li><strong>Auto-import:</strong> <code>Alt+Enter</code> (Windows/Linux) or
+                                <code>Option+Enter</code> (Mac) က missing imports တွေ automatically add လုပ်ပေးတယ်</li>
+                            <li><strong>Code completion:</strong> <code>Ctrl+Space</code> က suggestions ပေးတယ်</li>
+                            <li><strong>Run code:</strong> <code>Shift+F10</code> (Windows/Linux) or <code>Ctrl+R</code>
+                                (Mac)</li>
+                            <li><strong>Format code:</strong> <code>Ctrl+Alt+L</code> (Windows/Linux) or
+                                <code>Cmd+Option+L</code> (Mac)</li>
+                            <li><strong>Refactor/Rename:</strong> <code>Shift+F6</code> က variable/class names rename
+                                လုပ်လို့ ရတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 6: Testing Installation -->
+                <section class="content-section">
+                    <h2>6. Testing Your Setup (Setup မှန်/မမှန် စမ်းသပ်ခြင်း)</h2>
+
+                    <p>Let's verify everything is working by creating and running a simple Java program from command
+                        line:</p>
+
+                    <h3>Step 1: Create a Java File</h3>
+                    <p>Open any text editor (Notepad, TextEdit, nano) and create a file named <code>Test.java</code>:
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - Test.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class Test {
+    public static void main(String[] args) {
+        System.out.println("Java setup successful!");
+        System.out.println("JDK version: " + System.getProperty("java.version"));
+        System.out.println("OS: " + System.getProperty("os.name"));
+    }
+}</code></pre>
+                    </div>
+
+                    <h3>Step 2: Compile the Program</h3>
+                    <p>Open Command Prompt/Terminal, navigate to the folder containing Test.java, and compile:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Command Line</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>javac Test.java</code></pre>
+                    </div>
+
+                    <p>If successful, this creates <code>Test.class</code> file (no output = success). If there are
+                        errors, check for typos.</p>
+
+                    <h3>Step 3: Run the Program</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Command Line</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>java Test</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Expected Output</span>
+                        </div>
+                        <pre><code>Java setup successful!
+JDK version: 17.0.9
+OS: Windows 10</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အရေးကြီးတဲ့ မှတ်ချက်များ</span>
+                        </div>
+                        <ul>
+                            <li><code><strong>javac Test.java</strong></code> - Compile လုပ်တဲ့ command, .java file name
+                                နဲ့ သုံးပါ</li>
+                            <li><code><strong>java Test</strong></code> - Run လုပ်တဲ့ command, .class မပါဘဲ class name
+                                တင် သုံးပါ</li>
+                            <li>File name နဲ့ class name က <strong>exactly တူရပါမယ်</strong> (case-sensitive)</li>
+                            <li>Command prompt/terminal ကို Test.java file ရှိတဲ့ folder မှာ ဖွင့်ရပါမယ်</li>
+                            <li>Compile အောင်မြင်ရင် output မရှိပါ၊ error ရှိမှ message ပေါ်ပါတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 7: Key Takeaways -->
+                <section class="content-section">
+                    <h2>7. Key Takeaways (မှတ်သားရမည့် အချက်များ)</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>JDK = JRE + Development Tools:</strong> Developers need JDK, end users need JRE
+                            </li>
+                            <li><strong>JVM:</strong> Executes bytecode, platform-specific, enables WORA</li>
+                            <li><strong>Java 17 LTS or Java 21 LTS:</strong> Recommended versions for new learners</li>
+                            <li><strong>Environment Variables:</strong> JAVA_HOME points to JDK, PATH includes bin
+                                folder</li>
+                            <li><strong>Verify Installation:</strong> <code>java -version</code> and
+                                <code>javac -version</code></li>
+                            <li><strong>IntelliJ IDEA Community:</strong> Best IDE for beginners (free)</li>
+                            <li><strong>Compile:</strong> <code>javac FileName.java</code> creates .class file</li>
+                            <li><strong>Run:</strong> <code>java ClassName</code> executes the program</li>
+                            <li><strong>Command line vs IDE:</strong> Both work, IDE is more convenient</li>
+                            <li><strong>File name = Class name:</strong> Must match exactly (case-sensitive)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Practice Exercise -->
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Quick Quiz</h3>
+                        <p>Test your understanding:</p>
+
+                        <div class="quiz-question">
+                            <p><strong>Q1: What does JDK stand for?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q1" value="a">
+                                    <span>Java Development Kit</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="b">
+                                    <span>Java Deployment Kit</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="c">
+                                    <span>Java Distribution Kit</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: Which command compiles a Java file?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q2" value="a">
+                                    <span>java FileName.java</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="b">
+                                    <span>javac FileName.java</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="c">
+                                    <span>compile FileName.java</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: What does JAVA_HOME environment variable point to?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q3" value="a">
+                                    <span>JDK installation directory</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="b">
+                                    <span>Project directory</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="c">
+                                    <span>Source code folder</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Lesson Navigation -->
+            <div class="lesson-navigation">
+                <a href="lesson-1.html" class="nav-btn prev-btn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Previous Lesson
+                </a>
+                <div class="lesson-actions">
+                    <button class="action-btn" id="bookmarkBtn" onclick="toggleBookmark()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        </svg>
+                        Bookmark
+                    </button>
+                    <button class="action-btn" id="completeBtn" onclick="markComplete()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Mark as Complete
+                    </button>
+                </div>
+                <a href="lesson-3.html" class="nav-btn next-btn">
+                    Next Lesson
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Notes Section -->
+            <div class="notes-section">
+                <div class="notes-header">
+                    <h3>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
+                            <path
+                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+                        </svg>
+                        Your Notes
+                    </h3>
+                    <span class="notes-count">0 notes</span>
+                </div>
+                <textarea id="notesTextarea" class="notes-textarea"
+                    placeholder="Write your notes here... (auto-saved)"></textarea>
+                <div class="notes-saved" id="notesSaved">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Saved
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        // Quiz checker with multiple questions
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                showToast('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'a') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'a') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    Perfect! 3/3 correct! 🎉 You're ready to start coding Java!
+                `;
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg>
+                    ${score}/3 correct. Review the lesson and try again!<br>
+                    <small>Correct answers: Q1=A (Java Development Kit), Q2=B (javac FileName.java), Q3=A (JDK installation directory)</small>
+                `;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Java Comments - Complete Guide | A Coder</title>
+    <meta name="description"
+        content="Learn about Java comments - single-line, multi-line, and documentation comments. Understand when and how to use comments effectively.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Mobile Lesson Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <a href="tutorials.html">Tutorials</a>
+                <span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a>
+                <span>/</span>
+                <span>Lesson 4</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Course Layout -->
+    <div class="course-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Course Progress -->
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">16%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 16%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>4 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <!-- Lessons Navigation -->
+            <nav class="lessons-nav">
+                <!-- Module 1 -->
+                <div class="module">
+                    <button class="module-header active" data-module="1">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">What is Java</span>
+                            <span class="lesson-duration">10 min</span>
+                            <svg class="check-icon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Environment Setup</span>
+                            <span class="lesson-duration">15 min</span>
+                            <svg class="check-icon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">First Java Program</span>
+                            <span class="lesson-duration">12 min</span>
+                            <svg class="check-icon" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item active">
+                            <span class="lesson-number">4</span>
+                            <span class="lesson-title">Java Comments</span>
+                            <span class="lesson-duration">8 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item">
+                            <span class="lesson-number">5</span>
+                            <span class="lesson-title">Variables and Literals</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item">
+                            <span class="lesson-number">6</span>
+                            <span class="lesson-title">Data Types</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item">
+                            <span class="lesson-number">7</span>
+                            <span class="lesson-title">Operators</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <span class="lesson-number">8</span>
+                            <span class="lesson-title">Constants & Final</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <span class="lesson-number">9</span>
+                            <span class="lesson-title">If-Else Statements</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <span class="lesson-number">10</span>
+                            <span class="lesson-title">Switch Statements</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <span class="lesson-number">11</span>
+                            <span class="lesson-title">For Loops</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <span class="lesson-number">12</span>
+                            <span class="lesson-title">While Loops</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item">
+                            <span class="lesson-number">13</span>
+                            <span class="lesson-title">Methods</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item">
+                            <span class="lesson-number">14</span>
+                            <span class="lesson-title">Parameters</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item">
+                            <span class="lesson-number">15</span>
+                            <span class="lesson-title">Return Values</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item">
+                            <span class="lesson-number">16</span>
+                            <span class="lesson-title">Method Overloading</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item">
+                            <span class="lesson-number">17</span>
+                            <span class="lesson-title">Arrays</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item">
+                            <span class="lesson-number">18</span>
+                            <span class="lesson-title">Multi-dimensional Arrays</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item">
+                            <span class="lesson-number">19</span>
+                            <span class="lesson-title">Arrays with For Each</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item">
+                            <span class="lesson-number">20</span>
+                            <span class="lesson-title">ArrayList</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item">
+                            <span class="lesson-number">21</span>
+                            <span class="lesson-title">Classes & Objects</span>
+                            <span class="lesson-duration">18 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item">
+                            <span class="lesson-number">22</span>
+                            <span class="lesson-title">Constructors</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item">
+                            <span class="lesson-number">23</span>
+                            <span class="lesson-title">Access Modifiers</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item">
+                            <span class="lesson-number">24</span>
+                            <span class="lesson-title">Super, This Keyword</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="course-content">
+            <!-- Mobile Header -->
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open lesson menu">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <span>Lessons</span>
+                </button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 4 of 24</span>
+                    <span class="mobile-lesson-title">Java Comments</span>
+                </div>
+            </div>
+
+            <!-- Lesson Header -->
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 4</span>
+                    <span class="lesson-duration">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg>
+                        8 min read
+                    </span>
+                </div>
+                <h1 class="lesson-title">Java Comments</h1>
+                <p class="lesson-description">Code မှာ comments တွေ ထည့်ခြင်း၊ comment အမျိုးအစားတွေ၊ ဘယ်အချိန်မှာ
+                    သုံးသင့်လဲ၊ best practices တွေကို လေ့လာကြမယ်။ Comments က code ကို နားလည်ရ လွယ်ကူစေပြီး maintenance
+                    လုပ်ရတာ ပိုကောင်းစေပါတယ်။</p>
+            </div>
+
+            <!-- Lesson Content -->
+            <article class="lesson-article">
+                <!-- Section 1: What are Comments -->
+                <section class="content-section">
+                    <h2>1. Comments ဆိုတာ ဘာလဲ?</h2>
+
+                    <p>Comments are text notes in your code that are <strong>ignored by the compiler</strong>. They are
+                        used to explain what the code does, making it easier for you and others to understand the
+                        program.</p>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အခြေခံ အဓိပ္ပာယ်</span>
+                        </div>
+                        <p><strong>Comments</strong> ဆိုတာ code ထဲမှာ ရေးထားတဲ့ မှတ်ချက်တွေ သို့မဟုတ် ရှင်းလင်းချက်တွေ
+                            ဖြစ်ပါတယ်။ Compiler က comments တွေကို <strong>လုံးဝ လျစ်လျူရှုပါတယ်</strong> - compile
+                            လုပ်တဲ့ အခါ skip လုပ်သွားပါတယ်။</p>
+
+                        <p><strong>ဘာကြောင့် လိုအပ်လဲ?</strong></p>
+                        <ul>
+                            <li><strong>Code ကို နားလည်ရ လွယ်စေတယ်:</strong> Complex logic တွေကို ရှင်းပြနိုင်တယ်</li>
+                            <li><strong>Documentation:</strong> Function/Method က ဘာလုပ်တာလဲ မှတ်တမ်းတင်နိုင်တယ်</li>
+                            <li><strong>Team collaboration:</strong> အခြား developers တွေ code နားလည်အောင် ကူညီပေးတယ်
+                            </li>
+                            <li><strong>Debugging:</strong> Code အပိုင်းတစ်ခုကို ယာယီ ပိတ်ထားလို့ ရတယ် (comment out)
+                            </li>
+                            <li><strong>Reminders:</strong> TODO, FIXME စတဲ့ မှတ်သားရမည့် အရာတွေ မှတ်ထားလို့ ရတယ်</li>
+                        </ul>
+
+                        <p><strong>Key Point:</strong> Comments က program ရဲ့ behavior ကို မပြောင်းပါ။ Compiler က ignore
+                            လုပ်လို့ output မှာ သက်ရောက်မှု မရှိပါ။</p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">💬</div>
+                            <h3>Single-Line</h3>
+                            <p>Short comments on one line using //</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📝</div>
+                            <h3>Multi-Line</h3>
+                            <p>Longer comments spanning multiple lines using /* */</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📚</div>
+                            <h3>Documentation</h3>
+                            <p>Special comments for API docs using /** */</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2: Single-Line Comments -->
+                <section class="content-section">
+                    <h2>2. Single-Line Comments (တစ်ကြောင်းတည်း မှတ်ချက်)</h2>
+
+                    <p>Single-line comments start with <code>//</code> and continue to the end of the line. Everything
+                        after <code>//</code> is ignored by the compiler.</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - SingleLineExample.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class SingleLineExample {
+    public static void main(String[] args) {
+        // This is a single-line comment
+        System.out.println("Hello, World!");
+        
+        // Print the current year
+        System.out.println("Year: 2024");
+        
+        int age = 25;  // Variable to store age
+        
+        // Calculate next year's age
+        int nextAge = age + 1;
+        System.out.println("Next year: " + nextAge);  // Output: 26
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Hello, World!
+Year: 2024
+Next year: 26</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အသုံးပြုနည်း အသေးစိတ်</span>
+                        </div>
+
+                        <p><strong>Syntax:</strong> <code>//</code> နဲ့ စပါတယ်။ Double forward slashes သုံးပါတယ်။</p>
+
+                        <p><strong>Usage patterns:</strong></p>
+                        <ul>
+                            <li><strong>Above the code:</strong> Code အပေါ်မှာ comment ထည့်ပြီး ဘာလုပ်မယ် ဆိုတာ
+                                ရှင်းပြပါ
+                                <pre><code>// Calculate total price
+int total = price * quantity;</code></pre>
+                            </li>
+                            <li><strong>End of line:</strong> Code ရဲ့ အဆုံးမှာ comment ထည့်ပြီး ရှင်းလင်းချက် ပေးပါ
+                                <pre><code>int age = 18;  // Legal age for voting</code></pre>
+                            </li>
+                            <li><strong>Standalone line:</strong> သီးခြား line တစ်ကြောင်းလုံး comment အဖြစ် သုံးပါ
+                                <pre><code>// This section handles user authentication</code></pre>
+                            </li>
+                        </ul>
+
+                        <p><strong>ဘယ်အချိန်မှာ သုံးသင့်လဲ?</strong></p>
+                        <ul>
+                            <li>တိုတောင်းတဲ့ ရှင်းလင်းချက်တွေ အတွက်</li>
+                            <li>Variable/constant ရဲ့ purpose ရှင်းပြချင်တဲ့ အခါ</li>
+                            <li>Code တစ်ကြောင်း သို့မဟုတ် နှစ်ကြောင်း အကြောင်း ရှင်းပြချင်တဲ့ အခါ</li>
+                            <li>TODO, FIXME markers ထည့်ချင်တဲ့ အခါ</li>
+                        </ul>
+
+                        <p><strong>📌 အရေးကြီးတဲ့ စည်းမျဉ်း:</strong> <code>//</code> နောက်က အရာအားလုံး comment
+                            ဖြစ်ပါတယ် (same line မှာ)။ Next line က ပုံမှန် code ပြန်ဖြစ်ပါတယ်။</p>
+                    </div>
+
+                    <h3>Commenting Out Code (Code ကို ယာယီ ပိတ်ထားခြင်း)</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class DebugExample {
+    public static void main(String[] args) {
+        System.out.println("Program started");
+        
+        // Temporarily disabled for testing
+        // System.out.println("Debug info");
+        // int debugValue = 100;
+        
+        System.out.println("Program ended");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Commenting Out ရဲ့ အသုံးဝင်ပုံ</span>
+                        </div>
+                        <p><strong>Debugging:</strong> Code အပိုင်းတစ်ခုကို ယာယီ ပိတ်ပြီး ပြဿနာ ရှာချင်တဲ့ အခါ
+                            သုံးပါတယ်။ Code ကို delete မလုပ်ဘဲ comment out လုပ်ထားလို့ နောက်မှ ပြန်ဖွင့်လို့ ရပါတယ်။</p>
+                        <p><strong>Testing alternatives:</strong> Code ရဲ့ different versions တွေကို စမ်းချင်တဲ့ အခါ old
+                            code ကို comment out လုပ်ပြီး new code ရေးနိုင်ပါတယ်။</p>
+                        <p><strong>⚠️ Warning:</strong> Commented code ကို production မှာ မထားသင့်ပါ။ Debugging ပြီးရင်
+                            ဖျက်ပစ်ပါ။</p>
+                    </div>
+                </section>
+
+                <!-- Section 3: Multi-Line Comments -->
+                <section class="content-section">
+                    <h2>3. Multi-Line Comments (များကြောင်း မှတ်ချက်)</h2>
+
+                    <p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. Everything between
+                        these markers is ignored by the compiler, even if it spans multiple lines.</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - MultiLineExample.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class MultiLineExample {
+    public static void main(String[] args) {
+        /*
+         * This is a multi-line comment
+         * It can span multiple lines
+         * Compiler ignores everything between /* and */
+         */
+        System.out.println("Hello!");
+        
+        /* 
+           Calculate the area of a rectangle
+           Formula: length * width
+           Author: Your Name
+           Date: 2024-01-15
+        */
+        int length = 10;
+        int width = 5;
+        int area = length * width;
+        System.out.println("Area: " + area);
+        
+        /* This can also be on a single line */
+        int x = 100;
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Hello!
+Area: 50</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အသုံးပြုနည်း အသေးစိတ်</span>
+                        </div>
+
+                        <p><strong>Syntax:</strong></p>
+                        <ul>
+                            <li>Start: <code>/*</code></li>
+                            <li>End: <code>*/</code></li>
+                            <li>အကြားက အရာအားလုံး comment ဖြစ်ပါတယ်</li>
+                        </ul>
+
+                        <p><strong>Common formatting styles:</strong></p>
+                        <div class="code-block">
+                            <pre><code>/* Simple style */
+
+/*
+ * Asterisk-aligned style
+ * Second line
+ * Third line
+ */
+
+/* 
+   Indented style
+   Second line
+   Third line
+*/</code></pre>
+                        </div>
+
+                        <p><strong>ဘယ်အချိန်မှာ သုံးသင့်လဲ?</strong></p>
+                        <ul>
+                            <li><strong>Long descriptions:</strong> Complex logic ကို အသေးစိတ် ရှင်းပြချင်တဲ့ အခါ</li>
+                            <li><strong>File headers:</strong> File information, copyright, author details တွေ ထည့်တဲ့
+                                အခါ</li>
+                            <li><strong>Algorithm explanations:</strong> Step-by-step process တွေ document လုပ်တဲ့ အခါ
+                            </li>
+                            <li><strong>Temporary disabling:</strong> Code block ကြီးကို ယာယီ ပိတ်ထားချင်တဲ့ အခါ</li>
+                        </ul>
+
+                        <p><strong>⚠️ Warning:</strong> Multi-line comments တွေက nested (တစ်ခုအတွင်းမှာ တစ်ခု) လုပ်လို့
+                            မရပါ!</p>
+                        <div class="code-block">
+                            <pre><code>/* Outer comment
+   /* Inner comment - THIS WILL CAUSE ERROR! */
+*/</code></pre>
+                        </div>
+                    </div>
+
+                    <h3>Commenting Out Code Blocks</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class Example {
+    public static void main(String[] args) {
+        System.out.println("Active code");
+        
+        /*
+        // Disabled feature
+        int oldCalculation = 10 * 20;
+        System.out.println("Old way: " + oldCalculation);
+        
+        // More disabled code
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+        */
+        
+        // New implementation
+        int newCalculation = 15 * 20;
+        System.out.println("New way: " + newCalculation);
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Use Cases</span>
+                        </div>
+                        <p>Multi-line comments က code block များများ ပိတ်ချင်တဲ့ အခါ အဆင်ပြေပါတယ်။ Single-line comments
+                            နဲ့ ပိတ်ရင် line တစ်ကြောင်းချင်းစီ <code>//</code> ထည့်ရလို့ ပိုပင်ပန်းပါတယ်။</p>
+                        <p>Multi-line comments အတွင်းမှာ single-line comments တွေ ပါနိုင်ပါတယ်။ ဒါပေမယ့် multi-line
+                            comments nested မလုပ်နိုင်တာ သတိထားပါ။</p>
+                        </info-box>
+                </section>
+
+                <!-- Section 4: Documentation Comments (Javadoc) -->
+                <section class="content-section">
+                    <h2>4. Documentation Comments (Javadoc)</h2>
+
+                    <p>Documentation comments are special comments that start with <code>/**</code> and end with
+                        <code>*/</code>. They are used to generate API documentation automatically using the
+                        <strong>javadoc</strong> tool.</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - JavadocExample.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>/**
+ * This class demonstrates Javadoc comments.
+ * It provides methods for basic arithmetic operations.
+ * 
+ * @author Your Name
+ * @version 1.0
+ * @since 2024-01-15
+ */
+public class Calculator {
+    
+    /**
+     * Adds two integers and returns the result.
+     * 
+     * @param a the first integer
+     * @param b the second integer
+     * @return the sum of a and b
+     */
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    /**
+     * Subtracts the second integer from the first.
+     * 
+     * @param a the first integer (minuend)
+     * @param b the second integer (subtrahend)
+     * @return the difference of a and b
+     * @throws IllegalArgumentException if b is greater than a
+     */
+    public int subtract(int a, int b) {
+        if (b > a) {
+            throw new IllegalArgumentException("b cannot be greater than a");
+        }
+        return a - b;
+    }
+    
+    /**
+     * Calculates the area of a rectangle.
+     * 
+     * <p>This method multiplies length and width to get the area.
+     * Both parameters must be positive.</p>
+     * 
+     * @param length the length of the rectangle
+     * @param width the width of the rectangle
+     * @return the area of the rectangle
+     * @see #calculatePerimeter(int, int)
+     */
+    public int calculateArea(int length, int width) {
+        return length * width;
+    }
+    
+    /**
+     * Calculates the perimeter of a rectangle.
+     * 
+     * @param length the length of the rectangle
+     * @param width the width of the rectangle
+     * @return the perimeter of the rectangle
+     * @see #calculateArea(int, int)
+     */
+    public int calculatePerimeter(int length, int width) {
+        return 2 * (length + width);
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Javadoc အကြောင်း အသေးစိတ်</span>
+                        </div>
+
+                        <p><strong>Syntax:</strong> <code>/**</code> နဲ့ start လုပ်ပြီး <code>*/</code> နဲ့ end
+                            ဖြစ်ပါတယ်။ Multi-line comment နဲ့ ဆင်တယ်၊ ဒါပေမယ့် extra asterisk (*) တစ်ခု ပိုပါတယ်။</p>
+
+                        <p><strong>Common Javadoc Tags:</strong></p>
+                        <ul>
+                            <li><code>@author</code> - Code ရေးသူ အမည်</li>
+                            <li><code>@version</code> - Version number</li>
+                            <li><code>@since</code> - ဘယ် version/date မှာ စတင် ထည့်သွင်းခဲ့လဲ</li>
+                            <li><code>@param</code> - Method parameter ရှင်းလင်းချက်</li>
+                            <li><code>@return</code> - Return value ရှင်းလင်းချက်</li>
+                            <li><code>@throws</code> / <code>@exception</code> - Exception တွေ ဖြစ်နိုင်တာ ရှင်းပြတယ်
+                            </li>
+                            <li><code>@see</code> - Related methods/classes တွေ ညွှန်းပြတယ်</li>
+                            <li><code>@deprecated</code> - အဲ့ဒီ method/class က outdated ဖြစ်ပြီဆိုတာ mark လုပ်တယ်</li>
+                        </ul>
+
+                        <p><strong>ဘာကြောင့် အရေးကြီးလဲ?</strong></p>
+                        <ul>
+                            <li><strong>Professional documentation:</strong> javadoc tool က HTML documentation ကို
+                                automatically generate လုပ်ပေးပါတယ်</li>
+                            <li><strong>IDE support:</strong> Modern IDEs တွေက Javadoc ကို ဖတ်ပြီး tooltips,
+                                autocomplete မှာ information ပြပါတယ်</li>
+                            <li><strong>API documentation:</strong> Library developers တွေ သုံးတဲ့ standard format ပါ
+                            </li>
+                            <li><strong>Team collaboration:</strong> Method/class က ဘာလုပ်တယ်ဆိုတာ ပြတ်ပြတ်သားသား
+                                သိစေပါတယ်</li>
+                        </ul>
+
+                        <p><strong>Generating documentation:</strong></p>
+                        <pre><code>javadoc Calculator.java</code></pre>
+                        <p>ဒါက HTML files တွေ generate လုပ်ပေးမှာပါ။ Browser နဲ့ ဖွင့်ကြည့်လို့ ရပါတယ်။</p>
+                    </div>
+
+                    <h3>Class-Level vs Method-Level Javadoc</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>/**
+ * Represents a student in the school system.
+ * This class stores student information and provides
+ * methods to manage student data.
+ * 
+ * @author School Admin
+ * @version 2.0
+ */
+public class Student {
+    
+    /** Student's unique ID number */
+    private int studentId;
+    
+    /** Student's full name */
+    private String name;
+    
+    /**
+     * Creates a new Student with the given ID and name.
+     * 
+     * @param studentId unique identifier for the student
+     * @param name full name of the student
+     */
+    public Student(int studentId, String name) {
+        this.studentId = studentId;
+        this.name = name;
+    }
+    
+    /**
+     * Gets the student's ID.
+     * 
+     * @return the student's unique ID number
+     */
+    public int getStudentId() {
+        return studentId;
+    }
+    
+    /**
+     * Gets the student's name.
+     * 
+     * @return the student's full name
+     */
+    public String getName() {
+        return name;
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ဘယ်နေရာမှာ သုံးသင့်လဲ?</span>
+                        </div>
+                        <ul>
+                            <li><strong>Class level:</strong> Class ရဲ့ purpose, version, author တွေ document လုပ်ပါ
+                            </li>
+                            <li><strong>Method level:</strong> Method ရဲ့ functionality, parameters, return value,
+                                exceptions တွေ document လုပ်ပါ</li>
+                            <li><strong>Field level:</strong> Important instance variables တွေကို ရှင်းပြပါ
+                                (တိုတောင်းရင် <code>/** */</code> one-liner သုံးလို့ ရပါတယ်)</li>
+                            <li><strong>Constructor level:</strong> Constructor parameters တွေနဲ့ initialization logic
+                                ကို ရှင်းပြပါ</li>
+                        </ul>
+                        <p>📌 Public APIs, libraries, frameworks တွေမှာ Javadoc က <strong>မဖြစ်မနေ</strong>
+                            ထည့်သင့်ပါတယ်။</p>
+                    </div>
+                </section>
+
+                <!-- Section 5: Best Practices -->
+                <section class="content-section">
+                    <h2>5. Comment Best Practices (အကောင်းဆုံး အလေ့အကျင့်များ)</h2>
+
+                    <div class="highlight-box">
+                        <h3>✅ Good Comment Practices</h3>
+
+                        <h4>1. Explain WHY, not WHAT</h4>
+                        <div class="code-block">
+                            <pre><code>// ❌ Bad: Explains what (obvious from code)
+int age = 25;  // Set age to 25
+
+// ✅ Good: Explains why
+int age = 25;  // Minimum age required for insurance eligibility</code></pre>
+                        </div>
+
+                        <h4>2. Keep comments updated</h4>
+                        <div class="code-block">
+                            <pre><code>// ❌ Bad: Outdated comment
+// Calculate discount as 10%
+double discount = price * 0.20;  // Actually 20% now!
+
+// ✅ Good: Accurate comment
+// Calculate discount as 20% for premium members
+double discount = price * 0.20;</code></pre>
+                        </div>
+
+                        <h4>3. Use comments for complex logic</h4>
+                        <div class="code-block">
+                            <pre><code>// ✅ Good: Explains complex algorithm
+// Binary search algorithm - O(log n) time complexity
+// Divides search space in half each iteration
+int mid = (low + high) / 2;</code></pre>
+                        </div>
+
+                        <h4>4. Add TODO and FIXME markers</h4>
+                        <div class="code-block">
+                            <pre><code>// TODO: Implement input validation
+// FIXME: Bug when input is negative
+// NOTE: This method is performance-critical
+// HACK: Temporary workaround until API is fixed</code></pre>
+                        </div>
+
+                        <h4>5. Comment public APIs</h4>
+                        <div class="code-block">
+                            <pre><code>/**
+ * ✅ Good: Complete documentation for public method
+ * Validates user email format.
+ * 
+ * @param email the email address to validate
+ * @return true if valid, false otherwise
+ */
+public boolean validateEmail(String email) {
+    // Implementation
+    return email.contains("@");
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h3>⚠️ Bad Comment Practices (ရှောင်ကြဉ်သင့်တာများ)</h3>
+
+                        <h4>1. Stating the obvious</h4>
+                        <div class="code-block">
+                            <pre><code>// ❌ Bad: Obvious from code
+int x = 10;  // Assign 10 to x
+x++;  // Increment x by 1</code></pre>
+                        </div>
+
+                        <h4>2. Commented-out code without explanation</h4>
+                        <div class="code-block">
+                            <pre><code>// ❌ Bad: No context
+// int oldValue = 100;
+// System.out.println(oldValue);
+
+// ✅ Better: Explain why commented
+// Old implementation - removed after performance testing
+// Keeping for reference until version 2.0 release
+// int oldValue = 100;</code></pre>
+                        </div>
+
+                        <h4>3. Redundant comments</h4>
+                        <div class="code-block">
+                            <pre><code>// ❌ Bad: Comment repeats method name
+/**
+ * Gets the name.
+ * @return the name
+ */
+public String getName() {
+    return name;
+}
+
+// ✅ Better: Add value
+/**
+ * Returns the user's full name including middle initial if available.
+ * @return formatted full name
+ */
+public String getName() {
+    return name;
+}</code></pre>
+                        </div>
+
+                        <h4>4. Excessive comments</h4>
+                        <div class="code-block">
+                            <pre><code>// ❌ Bad: Too many obvious comments
+public void calculateTotal() {
+    // Declare variable for price
+    int price = 100;
+    // Declare variable for quantity
+    int quantity = 5;
+    // Multiply price and quantity
+    int total = price * quantity;
+    // Print the total
+    System.out.println(total);
+}
+
+// ✅ Better: One meaningful comment
+public void calculateTotal() {
+    // Calculate order total with current pricing
+    int total = 100 * 5;
+    System.out.println(total);
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Golden Rules (ရွှေစည်းမျဉ်းများ)</span>
+                        </div>
+                        <ul>
+                            <li><strong>Write self-documenting code first:</strong> Variable/method names ကို
+                                ရှင်းရှင်းလင်းလင်း ပေးပါ။ Comment မလိုအောင် code က clear ဖြစ်သင့်ပါတယ်</li>
+                            <li><strong>Comment the "why", not the "what":</strong> Code က "what" ကို ပြနေပြီးသား။
+                                Comment က "why" ကို ရှင်းပြပါ</li>
+                            <li><strong>Keep comments concise:</strong> တိုတောင်းပြီး သဘောပေါက်လွယ်အောင် ရေးပါ</li>
+                            <li><strong>Update comments when code changes:</strong> Code ပြောင်းရင် comment ကိုလည်း
+                                update လုပ်ပါ</li>
+                            <li><strong>Remove unused commented code:</strong> Production မှာ commented code မထားပါနဲ့
+                            </li>
+                            <li><strong>Use Javadoc for public APIs:</strong> Public methods/classes တွေမှာ Javadoc
+                                သုံးပါ</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 6: Key Takeaways -->
+                <section class="content-section">
+                    <h2>6. Key Takeaways (မှတ်သားရမည့် အချက်များ)</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>Single-line comments:</strong> <code>//</code> - Short, one-line explanations
+                            </li>
+                            <li><strong>Multi-line comments:</strong> <code>/* */</code> - Longer explanations spanning
+                                multiple lines</li>
+                            <li><strong>Documentation comments:</strong> <code>/** */</code> - Javadoc for generating
+                                API documentation</li>
+                            <li><strong>Comments are ignored by compiler</strong> - No effect on program execution</li>
+                            <li><strong>Explain WHY, not WHAT</strong> - Code shows what, comments explain why</li>
+                            <li><strong>Keep comments updated</strong> - Outdated comments are worse than no comments
+                            </li>
+                            <li><strong>Use Javadoc for public APIs</strong> - Essential for libraries and frameworks
+                            </li>
+                            <li><strong>Avoid obvious comments</strong> - Don't state what's clear from code</li>
+                            <li><strong>Use TODO/FIXME markers</strong> - Track work that needs to be done</li>
+                            <li><strong>Self-documenting code is best</strong> - Clear names reduce need for comments
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Practice Exercise -->
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Practice Exercise</h3>
+                        <p><strong>Task:</strong> Add appropriate comments to this code:</p>
+
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-language">Java - Before</span>
+                            </div>
+                            <pre><code>public class Circle {
+    private double radius;
+    
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    
+    public double calculateArea() {
+        return 3.14159 * radius * radius;
+    }
+    
+    public double calculateCircumference() {
+        return 2 * 3.14159 * radius;
+    }
+}</code></pre>
+                        </div>
+
+                        <p><strong>Add:</strong></p>
+                        <ul>
+                            <li>Class-level Javadoc comment</li>
+                            <li>Constructor Javadoc comment</li>
+                            <li>Method Javadoc comments with @param and @return tags</li>
+                            <li>Inline comment explaining the formulas</li>
+                        </ul>
+
+                        <h3>💡 Quick Quiz</h3>
+
+                        <div class="quiz-question">
+                            <p><strong>Q1: Which comment type is used for generating API documentation?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q1" value="a">
+                                    <span>// Single-line comment</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="b">
+                                    <span>/* Multi-line comment */</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="c">
+                                    <span>/** Javadoc comment */</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: Are comments compiled into bytecode?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q2" value="a">
+                                    <span>Yes, all comments are compiled</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="b">
+                                    <span>No, compiler ignores all comments</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="c">
+                                    <span>Only Javadoc comments are compiled</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: What should comments primarily explain?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q3" value="a">
+                                    <span>What the code does</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="b">
+                                    <span>Why the code does it</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="c">
+                                    <span>How to run the code</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Lesson Navigation -->
+            <div class="lesson-navigation">
+                <a href="lesson-3.html" class="nav-btn prev-btn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Previous Lesson
+                </a>
+                <div class="lesson-actions">
+                    <button class="action-btn" id="bookmarkBtn" onclick="toggleBookmark()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        </svg>
+                        Bookmark
+                    </button>
+                    <button class="action-btn" id="completeBtn" onclick="markComplete()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Mark as Complete
+                    </button>
+                </div>
+                <a href="lesson-5.html" class="nav-btn next-btn">
+                    Next Lesson
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Notes Section -->
+            <div class="notes-section">
+                <div class="notes-header">
+                    <h3>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
+                            <path
+                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+                        </svg>
+                        Your Notes
+                    </h3>
+                    <span class="notes-count">0 notes</span>
+                </div>
+                <textarea id="notesTextarea" class="notes-textarea"
+                    placeholder="Write your notes here... (auto-saved)"></textarea>
+                <div class="notes-saved" id="notesSaved">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Saved
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        // Quiz checker
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                showToast('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'c') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'b') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    Perfect! 3/3 correct! 🎉 Module 1 completed!
+                `;
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg>
+                    ${score}/3 correct. Review the lesson!<br>
+                    <small>Correct: Q1=C (Javadoc /** */), Q2=B (Compiler ignores all), Q3=B (Explain why)</small>
+                `;
+            }
+        }
+    </script>
+</body>
+
+</html>

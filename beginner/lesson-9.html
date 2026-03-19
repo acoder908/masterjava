@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9: If-Else Statements - Master Java Conditionals | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- .................naver........... -->
+    <div id="header"></div>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 9</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="course-layout">
+        <!-- W3Schools-style Sidebar for Lesson 9 -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">37%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 37%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>9 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow (ACTIVE) -->
+                <div class="module active">
+                    <button class="module-header active" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-9.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="lesson-content">
+            <div class="lesson-header">
+                <div class="lesson-badge">Module 3 - Lesson 9</div>
+                <h1>If-Else Statements: Making Decisions in Java</h1>
+                <p class="lesson-description">Control flow ရဲ့ အခြေခံ - conditions တွေအပေါ် မူတည်ပြီး code က ဘယ်လို run
+                    မလဲ ဆုံးဖြတ်နည်းကို လေ့လာကြမယ်။</p>
+                <div class="lesson-meta">
+                    <span>⏱️ 45 minutes</span>
+                    <span>📚 Intermediate</span>
+                    <span>💻 Hands-on Practice</span>
+                </div>
+            </div>
+
+            <!-- What You'll Learn -->
+            <section class="content-section">
+                <h2>🎯 သင် သင်ယူမည့် အရာများ</h2>
+                <div class="info-box burmese">
+                    <p>ဒီ lesson မှာ သင် သင်ယူမည့် အရာများ:</p>
+                    <ul>
+                        <li>If statement ရဲ့ syntax နဲ့ အလုပ်လုပ်ပုံ</li>
+                        <li>If-else နဲ့ if-else-if အသုံးပြုနည်း</li>
+                        <li>Nested if statements (if ထဲမှာ if)</li>
+                        <li>Comparison operators (==, !=, >, <,>=, <=)< /li>
+                        <li>Logical operators (&&, ||, !) နဲ့ ပေါင်းစပ်အသုံးပြုခြင်း</li>
+                        <li>Real-world examples များ</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <section class="content-section">
+                <h2>📖 If Statements ဆိုတာ ဘာလဲ?</h2>
+                <p>If statement ဆိုတာ program မှာ decision making လုပ်ဖို့ အသုံးပြုတဲ့ control flow statement တစ်ခုပါ။
+                    သင့် program က conditions တွေအပေါ် မူတည်ပြီး မတူညီတဲ့ code blocks တွေကို execute လုပ်နိုင်ပါတယ်။</p>
+
+                <div class="info-box burmese">
+                    <p><strong>နေ့စဉ်ဘဝမှာ ဥပမာ:</strong></p>
+                    <ul>
+                        <li>အကယ်၍ မိုးရွာနေရင် → ထီးကိုင်ပါ</li>
+                        <li>အကယ်၍ အပူချိန် > 30°C ဖြစ်ရင် → AC ဖွင့်ပါ</li>
+                        <li>အကယ်၍ score >= 50 ဖြစ်ရင် → Pass, မဟုတ်ရင် → Fail</li>
+                    </ul>
+                    <p>Programming မှာလည်း အတူတူပါပဲ!</p>
+                </div>
+            </section>
+
+            <!-- Basic If Statement -->
+            <section class="content-section">
+                <h2>🔹 Simple If Statement</h2>
+                <p>အရိုးရှင်းဆုံး if statement ရဲ့ syntax:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>if (condition) {
+    // condition က true ဖြစ်ရင် ဒီ code block run မယ်
+    statement;
+}</code></pre>
+                </div>
+
+                <h3>Example: အသက် စစ်ဆေးခြင်း</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class AgeCheck {
+    public static void main(String[] args) {
+        int age = 20;
+        
+        if (age >= 18) {
+            System.out.println("You are an adult!");
+        }
+        
+        System.out.println("Program finished.");
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>You are an adult!
+Program finished.</pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>ရှင်းလင်းချက်:</strong></p>
+                    <ul>
+                        <li>age >= 18 က true ဖြစ်လို့ if block ထဲက code run တယ်</li>
+                        <li>System.out.println("Program finished.") က if block အပြင်မှာ ရှိလို့ အမြဲ run တယ်</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- If-Else Statement -->
+            <section class="content-section">
+                <h2>🔹 If-Else Statement</h2>
+                <p>Condition က true မဟုတ်ရင် တခြား code block တစ်ခု run ချင်ရင် else သုံးပါ:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>if (condition) {
+    // condition က true ဖြစ်ရင် run မယ်
+} else {
+    // condition က false ဖြစ်ရင် run မယ်
+}</code></pre>
+                </div>
+
+                <h3>Example: Pass/Fail စစ်ဆေးခြင်း</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class ExamResult {
+    public static void main(String[] args) {
+        int score = 45;
+        
+        if (score >= 50) {
+            System.out.println("Congratulations! You passed!");
+            System.out.println("Your score: " + score);
+        } else {
+            System.out.println("Sorry, you failed.");
+            System.out.println("Your score: " + score);
+            System.out.println("Try again!");
+        }
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>Sorry, you failed.
+Your score: 45
+Try again!</pre>
+                </div>
+            </section>
+
+            <!-- If-Else-If Ladder -->
+            <section class="content-section">
+                <h2>🔹 If-Else-If Ladder</h2>
+                <p>Conditions အများကြီး စစ်ဆေးချင်ရင် else if သုံးပါ:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>if (condition1) {
+    // condition1 true ဖြစ်ရင်
+} else if (condition2) {
+    // condition2 true ဖြစ်ရင်
+} else if (condition3) {
+    // condition3 true ဖြစ်ရင်
+} else {
+    // အားလုံး false ဖြစ်ရင်
+}</code></pre>
+                </div>
+
+                <h3>Example: Grade System</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class GradeSystem {
+    public static void main(String[] args) {
+        int marks = 75;
+        String grade;
+        
+        if (marks >= 90) {
+            grade = "A - Excellent!";
+        } else if (marks >= 80) {
+            grade = "B - Very Good!";
+        } else if (marks >= 70) {
+            grade = "C - Good!";
+        } else if (marks >= 50) {
+            grade = "D - Pass";
+        } else {
+            grade = "F - Fail";
+        }
+        
+        System.out.println("Your marks: " + marks);
+        System.out.println("Your grade: " + grade);
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>Your marks: 75
+Your grade: C - Good!</pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>အရေးကြီးတဲ့ အချက်:</strong></p>
+                    <ul>
+                        <li>If-else-if ladder က အပေါ်ကနေ အောက်ကို စစ်တယ်</li>
+                        <li>ပထမ true condition တွေ့ရင် ကျန်တာတွေ မစစ်တော့ဘူး</li>
+                        <li>Condition order က အရေးကြီးတယ် (အပေါ်မှာ ပိုတင်းကျပ်တဲ့ condition ထားပါ)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Comparison Operators -->
+            <section class="content-section">
+                <h2>🔹 Comparison Operators</h2>
+                <p>Conditions စစ်ဆေးဖို့ အသုံးပြုတဲ့ operators:</p>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>ဆိုလိုချက်</th>
+                                <th>Example</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>==</code></td>
+                                <td>တူညီသည်</td>
+                                <td>5 == 5</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td><code>!=</code></td>
+                                <td>မတူညီသည်</td>
+                                <td>5 != 3</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td><code>></code></td>
+                                <td>ပိုကြီးသည်</td>
+                                <td>7 > 5</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td><code><</code></td>
+                                <td>ပိုသေးသည်</td>
+                                <td>3 < 5</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td><code>>=</code></td>
+                                <td>ပိုကြီးသည် သို့မဟုတ် တူညီသည်</td>
+                                <td>5 >= 5</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td><code><=</code></td>
+                                <td>ပိုသေးသည် သို့မဟုတ် တူညီသည်</td>
+                                <td>3 <= 5</td>
+                                <td>true</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>⚠️ သတိပြုရန်:</strong> Assignment operator <code>=</code> နဲ့ comparison operator
+                        <code>==</code> ကို မရောနှောပါနဲ့!</p>
+                    <ul>
+                        <li><code>x = 5</code> → value assign လုပ်တယ်</li>
+                        <li><code>x == 5</code> → value စစ်ဆေးတယ် (true/false)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Logical Operators -->
+            <section class="content-section">
+                <h2>🔹 Logical Operators</h2>
+                <p>Multiple conditions တွေကို ပေါင်းစပ်ဖို့:</p>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>ဆိုလိုချက်</th>
+                                <th>Example</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&&</code></td>
+                                <td>AND (နှစ်ခုလုံး)</td>
+                                <td>x > 5 && x < 10</td>
+                                <td>နှစ်ခုလုံး true ဖြစ်မှ true</td>
+                            </tr>
+                            <tr>
+                                <td><code>||</code></td>
+                                <td>OR (တစ်ခုခု)</td>
+                                <td>x < 5 || x> 10</td>
+                                <td>တစ်ခု true ဖြစ်ရင် true</td>
+                            </tr>
+                            <tr>
+                                <td><code>!</code></td>
+                                <td>NOT (ဆန့်ကျင်ဘက်)</td>
+                                <td>!(x == 5)</td>
+                                <td>true ကို false, false ကို true လုပ်တယ်</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Example: Age & License Check</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class DriverCheck {
+    public static void main(String[] args) {
+        int age = 22;
+        boolean hasLicense = true;
+        
+        // AND operator - နှစ်ခုလုံး true ဖြစ်ရမယ်
+        if (age >= 18 && hasLicense) {
+            System.out.println("You can drive!");
+        } else {
+            System.out.println("You cannot drive.");
+            
+            if (age < 18) {
+                System.out.println("Reason: Too young");
+            }
+            if (!hasLicense) {
+                System.out.println("Reason: No license");
+            }
+        }
+    }
+}</code></pre>
+                </div>
+
+                <h3>Example: Weekend or Holiday</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class DayOff {
+    public static void main(String[] args) {
+        String day = "Saturday";
+        boolean isHoliday = false;
+        
+        // OR operator - တစ်ခု true ဖြစ်ရင် enough
+        if (day.equals("Saturday") || day.equals("Sunday") || isHoliday) {
+            System.out.println("It's a day off! Enjoy!");
+        } else {
+            System.out.println("It's a working day.");
+        }
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Nested If Statements -->
+            <section class="content-section">
+                <h2>🔹 Nested If Statements</h2>
+                <p>If statement တစ်ခုထဲမှာ နောက်ထပ် if statement ထည့်ခြင်း:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class TicketPrice {
+    public static void main(String[] args) {
+        int age = 25;
+        boolean isStudent = true;
+        int price;
+        
+        if (age < 18) {
+            price = 500;  // Child price
+        } else {
+            // Adult category
+            if (isStudent) {
+                price = 800;  // Student discount
+            } else {
+                price = 1000;  // Regular adult
+            }
+        }
+        
+        System.out.println("Ticket price: " + price + " Kyats");
+        System.out.println("Age: " + age);
+        System.out.println("Student: " + isStudent);
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>Ticket price: 800 Kyats
+Age: 25
+Student: true</pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>Nested If ကို ဘယ်အချိန်သုံးရမလဲ:</strong></p>
+                    <ul>
+                        <li>Multiple levels of conditions စစ်ရတဲ့အခါ</li>
+                        <li>Inner condition က outer condition အပေါ် မူတည်တဲ့အခါ</li>
+                        <li>ဒါပေမယ့် nested if များလွန်းရင် code ရှုပ်သွားနိုင်တယ်</li>
+                        <li>လွယ်လွယ်နဲ့ ရေးနိုင်ရင် if-else-if သုံးတာ ပိုကောင်းတယ်</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Complete Example -->
+            <section class="content-section">
+                <h2>💻 Complete Example: Bank Account System</h2>
+                <p>အားလုံးကို ပေါင်းစပ်အသုံးပြုတဲ့ practical example:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class BankAccount {
+    public static void main(String[] args) {
+        double balance = 50000;
+        double withdrawAmount = 30000;
+        int accountAge = 6;  // months
+        boolean isPremium = false;
+        
+        System.out.println("=== Bank Withdrawal System ===");
+        System.out.println("Current Balance: " + balance + " Kyats");
+        System.out.println("Withdraw Amount: " + withdrawAmount + " Kyats");
+        System.out.println();
+        
+        // Check if account is active (at least 3 months old)
+        if (accountAge < 3) {
+            System.out.println("Error: Account too new!");
+            System.out.println("Wait " + (3 - accountAge) + " more months.");
+        } else {
+            // Account is active, check withdrawal
+            if (withdrawAmount > balance) {
+                System.out.println("Error: Insufficient funds!");
+                System.out.println("Available: " + balance);
+            } else {
+                // Sufficient balance
+                double fee = 0;
+                
+                // Calculate fee based on account type
+                if (isPremium) {
+                    fee = 0;  // No fee for premium
+                    System.out.println("Premium Account: No fees!");
+                } else {
+                    if (withdrawAmount > 100000) {
+                        fee = withdrawAmount * 0.02;  // 2% fee
+                    } else {
+                        fee = 1000;  // Flat fee
+                    }
+                    System.out.println("Transaction fee: " + fee + " Kyats");
+                }
+                
+                double total = withdrawAmount + fee;
+                
+                if (total <= balance) {
+                    balance = balance - total;
+                    System.out.println("✓ Withdrawal successful!");
+                    System.out.println("Amount withdrawn: " + withdrawAmount);
+                    System.out.println("New balance: " + balance + " Kyats");
+                } else {
+                    System.out.println("Error: Insufficient for amount + fee!");
+                    System.out.println("Need: " + total);
+                    System.out.println("Have: " + balance);
+                }
+            }
+        }
+        
+        System.out.println("\n=== Transaction Complete ===");
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>=== Bank Withdrawal System ===
+Current Balance: 50000.0 Kyats
+Withdraw Amount: 30000.0 Kyats
+
+Transaction fee: 1000.0 Kyats
+✓ Withdrawal successful!
+Amount withdrawn: 30000.0
+New balance: 19000.0 Kyats
+
+=== Transaction Complete ===</pre>
+                </div>
+            </section>
+
+            <!-- Key Takeaways -->
+            <section class="content-section">
+                <h2>🎯 အဓိက မှတ်သားရမည့် အချက်များ</h2>
+                <div class="info-box burmese">
+                    <ul>
+                        <li><strong>If statement:</strong> Condition true ဖြစ်မှ code block execute လုပ်တယ်</li>
+                        <li><strong>If-else:</strong> True/false နှစ်မျိုး အတွက် မတူညီတဲ့ code run တယ်</li>
+                        <li><strong>If-else-if:</strong> Multiple conditions စစ်ဆေးနိုင်တယ် (ပထမ true တွေ့ရင် ရပ်တယ်)
+                        </li>
+                        <li><strong>Comparison operators:</strong> ==, !=, >, <,>=, <= (values ကို နှိုင်းယှဉ်တယ်)</li>
+                        <li><strong>Logical operators:</strong> && (AND), || (OR), ! (NOT) (conditions ပေါင်းတယ်)</li>
+                        <li><strong>Nested if:</strong> If ထဲမှာ if - ရှုပ်ထွေးတဲ့ logic အတွက်</li>
+                        <li><strong>Code style:</strong> Curly braces {} အမြဲသုံးပါ၊ indentation မှန်အောင်ထားပါ</li>
+                        <li><strong>သတိပြုရန်:</strong> = (assign) နဲ့ == (compare) မရောပါနဲ့!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Practice Exercise -->
+            <section class="content-section">
+                <h2>✍️ Practice Exercise</h2>
+                <div class="highlight-box">
+                    <p><strong>Exercise: Temperature Advisor</strong></p>
+                    <p>အပူချိန်အပေါ် မူတည်ပြီး အကြံပြုချက် ပေးတဲ့ program ရေးပါ:</p>
+                    <ul>
+                        <li>temp < 10: "It's freezing! Wear heavy coat." </li>
+                        <li>temp 10-20: "It's cold. Wear a jacket."</li>
+                        <li>temp 21-30: "Pleasant weather!"</li>
+                        <li>temp 31-40: "It's hot! Stay hydrated."</li>
+                        <li>temp > 40: "Extreme heat! Stay indoors."</li>
+                    </ul>
+                    <p>Extra: If it's raining (boolean isRaining), add "Take an umbrella!"</p>
+                </div>
+
+                <details>
+                    <summary>💡 Solution ကြည့်ရန် (Try လုပ်ပြီးမှ ကြည့်ပါ)</summary>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy">Copy</button>
+                        </div>
+                        <pre><code>public class TemperatureAdvisor {
+    public static void main(String[] args) {
+        int temp = 35;
+        boolean isRaining = true;
+        
+        System.out.println("Current temperature: " + temp + "°C");
+        
+        if (temp < 10) {
+            System.out.println("It's freezing! Wear heavy coat.");
+        } else if (temp <= 20) {
+            System.out.println("It's cold. Wear a jacket.");
+        } else if (temp <= 30) {
+            System.out.println("Pleasant weather!");
+        } else if (temp <= 40) {
+            System.out.println("It's hot! Stay hydrated.");
+        } else {
+            System.out.println("Extreme heat! Stay indoors.");
+        }
+        
+        if (isRaining) {
+            System.out.println("Take an umbrella!");
+        }
+    }
+}</code></pre>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Quiz -->
+            <section class="content-section">
+                <h2>📝 Quick Quiz</h2>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p><strong>Question 1:</strong> ဒီ code က ဘာ output ပေးမလဲ?</p>
+                        <pre><code>int x = 10;
+if (x > 5 && x < 15) {
+    System.out.println("A");
+} else {
+    System.out.println("B");
+}</code></pre>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1" value="a"> A</label>
+                            <label><input type="radio" name="q1" value="b"> B</label>
+                            <label><input type="radio" name="q1" value="c"> Error</label>
+                            <label><input type="radio" name="q1" value="d"> Nothing</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ1()">Check Answer</button>
+                        <div id="q1-result"></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Question 2:</strong> x = 5 ဆိုရင် ဘယ် output ထွက်မလဲ?</p>
+                        <pre><code>if (x >= 10) {
+    System.out.println("Large");
+} else if (x >= 5) {
+    System.out.println("Medium");
+} else {
+    System.out.println("Small");
+}</code></pre>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q2" value="a"> Large</label>
+                            <label><input type="radio" name="q2" value="b"> Medium</label>
+                            <label><input type="radio" name="q2" value="c"> Small</label>
+                            <label><input type="radio" name="q2" value="d"> Error</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ2()">Check Answer</button>
+                        <div id="q2-result"></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Question 3:</strong> ဘယ် operator က "not equal to" ကို ကိုယ်စားပြုလဲ?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q3" value="a"> ==</label>
+                            <label><input type="radio" name="q3" value="b"> !=</label>
+                            <label><input type="radio" name="q3" value="c"> !</label>
+                            <label><input type="radio" name="q3" value="d">
+                                <>
+                            </label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ3()">Check Answer</button>
+                        <div id="q3-result"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="lesson-navigation">
+                <a href="lesson-8.html" class="nav-button prev">
+                    <span>← Previous</span>
+                    <small>Constants & Final</small>
+                </a>
+                <a href="lesson-10.html" class="nav-button next">
+                    <span>Next →</span>
+                    <small>Switch Statements</small>
+                </a>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/color.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        // Quiz checking functions
+        function checkQ1() {
+            const selected = document.querySelector('input[name="q1"]:checked');
+            const result = document.getElementById('q1-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'a') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! x > 5 && x < 15 is true (10 > 5 AND 10 < 15), so "A" prints.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. Both conditions are true, so the if block executes.</p>';
+            }
+        }
+
+        function checkQ2() {
+            const selected = document.querySelector('input[name="q2"]:checked');
+            const result = document.getElementById('q2-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'b') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! x >= 5 is true, so "Medium" prints. The first true condition wins!</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. x >= 5 is true, so the second block executes.</p>';
+            }
+        }
+
+        function checkQ3() {
+            const selected = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('q3-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'b') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! != means "not equal to"</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. != is the not equal operator.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>

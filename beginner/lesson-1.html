@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: What is Java? - Complete Guide | A Coder</title>
+    <meta name="description"
+        content="Learn what Java is, its history, features, and why it's one of the most popular programming languages in the world. Complete beginner's guide with examples.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Mobile Lesson Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <a href="../pages/tutorials.html">Tutorials</a>
+                <span>/</span>
+                <a href="../pages/course-detail.html">Java Fundamentals</a>
+                <span>/</span>
+                <span>Lesson 1</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Course Layout -->
+    <div class="course-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Course Progress -->
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">4%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 4%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>1 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <!-- Lessons Navigation -->
+            <nav class="lessons-nav">
+                <!-- Module 1 -->
+                <div class="module">
+                    <button class="module-header active" data-module="1">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-1.html" class="lesson-item active">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">What is Java</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Environment Setup</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">First Java Program</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item">
+                            <span class="lesson-number">4</span>
+                            <span class="lesson-title">Java Comments</span>
+                            <span class="lesson-duration">8 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item">
+                            <span class="lesson-number">5</span>
+                            <span class="lesson-title">Variables and Literals</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item">
+                            <span class="lesson-number">6</span>
+                            <span class="lesson-title">Data Types</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item">
+                            <span class="lesson-number">7</span>
+                            <span class="lesson-title">Operators</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item">
+                            <span class="lesson-number">8</span>
+                            <span class="lesson-title">Constants & Final</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <span class="lesson-number">9</span>
+                            <span class="lesson-title">If-Else Statements</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <span class="lesson-number">10</span>
+                            <span class="lesson-title">Switch Statements</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <span class="lesson-number">11</span>
+                            <span class="lesson-title">For Loops</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <span class="lesson-number">12</span>
+                            <span class="lesson-title">While Loops</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item">
+                            <span class="lesson-number">13</span>
+                            <span class="lesson-title">Methods</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item">
+                            <span class="lesson-number">14</span>
+                            <span class="lesson-title">Parameters</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item">
+                            <span class="lesson-number">15</span>
+                            <span class="lesson-title">Return Values</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item">
+                            <span class="lesson-number">16</span>
+                            <span class="lesson-title">Method Overloading</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item">
+                            <span class="lesson-number">17</span>
+                            <span class="lesson-title">Arrays</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item">
+                            <span class="lesson-number">18</span>
+                            <span class="lesson-title">Multi-dimensional Arrays</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item">
+                            <span class="lesson-number">19</span>
+                            <span class="lesson-title">Arrays with For Each</span>
+                            <span class="lesson-duration">10 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item">
+                            <span class="lesson-number">20</span>
+                            <span class="lesson-title">ArrayList</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <svg class="chevron" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item">
+                            <span class="lesson-number">21</span>
+                            <span class="lesson-title">Classes & Objects</span>
+                            <span class="lesson-duration">18 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item">
+                            <span class="lesson-number">22</span>
+                            <span class="lesson-title">Constructors</span>
+                            <span class="lesson-duration">15 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item">
+                            <span class="lesson-number">23</span>
+                            <span class="lesson-title">Access Modifiers</span>
+                            <span class="lesson-duration">12 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item">
+                            <span class="lesson-number">24</span>
+                            <span class="lesson-title">Super, This Keyword</span>
+                            <span class="lesson-duration">14 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="course-content">
+            <!-- Mobile Header -->
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open lesson menu">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <span>Lessons</span>
+                </button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 1 of 24</span>
+                    <span class="mobile-lesson-title">What is Java</span>
+                </div>
+            </div>
+
+            <!-- Lesson Header -->
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 1</span>
+                    <span class="lesson-duration">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg>
+                        10 min read
+                    </span>
+                </div>
+                <h1 class="lesson-title">What is Java?</h1>
+                <p class="lesson-description">Java programming language အကြောင်း အခြေခံကနေ စတင်လေ့လာကြမယ်။ Java က ဘာလဲ၊
+                    ဘာကြောင့် လူကြိုက်များတာလဲ၊ ဘယ်လို အလုပ်လုပ်တာလဲ ဆိုတာကို အသေးစိတ် လေ့လာကြမယ်။</p>
+            </div>
+
+            <!-- Lesson Content -->
+            <article class="lesson-article">
+                <!-- Section 1: Introduction -->
+                <section class="content-section">
+                    <h2>1. Java ဆိုတာ ဘာလဲ?</h2>
+                    <p>Java is a <strong>high-level, class-based, object-oriented programming language</strong> that is
+                        designed to have as few implementation dependencies as possible. It is a general-purpose
+                        programming language intended to let programmers <strong>write once, run anywhere
+                            (WORA)</strong>.</p>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>မြန်မာလို ရှင်းပြရင်</span>
+                        </div>
+                        <p><strong>Java</strong> ဆိုတာ <strong>high-level programming language</strong> တစ်ခု ဖြစ်ပါတယ်။
+                            "High-level" ဆိုတာက လူတွေ နားလည်ရ လွယ်ကူတဲ့ ဘာသာစကား ဆိုတဲ့ အဓိပ္ပာယ်ပါ။ Computer language
+                            တွေမှာ level 2 ခု ရှိပါတယ်:</p>
+                        <ul>
+                            <li><strong>Low-level:</strong> Machine ကိုယ်တိုင် နားလည်တဲ့ language (Assembly, Machine
+                                code) - လူတွေ နားလည်ရ ခက်ပါတယ်</li>
+                            <li><strong>High-level:</strong> လူတွေ နားလည်ရ လွယ်တဲ့ language (Java, Python, C++) -
+                                ပိုပြီး သဘာဝကျပါတယ်</li>
+                        </ul>
+                        <p><strong>"Class-based, Object-oriented"</strong> ဆိုတာက Java မှာ အရာအားလုံးကို
+                            <strong>Objects</strong> တွေနဲ့ <strong>Classes</strong> တွေ အနေနဲ့ ရေးရတယ် ဆိုတဲ့ သဘောပါ။
+                            အဲ့ဒါက real-world scenarios တွေကို ပိုပြီး လွယ်လွယ်ကူကူ model လုပ်လို့ ရစေပါတယ်။ (ဒါကို
+                            Module 6 မှာ အသေးစိတ် လေ့လာမှာပါ)</p>
+                        <p><strong>"Write Once, Run Anywhere (WORA)"</strong> က Java ရဲ့ အဓိက feature ပါ။ Java code
+                            တစ်ခါ ရေးလိုက်ရင် Windows, Mac, Linux ဘယ် operating system မှာမဆို အလုပ်လုပ်ပါတယ်။ ဒါက Java
+                            ရဲ့ အကြီးမားဆုံး အားသာချက် ဖြစ်ပါတယ်။</p>
+                    </div>
+                </section>
+
+                <!-- Section 2: History -->
+                <section class="content-section">
+                    <h2>2. Java ရဲ့ သမိုင်း (History of Java)</h2>
+                    <p>Java was originally developed by <strong>James Gosling</strong> at Sun Microsystems (now owned by
+                        Oracle Corporation) and released in <strong>1995</strong>. The language was initially called
+                        <strong>"Oak"</strong> after an oak tree that stood outside Gosling's office.</p>
+
+                    <div class="highlight-box">
+                        <h3>📜 Java Timeline</h3>
+                        <ul>
+                            <li><strong>1991:</strong> Project started, named "Oak"</li>
+                            <li><strong>1995:</strong> Renamed to "Java" and officially released</li>
+                            <li><strong>2006:</strong> Sun Microsystems made Java open source</li>
+                            <li><strong>2010:</strong> Oracle Corporation acquired Sun Microsystems</li>
+                            <li><strong>2024:</strong> Java 21 LTS (Long Term Support) released</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>မြန်မာလို ရှင်းပြရင်</span>
+                        </div>
+                        <p>Java ကို <strong>James Gosling</strong> က 1991 ခုနှစ်မှာ စတင် တီထွင်ခဲ့ပါတယ်။ အစောပိုင်းမှာ
+                            <strong>"Oak"</strong> လို့ နာမည်ပေးခဲ့ပြီး၊ 1995 မှာ <strong>"Java"</strong> အဖြစ်
+                            ပြောင်းလဲ ခဲ့ပါတယ်။ Java ဆိုတဲ့ နာမည်က Java coffee ကနေ လာတာပါ။</p>
+                        <p>အခုဆိုရင် Java က <strong>Oracle Corporation</strong> ရဲ့ ပိုင်ဆိုင်မှု ဖြစ်ပြီး၊ version
+                            အသစ်တွေ ဆက်လက် ထွက်ရှိနေပါတယ်။ Java 8, Java 11, Java 17, Java 21 တို့က <strong>Long Term
+                                Support (LTS)</strong> versions တွေ ဖြစ်ပြီး၊ production environments တွေမှာ အများဆုံး
+                            သုံးကြပါတယ်။</p>
+                        <p><strong>Open Source</strong> ဆိုတာက source code ကို လူတိုင်း ကြည့်လို့ရ၊ modify လုပ်လို့ရ၊
+                            အခမဲ့ သုံးလို့ရတယ် ဆိုတဲ့ သဘောပါ။</p>
+                    </div>
+                </section>
+
+                <!-- Section 3: Key Features -->
+                <section class="content-section">
+                    <h2>3. Java ရဲ့ အဓိက Features တွေ</h2>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌐</div>
+                            <h3>Platform Independent</h3>
+                            <p>Java code can run on any platform (Windows, Mac, Linux) without modification.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Object-Oriented</h3>
+                            <p>Everything in Java is treated as an object, making code more organized and reusable.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Secure</h3>
+                            <p>Built-in security features protect against malicious code and ensure safe execution.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Robust & Reliable</h3>
+                            <p>Strong memory management and exception handling make Java programs stable.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔄</div>
+                            <h3>Multithreading</h3>
+                            <p>Built-in support for running multiple tasks simultaneously for better performance.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📦</div>
+                            <h3>Rich API</h3>
+                            <p>Extensive built-in libraries for networking, I/O, utilities, and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အသေးစိတ် မြန်မာလို ရှင်းပြရင်</span>
+                        </div>
+
+                        <p><strong>1. Platform Independent (အခြေခံ ပလက်ဖောင်းမရွေး သုံးလို့ရတယ်):</strong></p>
+                        <p>Java ရဲ့ အကြီးမားဆုံး အားသာချက်ပါ။ Java program တစ်ခု ရေးလိုက်ရင် Windows computer မှာ run
+                            လို့ရသလို၊ Mac မှာလည်း run လို့ရ၊ Linux server မှာလည်း run လို့ရပါတယ်။ ဘာကြောင့်လဲဆိုတော့
+                            Java က <strong>Java Virtual Machine (JVM)</strong> ပေါ်မှာ အလုပ်လုပ်လို့ပါ။ JVM က operating
+                            system တိုင်းမှာ ရှိပြီး၊ သူက Java bytecode ကို ဘယ် platform မှာမဆို run လို့ ရအောင်
+                            ပြောင်းပေးပါတယ်။</p>
+
+                        <p><strong>2. Object-Oriented (အရာဝတ္ထု ဗဟိုပြု):</strong></p>
+                        <p>Java မှာ အရာအားလုံးက <strong>Object</strong> တွေပါ။ Real world မှာ ရှိတဲ့ အရာတွေကို software
+                            မှာ model လုပ်ရတာ လွယ်ကူစေပါတယ်။ ဥပမာ - Student, Car, Book စတဲ့ real-world entities တွေကို
+                            Object အနေနဲ့ ဖန်တီးနိုင်ပါတယ်။ ဒါက code ကို organized, reusable, maintainable ဖြစ်စေပါတယ်။
+                        </p>
+
+                        <p><strong>3. Secure (လုံခြုံမှု မြင့်မားတယ်):</strong></p>
+                        <p>Java မှာ security features တွေ built-in ပါဝင်ပါတယ်။ <strong>Bytecode Verification</strong> က
+                            malicious code တွေကို ကာကွယ်ပေးပါတယ်။ <strong>Sandbox</strong> environment မှာ run တာကြောင့်
+                            system resources တွေကို ထိခိုက်မှု မရှိပါ။ အဲ့ဒါကြောင့် banking, healthcare စတဲ့ sensitive
+                            applications တွေမှာ Java ကို သုံးကြပါတယ်။</p>
+
+                        <p><strong>4. Robust & Reliable (ခိုင်မာ ယုံကြည်စိတ်ချရတယ်):</strong></p>
+                        <p>Java မှာ <strong>Garbage Collection</strong> ရှိပါတယ်။ ဒါက memory management ကို အလိုအလျောက်
+                            လုပ်ပေးပါတယ်။ C/C++ လို manual memory management မလိုတော့ပါ။ <strong>Exception
+                                Handling</strong> က error တွေကို ကောင်းကောင်း handle လုပ်နိုင်စေပါတယ်။ <strong>Strong
+                                Type Checking</strong> က compile time မှာပဲ error တွေ ဖမ်းပေးလို့ runtime မှာ crash
+                            ဖြစ်ခြေ နည်းပါတယ်။</p>
+
+                        <p><strong>5. Multithreading (တစ်ချိန်တည်းမှာ အများကြီး လုပ်နိုင်တယ်):</strong></p>
+                        <p>Java မှာ <strong>multithreading</strong> support built-in ပါပါတယ်။ Thread ဆိုတာ program ရဲ့
+                            အစိတ်အပိုင်း တစ်ခုပါ။ Multiple threads တွေ တစ်ချိန်တည်းမှာ run နိုင်လို့ program က faster
+                            ဖြစ်ပါတယ်။ ဥပမာ - Video player app မှာ video play လုပ်နေတဲ့ အချိန်မှာပဲ subtitles တွေ load
+                            လုပ်နိုင်တာမျိုးပါ။</p>
+
+                        <p><strong>6. Rich API (လုပ်ဆောင်ချက် စွမ်းရည် များစွာ):</strong></p>
+                        <p>Java မှာ <strong>built-in libraries (API)</strong> တွေ အများကြီး ပါပါတယ်။ File handling,
+                            networking, database connection, GUI development စတာတွေကို library တွေ သုံးပြီး လွယ်လွယ်ကူကူ
+                            လုပ်လို့ ရပါတယ်။ Wheel ကို ပြန်ပြီး တီထွင်စရာ မလိုပါ။</p>
+                    </div>
+                </section>
+
+                <!-- Section 4: How Java Works -->
+                <section class="content-section">
+                    <h2>4. Java က ဘယ်လို အလုပ်လုပ်လဲ? (How Java Works)</h2>
+
+                    <p>Java programs follow a unique compilation and execution process that makes them
+                        platform-independent:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Process Flow</span>
+                        </div>
+                        <pre><code>Java Source Code (.java file)
+        ↓
+[Java Compiler (javac)]
+        ↓
+Bytecode (.class file)
+        ↓
+[Java Virtual Machine (JVM)]
+        ↓
+Machine Code (Native to OS)
+        ↓
+Output / Execution</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အဆင့်ဆင့် အသေးစိတ် ရှင်းပြရင်</span>
+                        </div>
+
+                        <p><strong>Step 1: Write Source Code (Source Code ရေးတယ်)</strong></p>
+                        <p>Java source code ကို <code>.java</code> file extension နဲ့ text editor သို့မဟုတ် IDE
+                            (IntelliJ IDEA, Eclipse, VS Code) တွေမှာ ရေးပါတယ်။ ဥပမာ - <code>HelloWorld.java</code></p>
+
+                        <p><strong>Step 2: Compile (Compile လုပ်တယ်)</strong></p>
+                        <p><strong>Java Compiler (javac)</strong> က source code (<code>.java</code>) ကို
+                            <strong>bytecode</strong> (<code>.class</code>) အဖြစ် ပြောင်းပေးပါတယ်။ Bytecode ဆိုတာ
+                            intermediate language တစ်ခု ဖြစ်ပြီး၊ လူတွေ ဖတ်လို့ မရပေမယ့် machine code ထက် higher level
+                            ဖြစ်ပါတယ်။</p>
+                        <pre><code>javac HelloWorld.java  // This creates HelloWorld.class</code></pre>
+
+                        <p><strong>Step 3: JVM Executes (JVM က run တယ်)</strong></p>
+                        <p><strong>Java Virtual Machine (JVM)</strong> က bytecode ကို ဖတ်ပြီး platform-specific machine
+                            code အဖြစ် ပြောင်းပေးပါတယ်။ Windows ဆို Windows machine code၊ Mac ဆို Mac machine code ပေါ့။
+                            အဲ့ဒါကြောင့် same bytecode က ဘယ် platform မှာမဆို run လို့ ရတာပါ။</p>
+                        <pre><code>java HelloWorld  // JVM executes HelloWorld.class</code></pre>
+
+                        <p><strong>ဘာကြောင့် 2-step process လုပ်တာလဲ?</strong></p>
+                        <ul>
+                            <li><strong>Platform Independence:</strong> Bytecode က platform-neutral ဖြစ်လို့ ဘယ် OS
+                                မှာမဆို run လို့ ရပါတယ်</li>
+                            <li><strong>Security:</strong> JVM က bytecode ကို verify လုပ်ပြီးမှ run လို့ security
+                                မြင့်မားပါတယ်</li>
+                            <li><strong>Optimization:</strong> JVM က runtime မှာ optimize လုပ်နိုင်လို့ performance
+                                ကောင်းပါတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 5: First Java Program -->
+                <section class="content-section">
+                    <h2>5. ပထမဆုံး Java Program (Your First Java Program)</h2>
+
+                    <p>Let's look at the classic "Hello, World!" program in Java:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java - HelloWorld.java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Hello, World!</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>Line by Line အသေးစိတ် ရှင်းပြရင်</span>
+                        </div>
+
+                        <p><strong>Line 1: <code>public class HelloWorld {</code></strong></p>
+                        <ul>
+                            <li><code><strong>public</strong></code> - ဒါက <strong>access modifier</strong> ပါ။ public
+                                ဆိုတာ ဒီ class ကို ဘယ်ကနေမဆို access လုပ်လို့ ရတယ် ဆိုတဲ့ သဘောပါ။</li>
+                            <li><code><strong>class</strong></code> - Java မှာ code အားလုံးက class တွေ အတွင်းမှာ
+                                ရှိရပါမယ်။ Class ဆိုတာ blueprint တစ်ခု လို့ စဉ်းစားလို့ ရပါတယ်။</li>
+                            <li><code><strong>HelloWorld</strong></code> - ဒါက class ရဲ့ နာမည်ပါ။
+                                <strong>အရေးကြီးတာ:</strong> Class name နဲ့ file name က တူရပါမယ်။ ဒီ class ကို
+                                <code>HelloWorld.java</code> ဆိုတဲ့ file နဲ့ save လုပ်ရပါမယ်။</li>
+                            <li><code><strong>{</strong></code> - Opening curly brace က class body ရဲ့ အစပါ။</li>
+                        </ul>
+
+                        <p><strong>Line 2: <code>public static void main(String[] args) {</code></strong></p>
+                        <p>ဒါက Java program ရဲ့ <strong>entry point</strong> ပါ။ Program start လုပ်တဲ့ အခါ JVM က ဒီ
+                            method ကို အရင်ဆုံး ရှာပြီး execute လုပ်ပါတယ်။ <code>main</code> method မရှိရင် program က
+                            run မှာ မဟုတ်ပါ။</p>
+                        <ul>
+                            <li><code><strong>public</strong></code> - JVM က ဘယ်ကနေမဆို access လုပ်နိုင်ဖို့ public
+                                ဖြစ်ရပါမယ်</li>
+                            <li><code><strong>static</strong></code> - Object မလုပ်ဘဲ class name နဲ့တင် ခေါ်လို့ ရဖို့
+                                static ဖြစ်ရပါမယ်။ JVM က object create မလုပ်ဘဲ main method ကို run ချင်လို့ပါ။</li>
+                            <li><code><strong>void</strong></code> - ဒီ method က ဘာမှ return မလုပ်ဘူး ဆိုတဲ့ သဘောပါ</li>
+                            <li><code><strong>main</strong></code> - Method ရဲ့ နာမည်ပါ။ ဒါက fixed name ဖြစ်ပြီး
+                                ပြောင်းလို့ မရပါ</li>
+                            <li><code><strong>String[] args</strong></code> - Command line arguments တွေကို လက်ခံဖို့
+                                parameter ပါ။ String array တစ်ခု ဖြစ်ပါတယ်</li>
+                        </ul>
+
+                        <p><strong>Line 3: <code>System.out.println("Hello, World!");</code></strong></p>
+                        <p>ဒါက screen မှာ text ပြဖို့ statement ပါ။</p>
+                        <ul>
+                            <li><code><strong>System</strong></code> - ဒါက Java ရဲ့ built-in class တစ်ခု ဖြစ်ပြီး
+                                <code>java.lang</code> package ထဲက လာပါတယ်</li>
+                            <li><code><strong>out</strong></code> - <code>System</code> class ရဲ့ static field တစ်ခု
+                                ဖြစ်ပြီး output stream ကို represent လုပ်ပါတယ်</li>
+                            <li><code><strong>println</strong></code> - "Print Line" ရဲ့ အတိုကောက်ပါ။ Print လုပ်ပြီး new
+                                line ထည့်ပေးပါတယ်</li>
+                            <li><code><strong>"Hello, World!"</strong></code> - ဒါက <strong>String literal</strong> ပါ။
+                                Print လုပ်ချင်တဲ့ text ကို double quotes (" ") ထဲမှာ ထည့်ပါတယ်</li>
+                            <li><code><strong>;</strong></code> - Semicolon က Java မှာ statement ရဲ့ အဆုံးပါ။
+                                <strong>မဖြစ်မနေ</strong> ထည့်ရပါမယ်</li>
+                        </ul>
+
+                        <p><strong>Line 4 & 5: <code>}</code></strong></p>
+                        <p>Closing curly braces တွေ ဖြစ်ပါတယ်။ Line 4 က <code>main</code> method ကို close လုပ်ပြီး၊
+                            Line 5 က <code>HelloWorld</code> class ကို close လုပ်ပါတယ်။</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>⚠️ အရေးကြီးတဲ့ စည်းမျဉ်းတွေ</h3>
+                        <ul>
+                            <li>Java က <strong>case-sensitive</strong> ဖြစ်ပါတယ်။ <code>HelloWorld</code> နဲ့
+                                <code>helloworld</code> က မတူပါ</li>
+                            <li>File name နဲ့ class name က <strong>တိတိကျကျ တူရပါမယ်</strong> (case-sensitive)</li>
+                            <li>Every statement က <strong>semicolon (;)</strong> နဲ့ ဆုံးရပါမယ်</li>
+                            <li>Opening curly brace <code>{</code> တိုင်းမှာ corresponding closing brace <code>}</code>
+                                ရှိရပါမယ်</li>
+                            <li><code>main</code> method ရဲ့ signature က <strong>အတိအကျ</strong> ဒီအတိုင်း ဖြစ်ရပါမယ်
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 6: More Examples -->
+                <section class="content-section">
+                    <h2>6. နောက်ထပ် ဥပမာများ (More Examples)</h2>
+
+                    <h3>Example 1: Printing Multiple Lines</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class MultipleLines {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Java Programming!");
+        System.out.println("Java is fun!");
+        System.out.println("Let's learn together.");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Welcome to Java Programming!
+Java is fun!
+Let's learn together.</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ရှင်းလင်းချက်</span>
+                        </div>
+                        <p><code>println()</code> က line တစ်ကြောင်း print လုပ်ပြီး cursor ကို next line ကို
+                            ရွှေ့ပေးပါတယ်။ ဒါကြောင့် <code>println()</code> သုံးကြိမ် ခေါ်လိုက်ရင် output က သုံးကြောင်း
+                            ထွက်ပါတယ်။</p>
+                        <p>If you want to print on the same line, use <code>print()</code> instead:</p>
+                        <pre><code>System.out.print("Hello ");
+System.out.print("World!");
+// Output: Hello World!</code></pre>
+                    </div>
+
+                    <h3>Example 2: Print vs Println</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy" onclick="copyCode(this)">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre><code>public class PrintDemo {
+    public static void main(String[] args) {
+        // Using print() - stays on same line
+        System.out.print("Java ");
+        System.out.print("is ");
+        System.out.print("awesome!");
+        
+        // Using println() - moves to next line
+        System.out.println();  // Empty line
+        System.out.println("Hello");
+        System.out.println("World");
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Output</span>
+                        </div>
+                        <pre><code>Java is awesome!
+
+Hello
+World</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>ဘာကြောင့် ဒီလို သုံးတာလဲ?</span>
+                        </div>
+                        <ul>
+                            <li><code><strong>print()</strong></code> - Text ကို print လုပ်ပြီး cursor က same line မှာပဲ
+                                ရှိနေပါတယ်။ တစ်ကြောင်းတည်းမှာ စာများများ ရေးချင်တဲ့ အခါ သုံးပါတယ်။</li>
+                            <li><code><strong>println()</strong></code> - Text ကို print လုပ်ပြီး cursor က next line ကို
+                                ရွှေ့ပါတယ်။ Line သစ် တစ်ကြောင်းချင်းစီ print ချင်တဲ့ အခါ သုံးပါတယ်။</li>
+                            <li><code><strong>println()</strong></code> ကို argument မပါဘဲ ခေါ်ရင် empty line တစ်ကြောင်း
+                                ထည့်ပေးပါတယ်</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 7: Why Learn Java -->
+                <section class="content-section">
+                    <h2>7. ဘာကြောင့် Java ကို လေ့လာသင့်လဲ?</h2>
+
+                    <div class="highlight-box">
+                        <h3>🌟 Java သုံးနေကြတဲ့ နေရာများ</h3>
+                        <ul>
+                            <li><strong>📱 Android Apps:</strong> 2.5 billion+ Android devices မှာ Java/Kotlin သုံးပါတယ်
+                            </li>
+                            <li><strong>🌐 Web Applications:</strong> LinkedIn, Twitter, Netflix backend မှာ Java
+                                သုံးပါတယ်</li>
+                            <li><strong>🏢 Enterprise Software:</strong> Banking systems, ERP, CRM applications</li>
+                            <li><strong>🎮 Games:</strong> Minecraft ကို Java နဲ့ ရေးထားပါတယ်!</li>
+                            <li><strong>📊 Big Data:</strong> Hadoop, Apache Spark တို့က Java-based ပါ</li>
+                            <li><strong>☁️ Cloud Applications:</strong> AWS, Google Cloud platforms</li>
+                            <li><strong>🤖 IoT Devices:</strong> Smart home devices, sensors</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span>အသေးစိတ် ရှင်းပြရင်</span>
+                        </div>
+
+                        <p><strong>1. Job Opportunities (အလုပ်အကိုင် အခွင့်အလမ်းများ)</strong></p>
+                        <p>Java က ကမ္ဘာတလွှားမှာ အများဆုံး တောင်းဆိုတဲ့ programming skills ထဲက တစ်ခု ဖြစ်ပါတယ်။ Fortune
+                            500 companies တွေရဲ့ 90% က Java သုံးပါတယ်။ Java developers တွေ အတွက် salary rate လည်း
+                            မြင့်မားပါတယ်။</p>
+
+                        <p><strong>2. Large Community & Resources (ကြီးမားတဲ့ community)</strong></p>
+                        <p>Java မှာ developers သန်းပေါင်း များစွာ ရှိပြီး၊ tutorials, documentation, libraries,
+                            frameworks တွေ အများကြီး ရရှိနိုင်ပါတယ်။ ပြဿနာ တစ်ခု တွေ့ရင် Google search လုပ်ရင် အဖြေ
+                            တွေ့လွယ်ပါတယ်။</p>
+
+                        <p><strong>3. Versatility (စွယ်စုံ သုံးစွဲနိုင်မှု)</strong></p>
+                        <p>Java နဲ့ mobile apps, web applications, desktop software, games, enterprise systems
+                            အစရှိသဖြင့် အမျိုးမျိုး develop လုပ်လို့ ရပါတယ်။ Programming language တစ်ခုတည်း သိရုံနဲ့
+                            များစွာသော project types တွေ လုပ်နိုင်ပါတယ်။</p>
+
+                        <p><strong>4. Strong Foundation (ခိုင်မာတဲ့ အခြေခံ)</strong></p>
+                        <p>Java သည်းသည်းခံခံ သင်ထားရင် C++, C#, Python စတဲ့ languages တွေ လေ့လာရတာ ပိုလွယ်ကူပါတယ်။ OOP
+                            concepts, data structures, algorithms တွေကို ကောင်းကောင်း နားလည်လာမှာ ဖြစ်ပါတယ်။</p>
+
+                        <p><strong>5. Stable & Mature (တည်ငြိမ်ပြီး ရင့်ကျက်တယ်)</strong></p>
+                        <p>Java က 25+ နှစ် ရှိပြီဖြစ်လို့ stable, well-tested, production-ready ဖြစ်ပါတယ်။
+                            ကုမ္ပဏီကြီးတွေ ယုံကြည်စိတ်ချစွာ သုံးနိုင်ပါတယ်။ Backward compatibility လည်း ကောင်းပါတယ်။</p>
+                    </div>
+                </section>
+
+                <!-- Section 8: Key Takeaways -->
+                <section class="content-section">
+                    <h2>8. Key Takeaways (မှတ်သားရမည့် အချက်များ)</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li>Java is a <strong>high-level, object-oriented programming language</strong></li>
+                            <li>Created by <strong>James Gosling</strong> in 1995 at Sun Microsystems</li>
+                            <li>Follows <strong>"Write Once, Run Anywhere"</strong> principle</li>
+                            <li>Java code is compiled to <strong>bytecode</strong> and executed by <strong>JVM</strong>
+                            </li>
+                            <li>Key features: Platform Independent, Object-Oriented, Secure, Robust</li>
+                            <li>Widely used in Android, Web, Enterprise, Big Data applications</li>
+                            <li>Every Java program must have a <code>main()</code> method</li>
+                            <li>Class name must match the filename exactly</li>
+                            <li>Java is case-sensitive language</li>
+                            <li>Statements end with semicolon (;)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Practice Exercise -->
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Quick Quiz</h3>
+                        <p>Test your understanding:</p>
+
+                        <div class="quiz-question">
+                            <p><strong>Q1: What does WORA stand for?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q1" value="a">
+                                    <span>Write Often, Read Always</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="b">
+                                    <span>Write Once, Run Anywhere</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q1" value="c">
+                                    <span>Write Object, Run Application</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: Java source code files have which extension?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q2" value="a">
+                                    <span>.class</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="b">
+                                    <span>.java</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q2" value="c">
+                                    <span>.jar</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: Who created Java?</strong></p>
+                            <div class="quiz-options">
+                                <label>
+                                    <input type="radio" name="q3" value="a">
+                                    <span>Dennis Ritchie</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="b">
+                                    <span>James Gosling</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="c">
+                                    <span>Guido van Rossum</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Lesson Navigation -->
+            <div class="lesson-navigation">
+                <button class="nav-btn prev-btn" disabled>
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Previous Lesson
+                </button>
+                <div class="lesson-actions">
+                    <button class="action-btn" id="bookmarkBtn" onclick="toggleBookmark()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        </svg>
+                        Bookmark
+                    </button>
+                    <button class="action-btn" id="completeBtn" onclick="markComplete()">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Mark as Complete
+                    </button>
+                </div>
+                <a href="lesson-2.html" class="nav-btn next-btn">
+                    Next Lesson
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Notes Section -->
+            <div class="notes-section">
+                <div class="notes-header">
+                    <h3>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
+                            <path
+                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+                        </svg>
+                        Your Notes
+                    </h3>
+                    <span class="notes-count">0 notes</span>
+                </div>
+                <textarea id="notesTextarea" class="notes-textarea"
+                    placeholder="Write your notes here... (auto-saved)"></textarea>
+                <div class="notes-saved" id="notesSaved">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Saved
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        // Quiz checker with multiple questions
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                showToast('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'b') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'b') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    Perfect! 3/3 correct! 🎉 You have a great understanding of Java basics.
+                `;
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = `
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline; margin-right: 8px;">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg>
+                    ${score}/3 correct. Review the lesson and try again!<br>
+                    <small>Correct answers: Q1=B (Write Once, Run Anywhere), Q2=B (.java), Q3=B (James Gosling)</small>
+                `;
+            }
+        }
+    </script>
+</body>
+
+</html>

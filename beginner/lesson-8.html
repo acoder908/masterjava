@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8: Constants & Final - Complete Guide | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- .................naver........... -->
+    <div id="header"></div>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 8</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="course-layout">
+        <!-- W3Schools-style Sidebar for Lesson 8 -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">33%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 33%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>8 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types (ACTIVE) -->
+                <div class="module active">
+                    <button class="module-header active" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-5.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow -->
+                <div class="module">
+                    <button class="module-header" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-9.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="course-content">
+            <div class="mobile-course-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">Lessons</button>
+                <div class="mobile-lesson-info">
+                    <span class="mobile-lesson-number">Lesson 8 of 24</span>
+                    <span class="mobile-lesson-title">Constants & Final</span>
+                </div>
+            </div>
+
+            <div class="lesson-header">
+                <div class="lesson-meta">
+                    <span class="lesson-badge">Lesson 8 - Module 2 Complete!</span>
+                    <span class="lesson-duration">⏱ 10 min read</span>
+                </div>
+                <h1 class="lesson-title">Constants and Final Keyword</h1>
+                <p class="lesson-description">Java မှာ constant values တွေ define လုပ်တဲ့ final keyword၊ naming
+                    conventions၊ immutability၊ best practices တွေကို အသေးစိတ် လေ့လာကြမယ်။</p>
+            </div>
+
+            <article class="lesson-article">
+                <section class="content-section">
+                    <h2>1. Constants ဆိုတာ ဘာလဲ?</h2>
+
+                    <p>A <strong>constant</strong> is a variable whose value cannot be changed once assigned.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Constant Example</span></div>
+                        <pre><code>// Regular variable (can change)
+int age = 25;
+age = 30;  // ✅ OK
+
+// Constant (cannot change)
+final int MAX_AGE = 100;
+MAX_AGE = 120;  // ❌ Error! Cannot reassign</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🔒 Constants အကြောင်း</span>
+                        </div>
+                        <p><strong>Constant</strong> ဆိုတာ value ကို program အတွင်းမှာ <strong>ပြောင်းလို့
+                                မရတဲ့</strong> variable ပါ။ Once assigned ဖြစ်ပြီဆို အပြောင်းအလဲ မရှိတော့ပါ။</p>
+                        <ul>
+                            <li><strong>Immutable:</strong> Value ပြောင်းလို့ မရပါ</li>
+                            <li><strong>Read-only:</strong> Read သာ လုပ်လို့ရတယ်၊ write မရပါ</li>
+                            <li><strong>Fixed values:</strong> PI, MAX_VALUE, TAX_RATE စတဲ့ fixed တန်ဖိုးတွေ အတွက်</li>
+                            <li><strong>Type safety:</strong> Accidental changes ကို ကာကွယ်ပေးတယ်</li>
+                        </ul>
+                        <p><strong>ဘာကြောင့် လိုအပ်လဲ?</strong></p>
+                        <ul>
+                            <li>Prevent accidental changes - တမင်မဟုတ်ပဲ ပြောင်းခြင်းမှ ကာကွယ်တယ်</li>
+                            <li>Meaningful names - 3.14159 ထက် PI က နားလည်ရလွယ်တယ်</li>
+                            <li>Maintainability - တစ်နေရာတည်း ပြောင်းရင် တစ်ခါတည်း အကုန် ပြောင်းသွားတယ်</li>
+                            <li>Thread-safety - Multiple threads တွေမှာ safe တယ်</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Immutable</h3>
+                            <p>Value cannot be changed</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Protected</h3>
+                            <p>Prevents accidental changes</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📌</div>
+                            <h3>Fixed Values</h3>
+                            <p>PI, MAX_SIZE, TAX_RATE</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>2. The final Keyword</h2>
+
+                    <p>The <code>final</code> keyword is used to declare constants in Java.</p>
+
+                    <h3>2.1 Final Variables</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Final Variable Syntax</span></div>
+                        <pre><code>final dataType VARIABLE_NAME = value;</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Final Examples</span></div>
+                        <pre><code>// Mathematical constants
+final double PI = 3.14159265359;
+final double E = 2.71828182846;
+
+// Configuration constants
+final int MAX_USERS = 100;
+final int MIN_AGE = 18;
+final String APP_NAME = "MyApp";
+
+// Physical constants
+final double SPEED_OF_LIGHT = 299792458;  // m/s
+final double GRAVITY = 9.81;              // m/s²
+
+System.out.println("PI: " + PI);
+System.out.println("Max users: " + MAX_USERS);</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🔑 Final Keyword အကြောင်း</span>
+                        </div>
+                        <p><code><strong>final</strong></code> keyword က variable ကို constant အဖြစ် declare
+                            လုပ်ပေးပါတယ်။</p>
+                        <ul>
+                            <li><strong>Must initialize:</strong> Declaration လုပ်တဲ့ အချိန်မှာပဲ value ပေးရပါမယ်</li>
+                            <li><strong>Cannot reassign:</strong> Value ကို နောက်မှ ပြောင်းလို့ မရပါ</li>
+                            <li><strong>Compile-time check:</strong> Compiler က reassignment ကို error ပေးပါတယ်</li>
+                            <li><strong>Local or instance:</strong> Method ထဲမှာရော class level မှာရော သုံးလို့ရတယ်</li>
+                        </ul>
+                    </div>
+
+                    <h3>2.2 Attempting to Change Final Variable</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Error Example</span></div>
+                        <pre><code>final int MAX_SIZE = 100;
+
+// ❌ This will cause a compilation error
+MAX_SIZE = 200;  // Error: cannot assign a value to final variable
+
+System.out.println(MAX_SIZE);</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Compilation Error</span></div>
+                        <pre><code>error: cannot assign a value to final variable MAX_SIZE
+        MAX_SIZE = 200;
+        ^</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>⚠️ Important Rules</h3>
+                        <ul>
+                            <li><strong>Must initialize when declared</strong> - Later initialization မရပါ (local
+                                variables)</li>
+                            <li><strong>One-time assignment</strong> - တစ်ခါသာ assign လုပ်လို့ ရတယ်</li>
+                            <li><strong>Compiler enforces</strong> - Compilation error ပေါ်မယ်</li>
+                        </ul>
+                        <div class="code-block">
+                            <pre><code>// ❌ Error: Not initialized
+final int x;  
+x = 10;  // Too late for local final variable
+
+// ✅ Correct: Initialize immediately
+final int y = 10;</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>3. Naming Conventions for Constants</h2>
+
+                    <p>Constants follow a specific naming convention in Java.</p>
+
+                    <div class="highlight-box">
+                        <h3>📝 Constant Naming Rules</h3>
+                        <ul>
+                            <li><strong>ALL UPPERCASE:</strong> All letters must be uppercase</li>
+                            <li><strong>Underscore separator:</strong> Use _ to separate words</li>
+                            <li><strong>Descriptive names:</strong> Make the purpose clear</li>
+                            <li><strong>No abbreviations:</strong> Use full words when possible</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Good Naming Examples</span></div>
+                        <pre><code>// ✅ Good constant names
+final int MAX_STUDENTS = 100;
+final double TAX_RATE = 0.15;
+final String DATABASE_URL = "jdbc:mysql://localhost";
+final int DEFAULT_TIMEOUT = 30;
+final double CONVERSION_RATE = 1.5;
+final int MINIMUM_PASSWORD_LENGTH = 8;
+
+// ❌ Bad constant names (don't follow convention)
+final int maxStudents = 100;     // Not uppercase
+final double TaxRate = 0.15;      // Mixed case
+final String databaseurl = "..."; // No separator
+final int x = 30;                 // Not descriptive</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>✍️ Naming Convention မြန်မာလို</span>
+                        </div>
+                        <p>Constants တွေအတွက် <strong>SCREAMING_SNAKE_CASE</strong> သုံးပါတယ်:</p>
+                        <ul>
+                            <li><strong>UPPERCASE:</strong> စာလုံးကြီး အားလုံး - MAX_VALUE</li>
+                            <li><strong>UNDERSCORE:</strong> စကားလုံးကြား _ နဲ့ ခွဲပါ - MAX_RETRY_COUNT</li>
+                            <li><strong>DESCRIPTIVE:</strong> ရှင်းရှင်းလင်းလင်း အမည်ပေးပါ - SPEED_OF_LIGHT</li>
+                        </ul>
+                        <p><strong>ဥပမာများ:</strong></p>
+                        <ul>
+                            <li>✅ <code>MAX_SIZE</code>, <code>MIN_AGE</code>, <code>TAX_RATE</code></li>
+                            <li>✅ <code>DATABASE_URL</code>, <code>API_KEY</code>, <code>DEFAULT_LANGUAGE</code></li>
+                            <li>❌ <code>maxSize</code>, <code>max_Size</code>, <code>MAXSIZE</code></li>
+                        </ul>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Wrong ❌</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Correct ✅</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>maxValue</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>MAX_VALUE</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Not uppercase</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>TAXRATE</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>TAX_RATE</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">No separator</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>MAX_VAL</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>MAX_VALUE</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Abbreviation</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><code>x</code></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>MAX_CAPACITY</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Not descriptive</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>4. Class-Level Constants (static final)</h2>
+
+                    <p>Constants shared across all instances of a class use <code>static final</code>.</p>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Static Final Constants</span></div>
+                        <pre><code>public class MathConstants {
+    // Class-level constants (static final)
+    public static final double PI = 3.14159265359;
+    public static final double E = 2.71828182846;
+    public static final int MAX_ITERATIONS = 1000;
+    
+    public static void main(String[] args) {
+        // Access without creating instance
+        System.out.println("PI: " + MathConstants.PI);
+        System.out.println("E: " + MathConstants.E);
+        
+        // Calculate circle area
+        double radius = 5.0;
+        double area = PI * radius * radius;
+        System.out.println("Area: " + area);
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>🌐 Static Final အကြောင်း</span>
+                        </div>
+                        <p><code><strong>static final</strong></code> က class-level constant ဖြစ်ပါတယ်။</p>
+                        <ul>
+                            <li><strong>static:</strong> Class ကိုယ်တိုင်နှင့် ဆိုင်တယ်၊ instance မလိုပါ</li>
+                            <li><strong>final:</strong> Value ပြောင်းလို့ မရပါ</li>
+                            <li><strong>Shared:</strong> All objects တွေက တူညီတဲ့ value ကို share လုပ်ကြတယ်</li>
+                            <li><strong>Memory efficient:</strong> တစ်ခါတည်း memory မှာ ရှိတယ်</li>
+                        </ul>
+                        <p><strong>Access pattern:</strong> <code>ClassName.CONSTANT_NAME</code></p>
+                        <div class="code-block">
+                            <pre><code>// Access from anywhere
+double pi = MathConstants.PI;
+int max = MathConstants.MAX_ITERATIONS;</code></pre>
+                        </div>
+                    </div>
+
+                    <h3>Real-World Example</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Configuration Class</span></div>
+                        <pre><code>public class AppConfig {
+    // Application constants
+    public static final String APP_NAME = "StudentManager";
+    public static final String VERSION = "1.0.0";
+    public static final int MAX_USERS = 1000;
+    public static final int SESSION_TIMEOUT = 1800;  // 30 minutes
+    
+    // Database constants
+    public static final String DB_HOST = "localhost";
+    public static final int DB_PORT = 3306;
+    public static final String DB_NAME = "school";
+    
+    // Tax and rates
+    public static final double TAX_RATE = 0.10;
+    public static final double DISCOUNT_RATE = 0.15;
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("App: " + AppConfig.APP_NAME);
+        System.out.println("Version: " + AppConfig.VERSION);
+        System.out.println("Max Users: " + AppConfig.MAX_USERS);
+        
+        // Calculate price with tax
+        double price = 100.0;
+        double total = price * (1 + AppConfig.TAX_RATE);
+        System.out.println("Total with tax: " + total);
+    }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>5. Final with Different Data Types</h2>
+
+                    <h3>5.1 Primitive Types</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Final Primitives</span></div>
+                        <pre><code>// Integer types
+final byte MAX_BYTE = 127;
+final short MAX_SHORT = 32767;
+final int MAX_INT = 2147483647;
+final long MAX_LONG = 9223372036854775807L;
+
+// Floating-point
+final float PI_FLOAT = 3.14159f;
+final double PI_DOUBLE = 3.14159265359;
+
+// Character
+final char GRADE_A = 'A';
+final char NEWLINE = '\n';
+
+// Boolean
+final boolean IS_PRODUCTION = true;
+final boolean DEBUG_MODE = false;</code></pre>
+                    </div>
+
+                    <h3>5.2 Reference Types (String, Arrays, Objects)</h3>
+                    <div class="code-block">
+                        <div class="code-header"><span>Final Reference Types</span></div>
+                        <pre><code>// String constant
+final String WELCOME_MESSAGE = "Welcome to Java!";
+final String ERROR_MESSAGE = "An error occurred";
+
+// Array constant (reference is final, but elements can change!)
+final int[] FIBONACCI = {1, 1, 2, 3, 5, 8, 13};
+FIBONACCI[0] = 10;  // ✅ OK! Can modify elements
+// FIBONACCI = new int[5];  // ❌ Error! Cannot reassign array
+
+// Array of Strings
+final String[] DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+DAYS[0] = "Monday";  // ✅ OK! Can modify elements</code></pre>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>⚠️ Important: Final Reference Variables</h3>
+                        <p><strong>Final reference</strong> ဆိုတာ <strong>reference ကိုယ်တိုင်</strong> ကို
+                            ပြောင်းလို့မရဘူး ဆိုတာပါ။ ဒါပေမယ့် <strong>object ရဲ့ content</strong> ကို ပြောင်းလို့
+                            ရပါတယ်။</p>
+                        <div class="code-block">
+                            <pre><code>final int[] numbers = {1, 2, 3};
+
+// ✅ OK: Modify array contents
+numbers[0] = 10;
+numbers[1] = 20;
+
+// ❌ Error: Cannot reassign reference
+numbers = new int[5];  // Compilation error!
+
+final String message = "Hello";
+// message = "Hi";  // ❌ Error! Strings are immutable anyway</code></pre>
+                        </div>
+                        <p><strong>Summary:</strong> Final = Reference မပြောင်း, Content ပြောင်းလို့ရတယ်</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>6. Constants vs Variables Comparison</h2>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                            <thead>
+                                <tr style="background: rgba(0,217,255,0.2);">
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Aspect</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Variable</th>
+                                    <th style="padding:12px; border:1px solid rgba(0,217,255,0.3);">Constant (final)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <strong>Declaration</strong>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>int age = 25;</code>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <code>final int MAX_AGE = 100;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <strong>Reassignment</strong>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">✅ Allowed</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">❌ Not allowed</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <strong>Naming</strong>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">camelCase</td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">UPPER_SNAKE_CASE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);"><strong>Use
+                                            Case</strong></td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Values that change
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">Fixed values</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">
+                                        <strong>Examples</strong>
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">counter, score, name
+                                    </td>
+                                    <td style="padding:10px; border:1px solid rgba(0,217,255,0.3);">PI, MAX_SIZE,
+                                        TAX_RATE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Side-by-Side Comparison</span></div>
+                        <pre><code>public class Comparison {
+    public static void main(String[] args) {
+        // Variable - can change
+        int studentCount = 30;
+        studentCount = 35;  // ✅ OK
+        studentCount = 40;  // ✅ OK
+        System.out.println("Count: " + studentCount);
+        
+        // Constant - cannot change
+        final int MAX_CAPACITY = 50;
+        // MAX_CAPACITY = 60;  // ❌ Error!
+        System.out.println("Max: " + MAX_CAPACITY);
+        
+        // Use constant in calculation
+        if (studentCount > MAX_CAPACITY) {
+            System.out.println("Exceeded capacity!");
+        } else {
+            System.out.println("Within capacity");
+        }
+    }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>7. Best Practices</h2>
+
+                    <div class="highlight-box">
+                        <h3>✅ When to Use Constants</h3>
+                        <ul>
+                            <li><strong>Mathematical values:</strong> PI, E, GOLDEN_RATIO</li>
+                            <li><strong>Configuration:</strong> MAX_USERS, DEFAULT_TIMEOUT, API_URL</li>
+                            <li><strong>Physical constants:</strong> SPEED_OF_LIGHT, GRAVITY</li>
+                            <li><strong>Status codes:</strong> SUCCESS_CODE, ERROR_CODE</li>
+                            <li><strong>Magic numbers:</strong> Any hardcoded number used multiple times</li>
+                            <li><strong>Fixed strings:</strong> ERROR_MESSAGES, DEFAULT_LANGUAGE</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>❌ When NOT to Use Constants</h3>
+                        <ul>
+                            <li><strong>Values that change:</strong> user input, current time, counters</li>
+                            <li><strong>Temporary variables:</strong> loop variables, calculation intermediates</li>
+                            <li><strong>Method parameters:</strong> Don't make parameters final unless needed</li>
+                            <li><strong>Local scope only:</strong> If used only once in one method</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Good vs Bad Usage</span></div>
+                        <pre><code>// ❌ Bad: Magic numbers scattered everywhere
+double area1 = 3.14159 * 5 * 5;
+double area2 = 3.14159 * 10 * 10;
+double circumference = 2 * 3.14159 * 5;
+
+// ✅ Good: Use constant
+final double PI = 3.14159;
+double area1 = PI * 5 * 5;
+double area2 = PI * 10 * 10;
+double circumference = 2 * PI * 5;
+
+// ❌ Bad: No constant for tax rate
+double total1 = price * 1.10;
+double total2 = amount * 1.10;
+
+// ✅ Good: Use constant
+final double TAX_RATE = 0.10;
+double total1 = price * (1 + TAX_RATE);
+double total2 = amount * (1 + TAX_RATE);</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-box-header">
+                            <span>💡 Pro Tips</span>
+                        </div>
+                        <ul>
+                            <li><strong>Group related constants:</strong> ဆက်စပ်တဲ့ constants တွေကို class တစ်ခုထဲ
+                                စုထားပါ</li>
+                            <li><strong>Document purpose:</strong> Comment ထည့်ပြီး constant ရဲ့ ရည်ရွယ်ချက် ရှင်းပြပါ
+                            </li>
+                            <li><strong>Use meaningful names:</strong> MAX_SIZE က x ထက် ကောင်းတယ်</li>
+                            <li><strong>Avoid magic numbers:</strong> Hardcoded numbers တွေကို constants အဖြစ် လုပ်ပါ
+                            </li>
+                            <li><strong>static final for class-level:</strong> တစ်ခုထက် ပိုသော instance မှာ သုံးမယ်ဆို
+                                static final လုပ်ပါ</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>8. Complete Example</h2>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>ShoppingCart.java</span></div>
+                        <pre><code>public class ShoppingCart {
+    // Constants for the application
+    public static final double TAX_RATE = 0.10;        // 10% tax
+    public static final double DISCOUNT_RATE = 0.15;   // 15% discount
+    public static final double FREE_SHIPPING_THRESHOLD = 50.0;
+    public static final double SHIPPING_COST = 5.99;
+    public static final int MAX_ITEMS = 100;
+    
+    public static void main(String[] args) {
+        // Product prices
+        double itemPrice1 = 25.00;
+        double itemPrice2 = 30.00;
+        int quantity = 2;
+        
+        // Calculate subtotal
+        double subtotal = (itemPrice1 + itemPrice2) * quantity;
+        System.out.println("Subtotal: $" + subtotal);
+        
+        // Apply discount
+        double discount = subtotal * DISCOUNT_RATE;
+        double afterDiscount = subtotal - discount;
+        System.out.println("Discount: $" + discount);
+        System.out.println("After discount: $" + afterDiscount);
+        
+        // Add tax
+        double tax = afterDiscount * TAX_RATE;
+        double total = afterDiscount + tax;
+        System.out.println("Tax: $" + tax);
+        
+        // Calculate shipping
+        double shipping = (total >= FREE_SHIPPING_THRESHOLD) ? 0 : SHIPPING_COST;
+        total += shipping;
+        
+        if (shipping == 0) {
+            System.out.println("Free shipping!");
+        } else {
+            System.out.println("Shipping: $" + shipping);
+        }
+        
+        System.out.println("Total: $" + total);
+        
+        // Check item limit
+        if (quantity > MAX_ITEMS) {
+            System.out.println("Exceeded maximum items!");
+        }
+    }
+}</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header"><span>Output</span></div>
+                        <pre><code>Subtotal: $110.0
+Discount: $16.5
+After discount: $93.5
+Tax: $9.35
+Total: $102.85
+Free shipping!</code></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>9. Key Takeaways</h2>
+                    <div class="takeaway-box">
+                        <ul>
+                            <li><strong>final keyword:</strong> Makes variable immutable (cannot reassign)</li>
+                            <li><strong>Constants naming:</strong> UPPER_SNAKE_CASE convention</li>
+                            <li><strong>Must initialize:</strong> Assign value when declaring (local)</li>
+                            <li><strong>static final:</strong> Class-level constants shared by all instances</li>
+                            <li><strong>Compile-time check:</strong> Compiler prevents reassignment</li>
+                            <li><strong>Reference types:</strong> Reference final, content can change</li>
+                            <li><strong>Use for fixed values:</strong> PI, MAX_SIZE, TAX_RATE</li>
+                            <li><strong>Avoid magic numbers:</strong> Replace with named constants</li>
+                            <li><strong>Group constants:</strong> Create config/constants classes</li>
+                            <li><strong>Document purpose:</strong> Add comments for clarity</li>
+                            <li><strong>Meaningful names:</strong> MAX_USERS better than X</li>
+                            <li><strong>Thread-safe:</strong> Constants are safe for concurrent access</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box"
+                        style="background: rgba(0,217,255,0.1); border-left: 4px solid #00d9ff; padding: 20px; margin: 30px 0;">
+                        <h3 style="color: #00d9ff; margin-top: 0;">🎉 Congratulations!</h3>
+                        <p style="font-size: 1.1em;"><strong>Module 2: Variables & Data Types - COMPLETED!</strong></p>
+                        <p>You've successfully learned:</p>
+                        <ul>
+                            <li>✅ Variables and Literals</li>
+                            <li>✅ Data Types (8 primitives + references)</li>
+                            <li>✅ Operators (Arithmetic, Relational, Logical)</li>
+                            <li>✅ Constants and Final keyword</li>
+                        </ul>
+                        <p style="margin-bottom: 0;"><strong>Next:</strong> Module 3 - Control Flow (If-Else, Switch,
+                            Loops)</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="exercise-box">
+                        <h3>💡 Practice Exercise</h3>
+                        <p><strong>Create a BankAccount class with constants:</strong></p>
+                        <ul>
+                            <li>MINIMUM_BALANCE (final double)</li>
+                            <li>INTEREST_RATE (static final double)</li>
+                            <li>MAX_WITHDRAWAL (static final double)</li>
+                            <li>CURRENCY (static final String)</li>
+                            <li>Calculate interest using the constant rate</li>
+                            <li>Validate withdrawal against MAX_WITHDRAWAL</li>
+                        </ul>
+
+                        <h3>💡 Quick Quiz</h3>
+                        <div class="quiz-question">
+                            <p><strong>Q1: Which keyword makes a variable constant?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q1" value="a"><span>const</span></label>
+                                <label><input type="radio" name="q1" value="b"><span>final</span></label>
+                                <label><input type="radio" name="q1" value="c"><span>static</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q2: What is the correct naming for constants?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q2" value="a"><span>maxValue</span></label>
+                                <label><input type="radio" name="q2" value="b"><span>MAX_VALUE</span></label>
+                                <label><input type="radio" name="q2" value="c"><span>MaxValue</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>Q3: Can you change a final variable after initialization?</strong></p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q3" value="a"><span>Yes</span></label>
+                                <label><input type="radio" name="q3" value="b"><span>No</span></label>
+                                <label><input type="radio" name="q3" value="c"><span>Only once</span></label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary quiz-submit" onclick="checkQuiz()">Check Answers</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </section>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-7.html" class="nav-btn prev-btn">← Previous</a>
+                <div class="lesson-actions">
+                    <button class="action-btn">Bookmark</button>
+                    <button class="action-btn">Mark Complete</button>
+                </div>
+                <a href="lesson-9.html" class="nav-btn next-btn">Next Module →</a>
+            </div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/color.js"></script>
+    <script src="../js/glo.js"></script>
+    <script>
+        function checkQuiz() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('quizResult');
+
+            if (!q1 || !q2 || !q3) {
+                alert('Please answer all questions');
+                return;
+            }
+
+            let score = 0;
+            if (q1.value === 'b') score++;
+            if (q2.value === 'b') score++;
+            if (q3.value === 'b') score++;
+
+            if (score === 3) {
+                result.className = 'quiz-result correct';
+                result.innerHTML = '✓ Perfect! 3/3 correct! 🎉 Module 2 Complete! Ready for Module 3!';
+            } else {
+                result.className = 'quiz-result incorrect';
+                result.innerHTML = score + '/3 correct. Correct: Q1=B (final keyword), Q2=B (UPPER_SNAKE_CASE), Q3=B (Cannot change)';
+            }
+        }
+    </script>
+</body>
+
+</html>

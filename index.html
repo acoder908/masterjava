@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A Coder - Learn Java programming, tutorials, code examples, and best practices. Master coding with expert guides and interactive lessons.">
+    <meta name="keywords" content="Java, Programming, Coding, Tutorials, Web Development, A Coder">
+    <meta name="author" content="A Coder">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="A Coder - Master Java Programming">
+    <meta property="og:description" content="Learn Java with interactive tutorials and expert guides">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.acoder.com">
+    <meta property="og:image" content="images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Coder - Master Java Programming">
+    <meta name="twitter:description" content="Learn Java with interactive tutorials and expert guides">
+
+    <title>A Coder - Master Java Programming | Tutorials & Guides</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google AdSense -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <p>🍪 We use cookies to improve your experience and show relevant ads. By continuing, you accept our <a
+                    href="pages/privacy.html">Privacy Policy</a>.</p>
+            <button id="acceptCookies" class="btn-accept">Accept</button>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Code brackets </> -->
+                    <text x="30" y="40" font-family="JetBrains Mono, monospace" font-size="36" font-weight="bold"
+                        fill="#00d9ff" text-anchor="middle">&lt;/&gt;</text>
+                </svg>
+                <span class="logo-text">
+                    <span style="color: #2c4c59fe;">A</span>
+                    <span style="color: #00d9ff;"> Coder</span>
+                </span>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="pages/tutorials.html">Tutorials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#playground">Playground</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search">🔍</button>
+                <button class="btn-cta">Join Newsletter</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search tutorials, articles..." class="search-input">
+            <button class="search-close">✕</button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Master <span class="gradient-text">Java</span> Programming
+                </h1>
+                <p class="hero-subtitle">From beginner to expert. Learn with interactive tutorials, real-world projects,
+                    and expert guidance.</p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>100+</strong>
+                        <span>Tutorials</span>
+                    </div>
+                    <div class="stat">
+                        <strong>50K+</strong>
+                        <span>Students</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.9★</strong>
+                        <span>Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="./pages/tutorials.html" class="btn btn-primary">Start Learning</a>
+                    <button class="btn btn-secondary">View Tutorials</button>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">HelloWorld.java</span>
+                    </div>
+                    <pre class="code-content"><span class="keyword">public class</span> <span class="class-name">HelloWorld</span> {
+    <span class="keyword">public static void</span> main(<span class="class-name">String</span>[] args) {
+        <span class="comment">// Welcome to A Coder!</span>
+        <span class="class-name">System</span>.out.println(<span class="string">"Hello, Coder!"</span>);
+        
+        <span class="class-name">ACoder</span> journey = <span class="keyword">new</span> <span class="class-name">ACoder</span>();
+        journey.startLearning();
+    }
+}</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense - Header Banner -->
+    <div class="ad-container ad-header">
+        <div class="ad-placeholder">
+            <!-- AdSense Header Ad Unit -->
+            <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+            <p class="ad-label">Advertisement</p>
+        </div>
+    </div>
+
+    <!-- Tutorial Categories -->
+    <section class="categories" id="tutorials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Category</h2>
+                <p class="section-subtitle">Choose your learning path</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🎯</div>
+                    <h3>Beginner</h3>
+                    <p>Start your Java journey from scratch</p>
+                    <span class="badge">42 Lessons</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🚀</div>
+                    <h3>Intermediate</h3>
+                    <p>Level up your coding skills</p>
+                    <span class="badge">38 Lessons</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">⚡</div>
+                    <h3>Advanced</h3>
+                    <p>Master complex concepts</p>
+                    <span class="badge">28 Lessons</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Projects</h3>
+                    <p>Build real-world applications</p>
+                    <span class="badge">15 Projects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Stay updated with coding tips and tutorials</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Java Best Practices" loading="lazy">
+                        <span class="blog-category">Featured</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="reading-time">⏱️ 8 min read</span>
+                            <span class="publish-date">Feb 10, 2026</span>
+                        </div>
+                        <h3>Java Best Practices Every Developer Should Know</h3>
+                        <p>Discover essential coding standards and practices that will make you a better Java
+                            developer...</p>
+                        <div class="blog-footer">
+                            <a href="pages/article-detail.html" class="btn-read-more"
+                                style="text-decoration: none;">Read More →</a>
+                            <div class="blog-actions">
+                                <button class="btn-bookmark" aria-label="Bookmark">🔖</button>
+                                <button class="btn-share" aria-label="Share">📤</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AdSense - In-Feed Ad -->
+                <div class="ad-container ad-infeed">
+                    <div class="ad-placeholder">
+                        <p class="ad-label">Advertisement</p>
+                        <!-- <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-XXXXXX" data-ad-client="ca-pub-XXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins> -->
+                    </div>
+                </div>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="OOP Concepts" loading="lazy">
+                        <span class="blog-category">Tutorial</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="reading-time">⏱️ 12 min read</span>
+                            <span class="publish-date">Feb 8, 2026</span>
+                        </div>
+                        <h3>Understanding OOP: A Complete Guide</h3>
+                        <p>Master object-oriented programming concepts with practical examples and clear explanations...
+                        </p>
+                        <div class="blog-footer">
+                            <a href="pages/article-detail.html" class="btn-read-more"
+                                style="text-decoration: none;">Read More →</a>
+                            <div class="blog-actions">
+                                <button class="btn-bookmark" aria-label="Bookmark">🔖</button>
+                                <button class="btn-share" aria-label="Share">📤</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Data Structures" loading="lazy">
+                        <span class="blog-category">Advanced</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="reading-time">⏱️ 15 min read</span>
+                            <span class="publish-date">Feb 5, 2026</span>
+                        </div>
+                        <h3>Data Structures in Java: Arrays to Trees</h3>
+                        <p>Deep dive into Java data structures with performance analysis and real-world use cases...</p>
+                        <div class="blog-footer">
+                            <a href="pages/article-detail.html" class="btn-read-more"
+                                style="text-decoration: none;">Read More →</a>
+                            <div class="blog-actions">
+                                <button class="btn-bookmark" aria-label="Bookmark">🔖</button>
+                                <button class="btn-share" aria-label="Share">📤</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-cta">
+                <button class="btn btn-outline">View All Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Playground -->
+    <section class="playground" id="playground">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Try It Yourself</h2>
+                <p class="section-subtitle">Interactive Java playground - write, run, and learn</p>
+            </div>
+
+            <div class="playground-container">
+                <div class="playground-editor">
+                    <div class="editor-header">
+                        <span>✏️ Editor</span>
+                        <button class="btn-run">▶️ Run Code</button>
+                    </div>
+                    <textarea id="codeEditor" class="code-editor">public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello from A Coder!");
+    }
+}</textarea>
+                </div>
+
+                <div class="playground-output">
+                    <div class="output-header">
+                        <span>📺 Output</span>
+                        <button class="btn-clear">Clear</button>
+                    </div>
+                    <div id="codeOutput" class="code-output">
+                        <p class="output-placeholder">Press "Run Code" to see the output...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>📬 Join Our Newsletter</h2>
+                    <p>Get weekly coding tips, tutorials, and exclusive content delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense - Footer Banner -->
+    <div class="ad-container ad-footer">
+        <div class="ad-placeholder">
+            <p class="ad-label">Advertisement</p>
+            <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <text x="30" y="40" font-family="JetBrains Mono, monospace" font-size="36"
+                                font-weight="bold" fill="#00d9ff" text-anchor="middle">&lt;/&gt;</text>
+                        </svg>
+                        <span style="color: #2c4c59fe;">A <span style="color: #00d9ff;">Coder</span></span>
+                    </div>
+                    <p>Master Java programming with expert tutorials and interactive learning.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="GitHub">🐙</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#tutorials">Tutorials</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#playground">Playground</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Cheat Sheets</a></li>
+                        <li><a href="#">Code Examples</a></li>
+                        <li><a href="#">Video Courses</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms of Service</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 A Coder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Reading Progress Bar -->
+    <div id="readingProgress" class="reading-progress"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

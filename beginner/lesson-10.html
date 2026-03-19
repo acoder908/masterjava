@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10: Switch Statements - Clean Java Conditionals | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 10</span>
+            </nav>
+        </div>
+    </div>
+    <div class="course-layout">
+        <!-- W3Schools-style Sidebar for Lesson 10 -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">42%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 42%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>10 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow (ACTIVE) -->
+                <div class="module active">
+                    <button class="module-header active" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-9.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="lesson-content">
+            <div class="lesson-header">
+                <div class="lesson-badge">Module 3 - Lesson 10</div>
+                <h1>Switch Statements: Elegant Multi-Way Decisions</h1>
+                <p class="lesson-description">If-else-if အစား switch သုံးရင် code က ပိო clean ဖြစ်တယ်၊ ပိုဖတ်လွယ်တယ်။
+                    Multiple cases တွေကို efficiently handle လုပ်နည်းကို လေ့လာကြမယ်။</p>
+                <div class="lesson-meta">
+                    <span>⏱️ 40 minutes</span>
+                    <span>📚 Intermediate</span>
+                    <span>💻 Practical Examples</span>
+                </div>
+            </div>
+
+            <!-- What You'll Learn -->
+            <section class="content-section">
+                <h2>🎯 သင် သင်ယူမည့် အရာများ</h2>
+                <div class="info-box burmese">
+                    <p>ဒီ lesson မှာ သင် သင်ယူမည့် အရာများ:</p>
+                    <ul>
+                        <li>Switch statement ရဲ့ syntax နဲ့ အလုပ်လုပ်ပုံ</li>
+                        <li>Case labels နဲ့ break statement အသုံးပြုနည်း</li>
+                        <li>Default case ကို ဘယ်လို သုံးရမလဲ</li>
+                        <li>Switch vs If-Else-If - ဘယ်အချိန် ဘာသုံးရမလဲ</li>
+                        <li>Fall-through behavior နဲ့ ဂရုစိုက်ရမည့် အချက်များ</li>
+                        <li>Modern Java Switch expressions (Java 12+)</li>
+                        <li>Real-world examples များ</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <section class="content-section">
+                <h2>📖 Switch Statement ဆိုတာ ဘာလဲ?</h2>
+                <p>Switch statement ဆိုတာ variable တစ်ခုရဲ့ value ကို multiple possible values တွေနဲ့ နှိုင်းယှဉ်ပြီး
+                    matching case ကို execute လုပ်တဲ့ control flow statement ပါ။ If-else-if ladder ထက် code က ပို clean
+                    ဖြစ်ပြီး၊ ပိုမြန်ပါတယ်။</p>
+
+                <div class="info-box burmese">
+                    <p><strong>နေ့စဉ်ဘဝမှာ ဥပမာ:</strong></p>
+                    <ul>
+                        <li>Menu မှာ 1 နှိပ်ရင် → Coca Cola, 2 နှိပ်ရင် → Pepsi, 3 နှိပ်ရင် → Sprite</li>
+                        <li>နေ့ရက် စစ်ဆေးခြင်း: Monday → အလုပ်နေ့, Saturday → စနေ, Sunday → တနင်္ဂနွေ</li>
+                        <li>Grade စစ်ဆေးခြင်း: A → Excellent, B → Good, C → Average</li>
+                    </ul>
+                    <p>If-else-if နဲ့ ရေးရင် ရှည်လျားမယ်၊ switch နဲ့ ရေးရင် ရှင်းလင်းမယ်!</p>
+                </div>
+
+                <h3>If-Else-If vs Switch</h3>
+                <p>အတူတူ ရလဒ် ထွက်ပေမယ့် switch က ပို clean:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">If-Else-If (Verbose)</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>if (day == 1) {
+    System.out.println("Monday");
+} else if (day == 2) {
+    System.out.println("Tuesday");
+} else if (day == 3) {
+    System.out.println("Wednesday");
+} else if (day == 4) {
+    System.out.println("Thursday");
+} else if (day == 5) {
+    System.out.println("Friday");
+} else {
+    System.out.println("Weekend");
+}</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Switch (Clean & Clear)</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    case 4:
+        System.out.println("Thursday");
+        break;
+    case 5:
+        System.out.println("Friday");
+        break;
+    default:
+        System.out.println("Weekend");
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Basic Switch Syntax -->
+            <section class="content-section">
+                <h2>🔹 Switch Statement Syntax</h2>
+                <p>Basic syntax structure:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>switch (expression) {
+    case value1:
+        // value1 နဲ့ တူရင် execute
+        statements;
+        break;
+    
+    case value2:
+        // value2 နဲ့ တူရင် execute
+        statements;
+        break;
+    
+    case value3:
+        // value3 နဲ့ တူရင် execute
+        statements;
+        break;
+    
+    default:
+        // ဘယ် case နဲ့မှ မတူရင် execute (optional)
+        statements;
+}</code></pre>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>အရေးကြီးတဲ့ အချက်များ:</strong></p>
+                    <ul>
+                        <li><strong>Expression:</strong> int, byte, short, char, String, enum ပဲ သုံးလို့ရတယ် (long,
+                            float, double မရဘူး)</li>
+                        <li><strong>Case values:</strong> Constant ဖြစ်ရမယ် (variables မသုံးနိုင်ဘူး)</li>
+                        <li><strong>break:</strong> Case ပြီးရင် switch ကနေ ထွက်ဖို့ (မပါရင် fall-through ဖြစ်တယ်)</li>
+                        <li><strong>default:</strong> Optional ပါ၊ ဘယ် case နဲ့မှ မကိုက်ရင် execute လုပ်တယ်</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Simple Example -->
+            <section class="content-section">
+                <h2>🔹 Simple Example: Day of Week</h2>
+                <p>နံပါတ်ကနေ နေ့ရက် ထုတ်ပြခြင်း:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class DayOfWeek {
+    public static void main(String[] args) {
+        int dayNumber = 3;
+        String dayName;
+        
+        switch (dayNumber) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            case 7:
+                dayName = "Sunday";
+                break;
+            default:
+                dayName = "Invalid day";
+        }
+        
+        System.out.println("Day " + dayNumber + " is " + dayName);
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>Day 3 is Wednesday</pre>
+                </div>
+            </section>
+
+            <!-- Break Statement -->
+            <section class="content-section">
+                <h2>🔹 Break Statement - အရေးကြီးဆုံး!</h2>
+                <p>Break statement က case တစ်ခု execute ပြီးရင် switch ကနေ ထွက်ဖို့ သုံးတယ်။ break မပါရင်
+                    <strong>fall-through</strong> ဖြစ်ပြီး အောက်က cases တွေ ဆက် execute လုပ်တယ်!</p>
+
+                <h3>Without Break (Fall-Through Bug!)</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java - WRONG!</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>int grade = 2;
+
+switch (grade) {
+    case 1:
+        System.out.println("Excellent!");
+        // break ပါရမယ်!
+    case 2:
+        System.out.println("Good!");
+        // break ပါရမယ်!
+    case 3:
+        System.out.println("Average");
+        // break ပါရမယ်!
+    default:
+        System.out.println("Need improvement");
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Wrong Output (Fall-through!):</strong>
+                    <pre>Good!
+Average
+Need improvement</pre>
+                    <p style="color: red;">⚠️ case 2 ပြီးတာနဲ့ မရပ်ဘဲ အောက်တွေ ဆက်လုပ်သွားတယ်!</p>
+                </div>
+
+                <h3>With Break (Correct!)</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java - CORRECT!</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>int grade = 2;
+
+switch (grade) {
+    case 1:
+        System.out.println("Excellent!");
+        break;  // ✓
+    case 2:
+        System.out.println("Good!");
+        break;  // ✓
+    case 3:
+        System.out.println("Average");
+        break;  // ✓
+    default:
+        System.out.println("Need improvement");
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Correct Output:</strong>
+                    <pre>Good!</pre>
+                    <p style="color: green;">✓ case 2 execute ပြီး break နဲ့ ထွက်သွားတယ်</p>
+                </div>
+            </section>
+
+            <!-- Intentional Fall-Through -->
+            <section class="content-section">
+                <h2>🔹 Intentional Fall-Through (တမင် ဆက်လုပ်စေခြင်း)</h2>
+                <p>တခါတရံ fall-through က useful ဖြစ်နိုင်တယ် - multiple cases အတွက် တူညီတဲ့ code run ချင်ရင်:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class WorkingDay {
+    public static void main(String[] args) {
+        int day = 3;
+        String dayType;
+        
+        switch (day) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                dayType = "Working Day";
+                break;
+            case 6:
+            case 7:
+                dayType = "Weekend";
+                break;
+            default:
+                dayType = "Invalid";
+        }
+        
+        System.out.println("Day " + day + ": " + dayType);
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>Day 3: Working Day</pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>ရှင်းလင်းချက်:</strong></p>
+                    <ul>
+                        <li>case 1, 2, 3, 4, 5 အားလုံး "Working Day" output ပေးတယ်</li>
+                        <li>case 1-4 မှာ break မပါဘူး → fall-through ဖြစ်တယ်</li>
+                        <li>case 5 မှာမှ break ရှိလို့ ထွက်သွားတယ်</li>
+                        <li>ဒီ pattern က multiple values အတွက် တူညီတဲ့ action လုပ်ဖို့ သုံးတယ်</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- String in Switch -->
+            <section class="content-section">
+                <h2>🔹 String in Switch (Java 7+)</h2>
+                <p>Java 7 ကနေစပြီး String ကိုလည်း switch မှာ သုံးလို့ရပါပြီ:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class BeverageMenu {
+    public static void main(String[] args) {
+        String drink = "Coffee";
+        int price;
+        
+        switch (drink) {
+            case "Coffee":
+                price = 3000;
+                System.out.println("Hot or Iced Coffee");
+                break;
+            
+            case "Tea":
+                price = 2000;
+                System.out.println("Green or Black Tea");
+                break;
+            
+            case "Juice":
+                price = 3500;
+                System.out.println("Fresh Fruit Juice");
+                break;
+            
+            case "Soda":
+                price = 2500;
+                System.out.println("Coca Cola or Pepsi");
+                break;
+            
+            default:
+                price = 0;
+                System.out.println("Not available");
+        }
+        
+        System.out.println("Price: " + price + " Kyats");
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>Hot or Iced Coffee
+Price: 3000 Kyats</pre>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>⚠️ String switch သတိပြုရန်:</strong></p>
+                    <ul>
+                        <li>Case-sensitive ဖြစ်တယ်: "coffee" နဲ့ "Coffee" မတူဘူး</li>
+                        <li>null value ကို check လုပ်နိုင်မယ် (NullPointerException ရှောင်ရန်)</li>
+                        <li>String comparison က equals() သုံးတယ် (== မဟုတ်ဘူး)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Complete Example: Calculator -->
+            <section class="content-section">
+                <h2>💻 Complete Example: Simple Calculator</h2>
+                <p>Switch နဲ့ calculator လေး တည်ဆောက်ကြမယ်:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class SimpleCalculator {
+    public static void main(String[] args) {
+        double num1 = 10;
+        double num2 = 5;
+        char operator = '/';
+        double result;
+        
+        System.out.println("=== Simple Calculator ===");
+        System.out.println("Number 1: " + num1);
+        System.out.println("Number 2: " + num2);
+        System.out.println("Operator: " + operator);
+        System.out.println();
+        
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                System.out.println("Addition: " + num1 + " + " + num2 + " = " + result);
+                break;
+            
+            case '-':
+                result = num1 - num2;
+                System.out.println("Subtraction: " + num1 + " - " + num2 + " = " + result);
+                break;
+            
+            case '*':
+                result = num1 * num2;
+                System.out.println("Multiplication: " + num1 + " × " + num2 + " = " + result);
+                break;
+            
+            case '/':
+                if (num2 != 0) {
+                    result = num1 / num2;
+                    System.out.println("Division: " + num1 + " ÷ " + num2 + " = " + result);
+                } else {
+                    System.out.println("Error: Cannot divide by zero!");
+                }
+                break;
+            
+            case '%':
+                if (num2 != 0) {
+                    result = num1 % num2;
+                    System.out.println("Modulus: " + num1 + " % " + num2 + " = " + result);
+                } else {
+                    System.out.println("Error: Cannot divide by zero!");
+                }
+                break;
+            
+            default:
+                System.out.println("Error: Invalid operator!");
+                System.out.println("Please use: +, -, *, /, %");
+        }
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>=== Simple Calculator ===
+Number 1: 10.0
+Number 2: 5.0
+Operator: /
+
+Division: 10.0 ÷ 5.0 = 2.0</pre>
+                </div>
+            </section>
+
+            <!-- Month Days Example -->
+            <section class="content-section">
+                <h2>🔹 Practical Example: Days in Month</h2>
+                <p>လ အမည်ကနေ ရက်ပေါင်း ထုတ်ပြခြင်း:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class DaysInMonth {
+    public static void main(String[] args) {
+        String month = "February";
+        int year = 2024;
+        int days;
+        
+        switch (month) {
+            case "January":
+            case "March":
+            case "May":
+            case "July":
+            case "August":
+            case "October":
+            case "December":
+                days = 31;
+                break;
+            
+            case "April":
+            case "June":
+            case "September":
+            case "November":
+                days = 30;
+                break;
+            
+            case "February":
+                // Leap year check
+                if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+                    days = 29;
+                } else {
+                    days = 28;
+                }
+                break;
+            
+            default:
+                days = 0;
+                System.out.println("Invalid month name!");
+        }
+        
+        if (days > 0) {
+            System.out.println(month + " " + year + " has " + days + " days.");
+        }
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>February 2024 has 29 days.</pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>ဒီ example က ပြတာ:</strong></p>
+                    <ul>
+                        <li>Multiple cases အတွက် တူညီတဲ့ result (31 days, 30 days)</li>
+                        <li>Switch case ထဲမှာ if statement သုံးခြင်း (February leap year)</li>
+                        <li>Default case မှာ error handling</li>
+                        <li>Real-world practical application</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Switch vs If-Else -->
+            <section class="content-section">
+                <h2>🔹 Switch vs If-Else-If: ဘယ်အချိန် ဘာသုံးရမလဲ?</h2>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Situation</th>
+                                <th>အကောင်းဆုံး Choice</th>
+                                <th>အကြောင်းပြချက်</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>တစ်ခု value ကို multiple values နဲ့ နှိုင်းယှဉ်ခြင်း</td>
+                                <td><strong>Switch</strong></td>
+                                <td>Clean, readable, faster</td>
+                            </tr>
+                            <tr>
+                                <td>Range checking (x > 10 && x < 20)</td>
+                                <td><strong>If-Else</strong></td>
+                                <td>Switch က range မစစ်နိုင်ဘူး</td>
+                            </tr>
+                            <tr>
+                                <td>Complex conditions (&&, ||)</td>
+                                <td><strong>If-Else</strong></td>
+                                <td>Switch က logical operators မသုံးနိုင်ဘူး</td>
+                            </tr>
+                            <tr>
+                                <td>Equality checking (==)</td>
+                                <td><strong>Switch</strong></td>
+                                <td>More efficient</td>
+                            </tr>
+                            <tr>
+                                <td>Boolean conditions</td>
+                                <td><strong>If-Else</strong></td>
+                                <td>Switch က boolean မသုံးနိုင်ဘူး</td>
+                            </tr>
+                            <tr>
+                                <td>String/Char/Int equality</td>
+                                <td><strong>Switch</strong></td>
+                                <td>Cleaner code</td>
+                            </tr>
+                            <tr>
+                                <td>Menu systems, day/month selection</td>
+                                <td><strong>Switch</strong></td>
+                                <td>Natural fit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>General Rule:</strong></p>
+                    <p>Single variable ကို specific values တွေနဲ့ နှိုင်းယှဉ်ချင်ရင် → <strong>Switch</strong></p>
+                    <p>Complex conditions, ranges, multiple variables → <strong>If-Else</strong></p>
+                </div>
+            </section>
+
+            <!-- Modern Switch (Java 12+) -->
+            <section class="content-section">
+                <h2>🔹 Modern Switch Expressions (Java 12+)</h2>
+                <p>Java 12 ကနေ switch က expression အနေနဲ့ သုံးလို့ရပါပြီ - break မလိုတော့ဘူး!</p>
+
+                <h3>Traditional Switch</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java (Old Style)</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>int day = 3;
+String dayType;
+
+switch (day) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        dayType = "Weekday";
+        break;
+    case 6:
+    case 7:
+        dayType = "Weekend";
+        break;
+    default:
+        dayType = "Invalid";
+}</code></pre>
+                </div>
+
+                <h3>Modern Switch Expression</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java 12+ (New Style)</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>int day = 3;
+
+String dayType = switch (day) {
+    case 1, 2, 3, 4, 5 -> "Weekday";
+    case 6, 7 -> "Weekend";
+    default -> "Invalid";
+};</code></pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>Modern switch ရဲ့ အားသာချက်များ:</strong></p>
+                    <ul>
+                        <li>break statement မလိုတော့ဘူး</li>
+                        <li>Arrow syntax (->) သုံးတယ်</li>
+                        <li>Multiple values ကို comma နဲ့ ခွဲလို့ရတယ်</li>
+                        <li>Direct value assignment ရတယ်</li>
+                        <li>Code က ပိုတိုပြီး ပို clean</li>
+                    </ul>
+                </div>
+
+                <h3>Complex Logic with Yield</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java 12+ (Advanced)</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>int marks = 75;
+
+String grade = switch (marks / 10) {
+    case 10, 9 -> "A";
+    case 8 -> "B";
+    case 7 -> "C";
+    case 6, 5 -> "D";
+    default -> {
+        if (marks < 0 || marks > 100) {
+            yield "Invalid";
+        } else {
+            yield "F";
+        }
+    }
+};
+
+System.out.println("Grade: " + grade);</code></pre>
+                </div>
+            </section>
+
+            <!-- Key Takeaways -->
+            <section class="content-section">
+                <h2>🎯 အဓိက မှတ်သားရမည့် အချက်များ</h2>
+                <div class="info-box burmese">
+                    <ul>
+                        <li><strong>Switch statement:</strong> Variable တစ်ခုကို multiple values တွေနဲ့ တိုက်စစ်တယ်</li>
+                        <li><strong>Supported types:</strong> int, byte, short, char, String, enum (long, float, double
+                            မရဘူး)</li>
+                        <li><strong>break:</strong> Case တစ်ခု execute ပြီးရင် switch ကနေ ထွက်ဖို့ (အရေးကြီးဆုံး!)</li>
+                        <li><strong>Fall-through:</strong> break မပါရင် အောက်က cases တွေ ဆက် execute လုပ်တယ်</li>
+                        <li><strong>default:</strong> ဘယ် case နဲ့မှ မတူရင် execute လုပ်တယ် (optional ပေမယ့်
+                            သုံးသင့်တယ်)</li>
+                        <li><strong>Case values:</strong> Constant ဖြစ်ရမယ်၊ variables သုံးလို့ မရဘူး</li>
+                        <li><strong>Intentional fall-through:</strong> Multiple cases အတွက် တူညီတဲ့ code run ချင်ရင်
+                            သုံးတယ်</li>
+                        <li><strong>Switch vs If-Else:</strong> Equality checking အတွက် switch, complex conditions အတွက်
+                            if-else</li>
+                        <li><strong>Modern switch (Java 12+):</strong> Arrow syntax, break မလို, ပိုတိုပြီး clean</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Practice Exercise -->
+            <section class="content-section">
+                <h2>✍️ Practice Exercise</h2>
+                <div class="highlight-box">
+                    <p><strong>Exercise: Traffic Light System</strong></p>
+                    <p>Traffic light color အပေါ် မူတည်ပြီး action ပြသတဲ့ program ရေးပါ:</p>
+                    <ul>
+                        <li>"Red" → "STOP! Wait for green light."</li>
+                        <li>"Yellow" → "SLOW DOWN! Prepare to stop."</li>
+                        <li>"Green" → "GO! Drive safely."</li>
+                        <li>Any other → "ERROR! Invalid light color."</li>
+                    </ul>
+                    <p><strong>Bonus:</strong> "red", "RED", "Red" အားလုံး အလုပ်လုပ်အောင် ပြင်ပါ (case-insensitive)</p>
+                </div>
+
+                <details>
+                    <summary>💡 Solution ကြည့်ရန် (Try လုပ်ပြီးမှ ကြည့်ပါ)</summary>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy">Copy</button>
+                        </div>
+                        <pre><code>public class TrafficLight {
+    public static void main(String[] args) {
+        String light = "Yellow";
+        
+        // Convert to lowercase for case-insensitive matching
+        String color = light.toLowerCase();
+        
+        System.out.println("Traffic Light: " + light);
+        System.out.print("Action: ");
+        
+        switch (color) {
+            case "red":
+                System.out.println("STOP! Wait for green light.");
+                System.out.println("⛔ Do not cross!");
+                break;
+            
+            case "yellow":
+                System.out.println("SLOW DOWN! Prepare to stop.");
+                System.out.println("⚠️ Caution!");
+                break;
+            
+            case "green":
+                System.out.println("GO! Drive safely.");
+                System.out.println("✅ Safe to proceed!");
+                break;
+            
+            default:
+                System.out.println("ERROR! Invalid light color.");
+                System.out.println("Valid colors: Red, Yellow, Green");
+        }
+    }
+}</code></pre>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Quiz -->
+            <section class="content-section">
+                <h2>📝 Quick Quiz</h2>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p><strong>Question 1:</strong> Switch statement မှာ ဘယ် data type မသုံးနိုင်ဘူးလဲ?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1" value="a"> int</label>
+                            <label><input type="radio" name="q1" value="b"> String</label>
+                            <label><input type="radio" name="q1" value="c"> float</label>
+                            <label><input type="radio" name="q1" value="d"> char</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ1()">Check Answer</button>
+                        <div id="q1-result"></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Question 2:</strong> Break statement မပါရင် ဘာဖြစ်မလဲ?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q2" value="a"> Compilation error</label>
+                            <label><input type="radio" name="q2" value="b"> Fall-through happens</label>
+                            <label><input type="radio" name="q2" value="c"> Program crashes</label>
+                            <label><input type="radio" name="q2" value="d"> Nothing happens</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ2()">Check Answer</button>
+                        <div id="q2-result"></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Question 3:</strong> Default case က switch မှာ required လား?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q3" value="a"> Yes, always required</label>
+                            <label><input type="radio" name="q3" value="b"> No, it's optional</label>
+                            <label><input type="radio" name="q3" value="c"> Only required for int</label>
+                            <label><input type="radio" name="q3" value="d"> Only required for String</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ3()">Check Answer</button>
+                        <div id="q3-result"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="lesson-navigation">
+                <a href="lesson-9.html" class="nav-button prev">
+                    <span>← Previous</span>
+                    <small>If-Else Statements</small>
+                </a>
+                <a href="lesson-11.html" class="nav-button next">
+                    <span>Next →</span>
+                    <small>For Loops</small>
+                </a>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script>
+        // Quiz checking functions
+        function checkQ1() {
+            const selected = document.querySelector('input[name="q1"]:checked');
+            const result = document.getElementById('q1-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'c') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! float (and double, long) cannot be used in switch. Only int, byte, short, char, String, and enum are allowed.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. float and double cannot be used in switch statements.</p>';
+            }
+        }
+
+        function checkQ2() {
+            const selected = document.querySelector('input[name="q2"]:checked');
+            const result = document.getElementById('q2-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'b') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! Without break, fall-through happens and subsequent cases continue to execute.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. Fall-through occurs when break is missing - the next cases will execute.</p>';
+            }
+        }
+
+        function checkQ3() {
+            const selected = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('q3-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'b') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! Default case is optional, but it\'s a good practice to include it for error handling.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. Default is optional, though recommended for completeness.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12: While Loops - Master Condition-Based Loops | A Coder</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course-detail.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navigation -->
+    <div id="header"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>/</span>
+                <a href="tutorials.html">Tutorials</a><span>/</span>
+                <a href="course-detail.html">Java Fundamentals</a><span>/</span>
+                <span>Lesson 12</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Layout with Sidebar -->
+    <div class="course-layout">
+        <!-- W3Schools-style Always-Visible Sidebar -->
+        <aside class="course-sidebar" id="courseSidebar">
+            <div class="sidebar-header">
+                <h2>Java Fundamentals</h2>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+
+            <div class="course-progress">
+                <div class="progress-info">
+                    <span class="progress-text">Course Progress</span>
+                    <span class="progress-percentage">50%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>12 of 24 lessons completed</span>
+                </div>
+            </div>
+
+            <nav class="lessons-nav">
+                <!-- Module 1: Java Introduction -->
+                <div class="module">
+                    <button class="module-header" data-module="1">
+                        <span>Module 1: Java Introduction</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-1.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">What is Java?</span>
+                            </div>
+                            <span class="lesson-duration">30 min</span>
+                        </a>
+                        <a href="lesson-2.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Java Setup & Installation</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                        <a href="lesson-3.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">First Java Program</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-4.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Comments in Java</span>
+                            </div>
+                            <span class="lesson-duration">25 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 2: Variables & Data Types -->
+                <div class="module">
+                    <button class="module-header" data-module="2">
+                        <span>Module 2: Variables & Data Types</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-5.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Variables & Literals</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-6.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Data Types</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-7.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Operators</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-8.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Constants & Final</span>
+                            </div>
+                            <span class="lesson-duration">35 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 3: Control Flow -->
+                <div class="module active">
+                    <button class="module-header active" data-module="3">
+                        <span>Module 3: Control Flow</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons active">
+                        <a href="lesson-9.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">09</span>
+                                <span class="lesson-title">If-Else Statements</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-10.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">10</span>
+                                <span class="lesson-title">Switch Statements</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-11.html" class="lesson-item completed">
+                            <div class="lesson-info">
+                                <span class="lesson-number">11</span>
+                                <span class="lesson-title">For Loops</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-12.html" class="lesson-item active">
+                            <div class="lesson-info">
+                                <span class="lesson-number">12</span>
+                                <span class="lesson-title">While Loops</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 4: Methods -->
+                <div class="module">
+                    <button class="module-header" data-module="4">
+                        <span>Module 4: Methods</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-13.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">13</span>
+                                <span class="lesson-title">Introduction to Methods</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-14.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">14</span>
+                                <span class="lesson-title">Method Parameters</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-15.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">15</span>
+                                <span class="lesson-title">Return Values</span>
+                            </div>
+                            <span class="lesson-duration">40 min</span>
+                        </a>
+                        <a href="lesson-16.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">16</span>
+                                <span class="lesson-title">Method Overloading</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 5: Arrays & Collections -->
+                <div class="module">
+                    <button class="module-header" data-module="5">
+                        <span>Module 5: Arrays & Collections</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-17.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">17</span>
+                                <span class="lesson-title">Arrays Basics</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                        <a href="lesson-18.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">18</span>
+                                <span class="lesson-title">Multi-dimensional Arrays</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-19.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">19</span>
+                                <span class="lesson-title">ArrayList</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-20.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">20</span>
+                                <span class="lesson-title">HashMap & HashSet</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Module 6: OOP Basics -->
+                <div class="module">
+                    <button class="module-header" data-module="6">
+                        <span>Module 6: OOP Basics</span>
+                        <span class="module-count">4 lessons</span>
+                    </button>
+                    <div class="module-lessons">
+                        <a href="lesson-21.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">21</span>
+                                <span class="lesson-title">Classes & Objects</span>
+                            </div>
+                            <span class="lesson-duration">60 min</span>
+                        </a>
+                        <a href="lesson-22.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">22</span>
+                                <span class="lesson-title">Constructors</span>
+                            </div>
+                            <span class="lesson-duration">45 min</span>
+                        </a>
+                        <a href="lesson-23.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">23</span>
+                                <span class="lesson-title">Inheritance</span>
+                            </div>
+                            <span class="lesson-duration">55 min</span>
+                        </a>
+                        <a href="lesson-24.html" class="lesson-item locked">
+                            <div class="lesson-info">
+                                <span class="lesson-number">24</span>
+                                <span class="lesson-title">Encapsulation</span>
+                            </div>
+                            <span class="lesson-duration">50 min</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="lesson-content">
+            <div class="lesson-header">
+                <div class="lesson-badge">Module 3 - Lesson 12 - Final!</div>
+                <h1>While Loops: Condition-Based Repetition</h1>
+                <p class="lesson-description">For loop က count-based ဆိုရင် while loop က condition-based ပါ။ Condition
+                    true ဖြစ်သရွေ့ code က run ပြီး unknown iterations, user input validation လို scenarios တွေမှာ
+                    အသုံးများပါတယ်။</p>
+                <div class="lesson-meta">
+                    <span>⏱️ 45 minutes</span>
+                    <span>📚 Intermediate</span>
+                    <span>🔄 Condition-Based Loops</span>
+                    <span>🎉 Module 3 Complete!</span>
+                </div>
+            </div>
+
+            <!-- What You'll Learn -->
+            <section class="content-section">
+                <h2>🎯 သင် သင်ယူမည့် အရာများ</h2>
+                <div class="info-box burmese">
+                    <p>ဒီ lesson မှာ သင် သင်ယူမည့် အရာများ:</p>
+                    <ul>
+                        <li>While loop ဆိုတာ ဘာလဲ၊ ဘယ်အခါ သုံးရမလဲ</li>
+                        <li>While loop syntax နဲ့ အလုပ်လုပ်ပုံ</li>
+                        <li>While vs For loops - ဘယ်အချိန် ဘာသုံးရမလဲ</li>
+                        <li>Do-While loop - အနည်းဆုံး တစ်ကြိမ် run ရမယ့် loop</li>
+                        <li>Infinite loops - ဘာကြောင့် ဖြစ်လဲ၊ ဘယ်လို ရှောင်ရမလဲ</li>
+                        <li>Loop control statements (break & continue)</li>
+                        <li>Input validation နဲ့ menu systems</li>
+                        <li>Real-world practical examples</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <section class="content-section">
+                <h2>📖 While Loop ဆိုတာ ဘာလဲ?</h2>
+                <p>While loop ဆိုတာ condition true ဖြစ်သရွေ့ code block ကို ထပ်ခါထပ်ခါ execute လုပ်တဲ့ loop တစ်မျိုးပါ။
+                    For loop လို iterations အရေအတွက် သိစရာ မလိုဘူး - condition false ဖြစ်တဲ့အထိ run နေမယ်။</p>
+
+                <div class="info-box burmese">
+                    <p><strong>နေ့စဉ်ဘဝမှာ ဥပမာများ:</strong></p>
+                    <ul>
+                        <li>မိုးရွာနေသရွေ့ အိမ်မှာ နေပါ (condition: မိုးရွာနေတာ)</li>
+                        <li>လမ်း ရှင်းနေသရွေ့ မောင်းပါ (condition: လမ်းရှင်းတာ)</li>
+                        <li>Password မှားနေသရွေ့ ထပ်မေးပါ (condition: password မှန်/မမှန်)</li>
+                        <li>Balance မလုံလောက်သရွေ့ ငွေထုတ်လို့ မရဘူး (condition: balance check)</li>
+                    </ul>
+                    <p>အဲ့ဒီလို scenarios တွေမှာ while loop က perfect!</p>
+                </div>
+
+                <h3>For vs While - အဓိက ခြားနားချက်</h3>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>For Loop</th>
+                                <th>While Loop</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>အသုံးပြုရန်</td>
+                                <td>Iterations သိချင်တဲ့အခါ</td>
+                                <td>Condition အပေါ် မူတည်တဲ့အခါ</td>
+                            </tr>
+                            <tr>
+                                <td>Structure</td>
+                                <td>for (init; condition; increment)</td>
+                                <td>while (condition)</td>
+                            </tr>
+                            <tr>
+                                <td>Best for</td>
+                                <td>Arrays, counting, known iterations</td>
+                                <td>User input, validation, unknown iterations</td>
+                            </tr>
+                            <tr>
+                                <td>Example</td>
+                                <td>Print 1 to 100</td>
+                                <td>Keep asking until password correct</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Basic While Loop -->
+            <section class="content-section">
+                <h2>🔹 Basic While Loop Syntax</h2>
+                <p>While loop ရဲ့ basic structure:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>while (condition) {
+    // condition က true ဖြစ်သရွေ့ run မယ်
+    statements;
+    // condition ကို update လုပ်ဖို့ မမေ့ပါနဲ့!
+}</code></pre>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>အရေးကြီးတဲ့ အချက်များ:</strong></p>
+                    <ul>
+                        <li><strong>Condition check:</strong> Loop body run မီ condition ကို စစ်တယ် (pre-check)</li>
+                        <li><strong>Update variable:</strong> Loop body ထဲမှာ condition ကို update လုပ်ရမယ် (infinite
+                            loop ဖြစ်မှာ မဟုတ်ရင်)</li>
+                        <li><strong>Zero iterations:</strong> Initial condition က false ဆိုရင် တစ်ကြိမ်မှ မ run ဘူး</li>
+                        <li><strong>Boolean condition:</strong> Condition က boolean expression ဖြစ်ရမယ် (true/false)
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>Flow Chart</h3>
+                <div class="info-box burmese">
+                    <pre>
+1. Check condition → true?
+   ├─ Yes: Execute loop body
+   │         ↓
+   │   Update variables
+   │         ↓
+   │   Go back to step 1
+   │
+   └─ No: Exit loop, continue program
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Simple Example -->
+            <section class="content-section">
+                <h2>🔹 Simple Example: Count to 10</h2>
+                <p>While loop နဲ့ 1 ကနေ 10 အထိ ရေတွက်ခြင်း:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>public class WhileCount {
+    public static void main(String[] args) {
+        int i = 1;  // Initialize
+        
+        while (i <= 10) {  // Condition
+            System.out.println(i);
+            i++;  // Update (အရေးကြီး!)
+        }
+        
+        System.out.println("Done!");
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Output:</strong>
+                    <pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Done!</pre>
+                </div>
+
+                <div class="info-box burmese">
+                    <p><strong>For loop နဲ့ နှိုင်းယှဉ်ရင်:</strong></p>
+                    <div class="code-block">
+                        <pre><code>// While loop
+int i = 1;
+while (i <= 10) {
+    System.out.println(i);
+    i++;
+}
+
+// For loop (same result)
+for (int i = 1; i <= 10; i++) {
+    System.out.println(i);
+}
+
+// For loop က တိုပြီး clean ပိုဖြစ်တယ် known iterations အတွက်!</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Input Validation -->
+            <section class="content-section">
+                <h2>🔹 Input Validation - While Loop ရဲ့ အင်အား!</h2>
+                <p>User က valid input မထည့်သမျှ ထပ်မေးဖို့ while loop က perfect:</p>
+
+                <h3>Example 1: Password Validation</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+
+public class PasswordCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String correctPassword = "java123";
+        String userInput = "";
+        int attempts = 0;
+        int maxAttempts = 3;
+        
+        System.out.println("=== Password Login System ===");
+        
+        while (!userInput.equals(correctPassword) && attempts < maxAttempts) {
+            System.out.print("Enter password: ");
+            userInput = scanner.nextLine();
+            attempts++;
+            
+            if (!userInput.equals(correctPassword)) {
+                int remaining = maxAttempts - attempts;
+                if (remaining > 0) {
+                    System.out.println("❌ Wrong password! " + remaining + " attempts left.");
+                } else {
+                    System.out.println("❌ Account locked! Too many failed attempts.");
+                }
+            }
+        }
+        
+        if (userInput.equals(correctPassword)) {
+            System.out.println("✓ Login successful! Welcome!");
+        }
+        
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Sample Output:</strong>
+                    <pre>=== Password Login System ===
+Enter password: abc123
+❌ Wrong password! 2 attempts left.
+Enter password: test
+❌ Wrong password! 1 attempts left.
+Enter password: java123
+✓ Login successful! Welcome!</pre>
+                </div>
+
+                <h3>Example 2: Age Validation</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+
+public class AgeValidation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int age = -1;  // Invalid initial value
+        
+        System.out.println("Enter your age (1-120):");
+        
+        while (age < 1 || age > 120) {
+            System.out.print("Age: ");
+            
+            if (scanner.hasNextInt()) {
+                age = scanner.nextInt();
+                
+                if (age < 1 || age > 120) {
+                    System.out.println("Invalid age! Please enter between 1 and 120.");
+                }
+            } else {
+                System.out.println("Please enter a valid number!");
+                scanner.next();  // Clear invalid input
+            }
+        }
+        
+        System.out.println("Thank you! Your age: " + age);
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Menu System -->
+            <section class="content-section">
+                <h2>🔹 Menu-Driven Programs</h2>
+                <p>Menu systems မှာ while loop က အရမ်း သုံးတယ် - user က exit မရွေးမချင်း ထပ်ခါထပ်ခါ menu ပြနေတယ်:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+
+public class CalculatorMenu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int choice = 0;
+        
+        while (choice != 5) {
+            System.out.println("\n=== Simple Calculator ===");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. Exit");
+            System.out.print("Enter choice (1-5): ");
+            
+            choice = scanner.nextInt();
+            
+            if (choice >= 1 && choice <= 4) {
+                System.out.print("Enter first number: ");
+                double num1 = scanner.nextDouble();
+                System.out.print("Enter second number: ");
+                double num2 = scanner.nextDouble();
+                double result = 0;
+                
+                switch (choice) {
+                    case 1:
+                        result = num1 + num2;
+                        System.out.println("Result: " + num1 + " + " + num2 + " = " + result);
+                        break;
+                    case 2:
+                        result = num1 - num2;
+                        System.out.println("Result: " + num1 + " - " + num2 + " = " + result);
+                        break;
+                    case 3:
+                        result = num1 * num2;
+                        System.out.println("Result: " + num1 + " × " + num2 + " = " + result);
+                        break;
+                    case 4:
+                        if (num2 != 0) {
+                            result = num1 / num2;
+                            System.out.println("Result: " + num1 + " ÷ " + num2 + " = " + result);
+                        } else {
+                            System.out.println("Error: Cannot divide by zero!");
+                        }
+                        break;
+                }
+            } else if (choice == 5) {
+                System.out.println("Thank you for using calculator! Goodbye!");
+            } else {
+                System.out.println("Invalid choice! Please select 1-5.");
+            }
+        }
+        
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Sample Output:</strong>
+                    <pre>=== Simple Calculator ===
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter choice (1-5): 1
+Enter first number: 10
+Enter second number: 5
+Result: 10.0 + 5.0 = 15.0
+
+=== Simple Calculator ===
+1. Addition
+...
+Enter choice (1-5): 5
+Thank you for using calculator! Goodbye!</pre>
+                </div>
+            </section>
+
+            <!-- Do-While Loop -->
+            <section class="content-section">
+                <h2>🔹 Do-While Loop</h2>
+                <p>Do-while loop က while loop နဲ့ ဆင်တယ်၊ ဒါပေမယ့် condition ကို <strong>အဆုံးမှာ</strong> စစ်တယ်။
+                    ဆိုလိုတာက <strong>အနည်းဆုံး တစ်ကြိမ်</strong> run မယ်!</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java Syntax</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>do {
+    // Code ကို အရင် run တယ်
+    statements;
+} while (condition);  // နောက်မှ condition စစ်တယ်</code></pre>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>While vs Do-While:</strong></p>
+                    <ul>
+                        <li><strong>While:</strong> Condition အရင်စစ် → true ဖြစ်မှ run (0 or more times)</li>
+                        <li><strong>Do-While:</strong> အရင် run → နောက် condition စစ် (1 or more times)</li>
+                    </ul>
+                </div>
+
+                <h3>Example: Menu (Must Show At Least Once)</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+
+public class DoWhileMenu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String response;
+        
+        do {
+            System.out.println("\n=== Welcome to Our Service ===");
+            System.out.println("We're here to help you!");
+            System.out.println("Have a great day!");
+            
+            System.out.print("\nDo you want to see this again? (yes/no): ");
+            response = scanner.nextLine().toLowerCase();
+            
+        } while (response.equals("yes"));
+        
+        System.out.println("Goodbye!");
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+
+                <h3>Comparison Example</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>// While loop
+int x = 10;
+while (x < 5) {
+    System.out.println("This never prints!");  // ဘာမှ မထွက်ဘူး
+}
+
+// Do-While loop
+int y = 10;
+do {
+    System.out.println("This prints once!");  // တစ်ကြိမ် ထွက်တယ်
+} while (y < 5);</code></pre>
+                </div>
+            </section>
+
+            <!-- Infinite Loops -->
+            <section class="content-section">
+                <h2>🔹 Infinite Loops - အန္တရာယ်!</h2>
+                <p>Infinite loop ဆိုတာ condition က ဘယ်တော့မှ false မဖြစ်လို့ loop က အဆုံးမရှိ run နေတဲ့ အခြေအနေပါ:</p>
+
+                <h3>❌ Common Infinite Loop Mistakes</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">WRONG!</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>// Mistake 1: Forgot to update
+int i = 1;
+while (i <= 10) {
+    System.out.println(i);
+    // i++ ထည့်ဖို့ မေ့သွားတယ်!
+}
+
+// Mistake 2: Wrong update direction
+int j = 1;
+while (j <= 10) {
+    System.out.println(j);
+    j--;  // Decreasing instead of increasing!
+}
+
+// Mistake 3: Always true condition
+while (true) {
+    System.out.println("Forever!");
+    // No break statement!
+}
+
+// Mistake 4: Wrong comparison
+int count = 0;
+while (count != 10) {
+    System.out.println(count);
+    count += 2;  // 0,2,4,6,8,10,12... ဘယ်တော့မှ 10 မတူဘူး!
+}</code></pre>
+                </div>
+
+                <h3>✅ How to Avoid Infinite Loops</h3>
+                <div class="info-box burmese">
+                    <ul>
+                        <li><strong>Always update:</strong> Loop variable ကို loop body ထဲမှာ update လုပ်ပါ</li>
+                        <li><strong>Check direction:</strong> Increment/decrement က condition နဲ့ ညီရမယ်</li>
+                        <li><strong>Use break:</strong> Intentional infinite loop မှာ break condition ထည့်ပါ</li>
+                        <li><strong>Test carefully:</strong> Small values နဲ့ test လုပ်ပါ (100 အစား 5)</li>
+                        <li><strong>Add counter:</strong> Safety counter ထည့်ပြီး maximum iterations limit လုပ်ပါ</li>
+                    </ul>
+                </div>
+
+                <h3>Intentional Infinite Loop (With Break)</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java - Correct Usage</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+
+public class ServerSimulation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Server က ပိတ်ဖို့ command မရသမျှ run နေမယ်
+        while (true) {
+            System.out.print("Server> ");
+            String command = scanner.nextLine();
+            
+            if (command.equals("exit")) {
+                System.out.println("Shutting down server...");
+                break;  // Exit the infinite loop
+            }
+            
+            System.out.println("Processing: " + command);
+        }
+        
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Break and Continue -->
+            <section class="content-section">
+                <h2>🔹 Loop Control: Break & Continue</h2>
+
+                <h3>Break Statement</h3>
+                <p>Loop ကနေ ချက်ချင်း ထွက်ဖို့:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>// Example: Find first even number
+int[] numbers = {1, 3, 5, 7, 8, 9, 11};
+int i = 0;
+
+while (i < numbers.length) {
+    if (numbers[i] % 2 == 0) {
+        System.out.println("First even number: " + numbers[i]);
+        break;  // Found it, exit loop
+    }
+    i++;
+}
+
+// Output: First even number: 8</code></pre>
+                </div>
+
+                <h3>Continue Statement</h3>
+                <p>Current iteration ကို skip လုပ်ပြီး next iteration သွားဖို့:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>// Example: Print only odd numbers
+int i = 1;
+
+while (i <= 10) {
+    if (i % 2 == 0) {
+        i++;
+        continue;  // Skip even numbers
+    }
+    
+    System.out.println(i);  // Only odd numbers print
+    i++;
+}
+
+// Output: 1, 3, 5, 7, 9</code></pre>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Break vs Continue:</strong></p>
+                    <ul>
+                        <li><strong>break:</strong> Loop ကနေ လုံးဝထွက်သွားတယ်</li>
+                        <li><strong>continue:</strong> Current iteration ကို skip လုပ်ပြီး next iteration ကို ဆက်လုပ်တယ်
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Complete Example -->
+            <section class="content-section">
+                <h2>💻 Complete Example: Number Guessing Game</h2>
+                <p>While loop, break, continue အားလုံး ပေါင်းစပ်ထားတဲ့ complete game:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        
+        System.out.println("=== Number Guessing Game ===");
+        System.out.println("I'm thinking of a number between 1 and 100.");
+        
+        int targetNumber = random.nextInt(100) + 1;
+        int attempts = 0;
+        int maxAttempts = 7;
+        boolean hasWon = false;
+        
+        while (attempts < maxAttempts) {
+            int remaining = maxAttempts - attempts;
+            System.out.println("\nAttempts remaining: " + remaining);
+            System.out.print("Enter your guess: ");
+            
+            // Input validation
+            if (!scanner.hasNextInt()) {
+                System.out.println("❌ Invalid input! Please enter a number.");
+                scanner.next();  // Clear bad input
+                continue;  // Skip this iteration
+            }
+            
+            int guess = scanner.nextInt();
+            attempts++;
+            
+            // Check if out of range
+            if (guess < 1 || guess > 100) {
+                System.out.println("❌ Please guess between 1 and 100!");
+                attempts--;  // Don't count this attempt
+                continue;
+            }
+            
+            // Check the guess
+            if (guess == targetNumber) {
+                hasWon = true;
+                System.out.println("\n🎉 Congratulations! You won!");
+                System.out.println("The number was: " + targetNumber);
+                System.out.println("You guessed it in " + attempts + " attempts!");
+                break;  // Exit the loop
+                
+            } else if (guess < targetNumber) {
+                int difference = targetNumber - guess;
+                
+                if (difference <= 5) {
+                    System.out.println("🔥 Very close! Too low!");
+                } else if (difference <= 15) {
+                    System.out.println("📈 Too low!");
+                } else {
+                    System.out.println("⬆️ Way too low!");
+                }
+                
+            } else {
+                int difference = guess - targetNumber;
+                
+                if (difference <= 5) {
+                    System.out.println("🔥 Very close! Too high!");
+                } else if (difference <= 15) {
+                    System.out.println("📉 Too high!");
+                } else {
+                    System.out.println("⬇️ Way too high!");
+                }
+            }
+        }
+        
+        if (!hasWon) {
+            System.out.println("\n😢 Game Over! You ran out of attempts.");
+            System.out.println("The number was: " + targetNumber);
+        }
+        
+        System.out.println("\nThanks for playing!");
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Sample Output:</strong>
+                    <pre>=== Number Guessing Game ===
+I'm thinking of a number between 1 and 100.
+
+Attempts remaining: 7
+Enter your guess: 50
+📉 Too high!
+
+Attempts remaining: 6
+Enter your guess: 25
+📈 Too low!
+
+Attempts remaining: 5
+Enter your guess: 37
+🔥 Very close! Too low!
+
+Attempts remaining: 4
+Enter your guess: 40
+🎉 Congratulations! You won!
+The number was: 40
+You guessed it in 4 attempts!
+
+Thanks for playing!</pre>
+                </div>
+            </section>
+
+            <!-- Banking System -->
+            <section class="content-section">
+                <h2>💻 Advanced Example: ATM Banking System</h2>
+                <p>Real-world scenario - ATM machine simulation:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>import java.util.Scanner;
+
+public class ATMSystem {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Account data
+        String accountName = "Aung Aung";
+        int pin = 1234;
+        double balance = 50000;
+        boolean isAuthenticated = false;
+        int loginAttempts = 0;
+        int maxLoginAttempts = 3;
+        
+        System.out.println("=== Welcome to A Coder Bank ATM ===");
+        
+        // PIN verification
+        while (!isAuthenticated && loginAttempts < maxLoginAttempts) {
+            System.out.print("Enter your PIN: ");
+            int userPin = scanner.nextInt();
+            loginAttempts++;
+            
+            if (userPin == pin) {
+                isAuthenticated = true;
+                System.out.println("✓ Login successful!");
+            } else {
+                int remaining = maxLoginAttempts - loginAttempts;
+                if (remaining > 0) {
+                    System.out.println("❌ Incorrect PIN! " + remaining + " attempts left.");
+                } else {
+                    System.out.println("❌ Card blocked! Too many failed attempts.");
+                }
+            }
+        }
+        
+        // Main menu (if authenticated)
+        if (isAuthenticated) {
+            int choice = 0;
+            
+            while (choice != 4) {
+                System.out.println("\n=== Main Menu ===");
+                System.out.println("Account: " + accountName);
+                System.out.println("1. Check Balance");
+                System.out.println("2. Deposit");
+                System.out.println("3. Withdraw");
+                System.out.println("4. Exit");
+                System.out.print("Enter choice (1-4): ");
+                
+                choice = scanner.nextInt();
+                
+                switch (choice) {
+                    case 1:
+                        // Check balance
+                        System.out.println("\n=== Balance Inquiry ===");
+                        System.out.println("Current Balance: " + balance + " Kyats");
+                        break;
+                        
+                    case 2:
+                        // Deposit
+                        System.out.println("\n=== Deposit ===");
+                        System.out.print("Enter amount to deposit: ");
+                        double depositAmount = scanner.nextDouble();
+                        
+                        if (depositAmount > 0 && depositAmount <= 1000000) {
+                            balance += depositAmount;
+                            System.out.println("✓ Deposit successful!");
+                            System.out.println("Deposited: " + depositAmount + " Kyats");
+                            System.out.println("New Balance: " + balance + " Kyats");
+                        } else {
+                            System.out.println("❌ Invalid amount! (Max: 1,000,000 Kyats)");
+                        }
+                        break;
+                        
+                    case 3:
+                        // Withdraw
+                        System.out.println("\n=== Withdrawal ===");
+                        System.out.print("Enter amount to withdraw: ");
+                        double withdrawAmount = scanner.nextDouble();
+                        
+                        if (withdrawAmount <= 0) {
+                            System.out.println("❌ Invalid amount!");
+                        } else if (withdrawAmount > balance) {
+                            System.out.println("❌ Insufficient balance!");
+                            System.out.println("Available: " + balance + " Kyats");
+                        } else if (withdrawAmount > 500000) {
+                            System.out.println("❌ Daily withdrawal limit: 500,000 Kyats");
+                        } else {
+                            balance -= withdrawAmount;
+                            System.out.println("✓ Withdrawal successful!");
+                            System.out.println("Withdrawn: " + withdrawAmount + " Kyats");
+                            System.out.println("Remaining Balance: " + balance + " Kyats");
+                            
+                            // Dispense money simulation
+                            System.out.println("\nDispensing money...");
+                            int[] notes = {50000, 10000, 5000, 1000};
+                            double remaining = withdrawAmount;
+                            
+                            for (int note : notes) {
+                                if (remaining >= note) {
+                                    int count = (int)(remaining / note);
+                                    System.out.println(note + " Kyats × " + count);
+                                    remaining = remaining % note;
+                                }
+                            }
+                        }
+                        break;
+                        
+                    case 4:
+                        System.out.println("\n=== Thank You ===");
+                        System.out.println("Please take your card.");
+                        System.out.println("Have a nice day!");
+                        break;
+                        
+                    default:
+                        System.out.println("❌ Invalid choice! Please select 1-4.");
+                }
+            }
+        }
+        
+        scanner.close();
+    }
+}</code></pre>
+                </div>
+
+                <div class="output-box">
+                    <strong>Sample Output:</strong>
+                    <pre>=== Welcome to A Coder Bank ATM ===
+Enter your PIN: 1234
+✓ Login successful!
+
+=== Main Menu ===
+Account: Aung Aung
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter choice (1-4): 3
+
+=== Withdrawal ===
+Enter amount to withdraw: 75000
+✓ Withdrawal successful!
+Withdrawn: 75000.0 Kyats
+Remaining Balance: -25000.0 Kyats
+
+Dispensing money...
+50000 Kyats × 1
+10000 Kyats × 2
+5000 Kyats × 1
+
+=== Main Menu ===
+...</pre>
+                </div>
+            </section>
+
+            <!-- Common Patterns -->
+            <section class="content-section">
+                <h2>🔹 Common While Loop Patterns</h2>
+
+                <h3>Pattern 1: Sentinel-Controlled Loop</h3>
+                <p>Special value (sentinel) ရောက်တဲ့အထိ run:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>Scanner scanner = new Scanner(System.in);
+int num;
+
+System.out.println("Enter numbers (0 to stop):");
+
+while ((num = scanner.nextInt()) != 0) {
+    System.out.println("You entered: " + num);
+}
+
+System.out.println("Done!");</code></pre>
+                </div>
+
+                <h3>Pattern 2: Flag-Controlled Loop</h3>
+                <p>Boolean flag သုံးပြီး control:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>boolean keepRunning = true;
+
+while (keepRunning) {
+    // Do something
+    
+    if (someCondition) {
+        keepRunning = false;  // Stop the loop
+    }
+}</code></pre>
+                </div>
+
+                <h3>Pattern 3: Counter-Controlled (Known Max)</h3>
+                <p>Maximum iterations ရှိတဲ့ validation:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="code-copy">Copy</button>
+                    </div>
+                    <pre><code>int attempts = 0;
+int maxAttempts = 5;
+boolean success = false;
+
+while (!success && attempts < maxAttempts) {
+    // Try something
+    attempts++;
+    
+    if (successfulOperation) {
+        success = true;
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Key Takeaways -->
+            <section class="content-section">
+                <h2>🎯 အဓိက မှတ်သားရမည့် အချက်များ</h2>
+                <div class="info-box burmese">
+                    <ul>
+                        <li><strong>While loop:</strong> Condition true ဖြစ်သရွေ့ run တယ် (0 or more times)</li>
+                        <li><strong>Do-while loop:</strong> အရင် run, နောက် condition စစ် (1 or more times)</li>
+                        <li><strong>Use while when:</strong> Iterations မသိ, condition-based, user input validation</li>
+                        <li><strong>Use for when:</strong> Iterations သိ, counting, arrays</li>
+                        <li><strong>Always update:</strong> Loop variable ကို update လုပ်ဖို့ မမေ့ပါနဲ့ (infinite loop
+                            ဖြစ်မယ်)</li>
+                        <li><strong>Break:</strong> Loop ကနေ လုံးဝထွက်ဖို့</li>
+                        <li><strong>Continue:</strong> Current iteration skip လုပ်ဖို့</li>
+                        <li><strong>Input validation:</strong> While loop က perfect (valid input မရသမျှ ထပ်မေး)</li>
+                        <li><strong>Menu systems:</strong> Do-while သုံးရင် menu ကို အနည်းဆုံး တစ်ကြိမ် ပြတယ်</li>
+                        <li><strong>Infinite loops:</strong> Testing နဲ့ safety counters သုံးပြီး ရှောင်ပါ</li>
+                        <li><strong>Boolean flags:</strong> Complex conditions အတွက် boolean variables သုံးပါ</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Practice Exercise -->
+            <section class="content-section">
+                <h2>✍️ Practice Exercise</h2>
+                <div class="highlight-box">
+                    <p><strong>Exercise: Factorial Calculator</strong></p>
+                    <p>While loop သုံးပြီး factorial တွက်တဲ့ program ရေးပါ:</p>
+                    <ul>
+                        <li>User ကနေ positive number တစ်ခု input ယူပါ</li>
+                        <li>Factorial တွက်ပါ (5! = 5 × 4 × 3 × 2 × 1 = 120)</li>
+                        <li>Input validation လုပ်ပါ (negative numbers reject)</li>
+                        <li>User က "exit" လို့ ရိုက်မှ ရပ်ပါ</li>
+                    </ul>
+                    <p><strong>Example:</strong></p>
+                    <pre>Enter a number (or 'exit' to quit): 5
+5! = 120
+
+Enter a number (or 'exit' to quit): 6
+6! = 720
+
+Enter a number (or 'exit' to quit): exit
+Goodbye!</pre>
+                </div>
+
+                <details>
+                    <summary>💡 Solution ကြည့်ရန် (Try လုပ်ပြီးမှ ကြည့်ပါ)</summary>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">Java</span>
+                            <button class="code-copy">Copy</button>
+                        </div>
+                        <pre><code>import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        
+        System.out.println("=== Factorial Calculator ===");
+        
+        while (!input.equals("exit")) {
+            System.out.print("Enter a number (or 'exit' to quit): ");
+            input = scanner.nextLine();
+            
+            if (input.equals("exit")) {
+                System.out.println("Goodbye!");
+                break;
+            }
+            
+            try {
+                int n = Integer.parseInt(input);
+                
+                if (n < 0) {
+                    System.out.println("Error: Please enter a positive number!");
+                    continue;
+                }
+                
+                long factorial = 1;
+                int i = 1;
+                
+                while (i <= n) {
+                    factorial *= i;
+                    i++;
+                }
+                
+                System.out.println(n + "! = " + factorial);
+                
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Invalid input!");
+            }
+            
+            System.out.println();
+        }
+        
+        scanner.close();
+    }
+}</code></pre>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Quiz -->
+            <section class="content-section">
+                <h2>📝 Quick Quiz</h2>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p><strong>Question 1:</strong> ဒီ while loop က ဘယ်နှစ်ကြိမ် run မလဲ?</p>
+                        <pre><code>int x = 5;
+while (x > 3) {
+    System.out.println(x);
+    x--;
+}</code></pre>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1" value="a"> 1 time</label>
+                            <label><input type="radio" name="q1" value="b"> 2 times</label>
+                            <label><input type="radio" name="q1" value="c"> 3 times</label>
+                            <label><input type="radio" name="q1" value="d"> Infinite</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ1()">Check Answer</button>
+                        <div id="q1-result"></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Question 2:</strong> Do-while loop နဲ့ while loop ရဲ့ အဓိက ခြားနားချက်က ဘာလဲ?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q2" value="a"> Do-while က မြန်တယ်</label>
+                            <label><input type="radio" name="q2" value="b"> Do-while က အနည်းဆုံး တစ်ကြိမ် run
+                                တယ်</label>
+                            <label><input type="radio" name="q2" value="c"> While က condition မစစ်ဘူး</label>
+                            <label><input type="radio" name="q2" value="d"> ဘာမှ မကွာဘူး</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ2()">Check Answer</button>
+                        <div id="q2-result"></div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Question 3:</strong> ဘယ် scenario မှာ while loop က for loop ထက် ပိုကောင်းလဲ?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q3" value="a"> Array elements print လုပ်ဖို့</label>
+                            <label><input type="radio" name="q3" value="b"> 1 to 100 count လုပ်ဖို့</label>
+                            <label><input type="radio" name="q3" value="c"> User က valid password ထည့်သည်အထိ
+                                မေးဖို့</label>
+                            <label><input type="radio" name="q3" value="d"> Multiplication table ဆွဲဖို့</label>
+                        </div>
+                        <button class="btn-check-answer" onclick="checkQ3()">Check Answer</button>
+                        <div id="q3-result"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module Complete -->
+            <section class="content-section">
+                <div class="highlight-box"
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center;">
+                    <h2 style="color: white; margin-bottom: 1rem;">🎉 Congratulations!</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                        <strong>Module 3: Control Flow ပြီးပါပြီ!</strong>
+                    </p>
+                    <div
+                        style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <p style="font-size: 1rem; margin-bottom: 0.5rem;">သင် သင်ယူပြီးသား အရာများ:</p>
+                        <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
+                            <li>✅ Lesson 9: If-Else Statements</li>
+                            <li>✅ Lesson 10: Switch Statements</li>
+                            <li>✅ Lesson 11: For Loops</li>
+                            <li>✅ Lesson 12: While Loops</li>
+                        </ul>
+                    </div>
+                    <p style="font-size: 1.1rem; margin-bottom: 0;">
+                        <strong>Course Progress: 50% Complete!</strong><br>
+                        12 of 24 lessons finished!
+                    </p>
+                    <p style="margin-top: 1.5rem; font-size: 0.95rem;">
+                        Next: <strong>Module 4 - Methods</strong> 🚀
+                    </p>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="lesson-navigation">
+                <a href="lesson-11.html" class="nav-button prev">
+                    <span>← Previous</span>
+                    <small>For Loops</small>
+                </a>
+                <a href="lesson-13.html" class="nav-button next">
+                    <span>Next →</span>
+                    <small>Module 4: Methods</small>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+    <script src="../js/glo.js"></script>
+    <script src="../js/color.js"></script>
+
+    <script>
+        // Quiz functions
+        function checkQ1() {
+            const selected = document.querySelector('input[name="q1"]:checked');
+            const result = document.getElementById('q1-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'b') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! x starts at 5, runs while x > 3: prints 5 (x=5), prints 4 (x=4), then x=3 so stops. 2 times!</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. x: 5→4→3(stop). Runs 2 times (x=5 and x=4).</p>';
+            }
+        }
+
+        function checkQ2() {
+            const selected = document.querySelector('input[name="q2"]:checked');
+            const result = document.getElementById('q2-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'b') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! Do-while checks condition AFTER execution, so it always runs at least once. While checks BEFORE.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. Do-while executes the body first, then checks condition, guaranteeing at least one execution.</p>';
+            }
+        }
+
+        function checkQ3() {
+            const selected = document.querySelector('input[name="q3"]:checked');
+            const result = document.getElementById('q3-result');
+
+            if (!selected) {
+                result.innerHTML = '<p style="color: orange;">Please select an answer!</p>';
+                return;
+            }
+
+            if (selected.value === 'c') {
+                result.innerHTML = '<p style="color: green;">✓ Correct! While loop is perfect for input validation - keep asking until valid input received. Unknown iterations!</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">✗ Incorrect. While loop excels at condition-based scenarios like validation where iterations are unknown.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>
