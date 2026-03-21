@@ -32,22 +32,44 @@ acceptCookies.addEventListener('click', () => {
     cookieConsent.classList.remove('show');
 });
 
-// ========================================
-// Mobile Menu
-// ========================================
-const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+// Mobile Menu Toggle Functionality
 
-mobileMenuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    mobileMenuToggle.classList.toggle('active');
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-container')) {
-        navLinks.classList.remove('active');
-        mobileMenuToggle.classList.remove('active');
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+    const mobileNav = document.querySelector('.mobile-nav-links');
+    const mobileClose = document.querySelector('.mobile-menu-close');
+    
+    // Open mobile menu
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', function() {
+            if (mobileOverlay) mobileOverlay.classList.add('active');
+            if (mobileNav) mobileNav.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+        if (mobileOverlay) mobileOverlay.classList.remove('active');
+        if (mobileNav) mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    if (mobileClose) {
+        mobileClose.addEventListener('click', closeMobileMenu);
+    }
+    
+    if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Close menu when clicking a link
+    if (mobileNav) {
+        const mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
     }
 });
 
