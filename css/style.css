@@ -1088,111 +1088,234 @@ button {
 
 /* ========================================
    NAVBAR MOBILE FIXES - Additional Styles
-   Add this to your CSS file
    ======================================== */
 
-/* Hide desktop nav actions on mobile */
-@media (max-width: 768px) {
-    .nav-actions {
-        display: none;
-    }
+/* =========================
+   Reset & Base
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Mobile Nav Footer Styles */
-.mobile-nav-footer {
-    margin-top: auto;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
-.mobile-nav-footer .btn-cta {
+body {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Prevent image overflow */
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   Responsive Typography
+========================= */
+
+h1 {
+    font-size: clamp(22px, 4vw, 36px);
+}
+
+h2 {
+    font-size: clamp(18px, 3vw, 28px);
+}
+
+h3 {
+    font-size: clamp(16px, 2.5vw, 22px);
+}
+
+p {
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
     width: 100%;
-    padding: 1rem;
-    background: var(--gradient-primary);
-    color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    text-align: center;
-    display: block;
+    background: #050816;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.mobile-nav-footer .btn-cta:hover {
-    transform: scale(1.02);
-}
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 
-/* Mobile Nav Links Enhancement */
-.mobile-nav-links {
-    display: flex;
-    flex-direction: column;
-}
+    height: 70px;
 
-.mobile-nav-links a {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 0;
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    font-weight: 500;
-    border-bottom: 1px solid var(--border-color);
-    transition: var(--transition);
+    justify-content: space-between;
 }
 
-.mobile-nav-links a:hover,
-.mobile-nav-links a.active {
-    color: var(--primary);
-    padding-left: 0.5rem;
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.mobile-nav-links a.active {
-    color: var(--primary);
-    font-weight: 600;
+.logo-icon {
+    width: 40px;
+    height: 40px;
 }
 
-/* Hamburger Animation */
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* =========================
+   Navigation Links
+========================= */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d9ff;
+}
+
+.nav-links a.active {
+    color: #00d9ff;
+}
+
+/* =========================
+   Right Actions
+========================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-cta {
+    background: #ff6b35;
+    border: none;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
-    gap: 5px;
-    padding: 8px;
-    background: transparent;
-    border: none;
     cursor: pointer;
-    z-index: 1000;
+    border: none;
+    background: none;
 }
 
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background: var(--text-primary);
-    border-radius: 3px;
-    transition: all 0.3s ease;
+    background: white;
+    margin: 4px 0;
 }
 
-/* Hamburger active state animation */
-.mobile-menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
-}
-
-.mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-}
+/* =========================
+   Tablet
+========================= */
 
 @media (max-width: 768px) {
+
     .mobile-menu-toggle {
         display: flex;
     }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+        background: #050816;
+
+        flex-direction: column;
+        align-items: center;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-links.active {
+        max-height: 350px;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-actions {
+        display: none;
+    }
 }
 
-/* Better mobile menu slide animation */
-.mobile-nav-links {
-    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* =========================
+   Small Mobile
+========================= */
 
-.mobile-nav-links.active {
-    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.7);
+@media (max-width: 480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .btn-cta {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .nav-container {
+        padding: 0 15px;
+    }
 }

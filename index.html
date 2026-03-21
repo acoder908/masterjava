@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
         content="A Coder - Learn Java programming, tutorials, code examples, and best practices. Master coding with expert guides and interactive lessons.">
     <meta name="keywords" content="Java, Programming, Coding, Tutorials, Web Development, A Coder">
@@ -56,56 +56,8 @@
         <span class="moon-icon">🌙</span>
     </button>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <svg class="logo-icon" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Code brackets </> -->
-                    <text x="30" y="40" font-family="JetBrains Mono, monospace" font-size="36" font-weight="bold"
-                        fill="#00d9ff" text-anchor="middle">&lt;/&gt;</text>
-                </svg>
-                <span class="logo-text">
-                    <span style="color: #2c4c59fe;">A</span>
-                    <span style="color: #00d9ff;"> Coder</span>
-                </span>
-            </a>
-
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="pages/tutorials.html">Tutorials</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#playground">Playground</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <button class="search-btn" aria-label="Search">🔍</button>
-                <button class="btn-cta">Join Newsletter</button>
-            </div>
-        </div>
-    </nav>
-    <!-- Mobile Menu Overlay (Dark Background) -->
-<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
- 
-<!-- Mobile Navigation Menu (Slide-in Drawer) -->
-<nav class="mobile-nav-links" id="mobileNavLinks">
-    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">×</button>
-    <a href="../index.html" class="active">🏠 Home</a>
-    <a href="../pages/tutorials.html">📚 Tutorials</a>
-    <a href="../pages/about.html">ℹ️ About</a>
-    <a href="../pages/contact.html">📧 Contact</a>
-    <div class="mobile-nav-footer">
-        <button class="btn-cta mobile">Join Newsletter</button>
-    </div>
-</nav>
+    <!-- Navbar -->
+    <div id="header"></div>
 
     <!-- Search Overlay -->
     <div id="searchOverlay" class="search-overlay">
@@ -373,64 +325,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <svg class="logo-icon" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                            <text x="30" y="40" font-family="JetBrains Mono, monospace" font-size="36"
-                                font-weight="bold" fill="#00d9ff" text-anchor="middle">&lt;/&gt;</text>
-                        </svg>
-                        <span style="color: #2c4c59fe;">A <span style="color: #00d9ff;">Coder</span></span>
-                    </div>
-                    <p>Master Java programming with expert tutorials and interactive learning.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
-                        <a href="#" aria-label="LinkedIn">💼</a>
-                        <a href="#" aria-label="GitHub">🐙</a>
-                        <a href="#" aria-label="YouTube">📺</a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#tutorials">Tutorials</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#playground">Playground</a></li>
-                        <li><a href="pages/about.html">About Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Cheat Sheets</a></li>
-                        <li><a href="#">Code Examples</a></li>
-                        <li><a href="#">Video Courses</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
-                        <li><a href="pages/terms.html">Terms of Service</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 A Coder. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
@@ -440,6 +335,8 @@
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
+    <script src="../js/glo.js"></script>
+    
 </body>
 
 </html>
