@@ -35,31 +35,41 @@ acceptCookies.addEventListener('click', () => {
 // Mobile Menu Toggle Functionality
 
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileOverlay = document.querySelector('.mobile-menu-overlay');
-    const mobileNav = document.querySelector('.mobile-nav-links');
-    const mobileClose = document.querySelector('.mobile-menu-close');
+    const mobileToggle = document.getElementById('mobileMenuToggle');
+    const mobileOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileNav = document.getElementById('mobileNavLinks');
+    const mobileClose = document.getElementById('mobileMenuClose');
     
     // Open mobile menu
     if (mobileToggle) {
         mobileToggle.addEventListener('click', function() {
+            // Toggle hamburger animation
+            this.classList.toggle('active');
+            
+            // Open menu
             if (mobileOverlay) mobileOverlay.classList.add('active');
             if (mobileNav) mobileNav.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
     }
     
-    // Close mobile menu
+    // Close mobile menu function
     function closeMobileMenu() {
+        // Remove hamburger animation
+        if (mobileToggle) mobileToggle.classList.remove('active');
+        
+        // Close menu
         if (mobileOverlay) mobileOverlay.classList.remove('active');
         if (mobileNav) mobileNav.classList.remove('active');
         document.body.style.overflow = '';
     }
     
+    // Close button
     if (mobileClose) {
         mobileClose.addEventListener('click', closeMobileMenu);
     }
     
+    // Click overlay to close
     if (mobileOverlay) {
         mobileOverlay.addEventListener('click', closeMobileMenu);
     }
@@ -68,9 +78,29 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mobileNav) {
         const mobileLinks = mobileNav.querySelectorAll('a');
         mobileLinks.forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
+            link.addEventListener('click', function() {
+                closeMobileMenu();
+            });
         });
     }
+    
+    // Close menu on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
+    
+    // Close menu on window resize (desktop view)
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        }, 250);
+    });
 });
 
 // ========================================
