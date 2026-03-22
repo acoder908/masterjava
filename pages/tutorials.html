@@ -25,6 +25,23 @@
     </button>
     <!-- Navigation -->
     <div id="header"></div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav-links" id="mobileNavLinks">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">×</button>
+        <a href="index.html">🏠 Home</a>
+        <a href="pages/tutorials.html">📚 Tutorials</a>
+        <a href="#blog">📝 Blog</a>
+        <a href="#playground">🎮 Playground</a>
+        <a href="pages/about.html">ℹ️ About</a>
+        <a href="pages/contact.html">📧 Contact</a>
+        <div class="mobile-nav-footer">
+            <button class="btn-cta" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Join Newsletter</button>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="tutorials-hero">
