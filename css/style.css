@@ -122,9 +122,10 @@ button {
    Utility Classes
    ======================================== */
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 16px;
 }
 
 .gradient-text {
@@ -950,7 +951,7 @@ button {
 .newsletter-form {
     display: flex;
     gap: 1rem;
-    min-width: 400px;
+    width: 100%;
 }
 
 .newsletter-form input {
@@ -1519,4 +1520,36 @@ img {
     .nav-links {
         display: flex !important;
     }
+}
+@media (max-width: 768px) {
+
+    .newsletter-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .newsletter-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: left;
+    }
+
+
 }
