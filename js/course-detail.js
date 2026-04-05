@@ -414,3 +414,166 @@ window.addEventListener('load', () => {
         sessionStorage.removeItem('scrollPosition');
     }
 });
+
+
+/* ========================================
+   SIDEBAR MOBILE JAVASCRIPT
+   Add to course-detail.js or create separate file
+   ======================================== */
+
+(function () {
+    'use strict';
+
+    console.log('📚 Sidebar mobile initializing...');
+
+    /**
+     * Initialize sidebar mobile functionality
+     */
+    function initSidebarMobile() {
+        const sidebar = document.getElementById('courseSidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        if (!sidebar) {
+            console.warn('⚠️ Sidebar not found');
+            return;
+        }
+
+        console.log('✅ Sidebar found');
+
+        // Create toggle button if doesn't exist
+        if (!sidebarToggle) {
+            createSidebarToggle();
+        }
+
+        // Create overlay if doesn't exist
+        if (!sidebarOverlay) {
+            createSidebarOverlay();
+        }
+
+        // Get elements after creation
+        const toggle = document.getElementById('sidebarToggle');
+        const overlay = document.getElementById('sidebarOverlay');
+        const close = document.querySelector('.sidebar-close');
+
+        // Open sidebar
+        if (toggle) {
+            toggle.addEventListener('click', function () {
+                console.log('📖 Opening sidebar...');
+                openSidebar();
+            });
+        }
+
+        // Close sidebar
+        if (close) {
+            close.addEventListener('click', function () {
+                console.log('❌ Closing sidebar...');
+                closeSidebar();
+            });
+        }
+
+        // Click overlay to close
+        if (overlay) {
+            overlay.addEventListener('click', function () {
+                closeSidebar();
+            });
+        }
+
+        // Close on ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeSidebar();
+            }
+        });
+
+        // Close on window resize to desktop
+        let resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                if (window.innerWidth > 1024) {
+                    closeSidebar();
+                }
+            }, 250);
+        });
+
+        console.log('✅ Sidebar mobile initialized!');
+    }
+
+    /**
+     * Create sidebar toggle button
+     */
+    function createSidebarToggle() {
+        const toggle = document.createElement('button');
+        toggle.id = 'sidebarToggle';
+        toggle.className = 'sidebar-toggle';
+        toggle.setAttribute('aria-label', 'Toggle sidebar');
+        toggle.innerHTML = '📚';
+        document.body.appendChild(toggle);
+        console.log('✅ Sidebar toggle button created');
+    }
+
+    /**
+     * Create sidebar overlay
+     */
+    function createSidebarOverlay() {
+        const overlay = document.createElement('div');
+        overlay.id = 'sidebarOverlay';
+        overlay.className = 'sidebar-overlay';
+        document.body.appendChild(overlay);
+        console.log('✅ Sidebar overlay created');
+    }
+
+    /**
+     * Open sidebar
+     */
+    function openSidebar() {
+        const sidebar = document.getElementById('courseSidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        if (sidebar) sidebar.classList.add('active');
+        if (overlay) overlay.classList.add('active');
+        document.body.classList.add('sidebar-open');
+    }
+
+    /**
+     * Close sidebar
+     */
+    function closeSidebar() {
+        const sidebar = document.getElementById('courseSidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        if (sidebar) sidebar.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+        document.body.classList.remove('sidebar-open');
+    }
+
+    /**
+     * Module toggle functionality
+     */
+    function initModuleToggle() {
+        const modules = document.querySelectorAll('.module-header');
+
+        modules.forEach(function (header) {
+            header.addEventListener('click', function () {
+                const module = this.closest('.module');
+                module.classList.toggle('active');
+            });
+        });
+
+        console.log(`✅ ${modules.length} module toggles initialized`);
+    }
+
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+            initSidebarMobile();
+            initModuleToggle();
+        });
+    } else {
+        initSidebarMobile();
+        initModuleToggle();
+    }
+
+})();
